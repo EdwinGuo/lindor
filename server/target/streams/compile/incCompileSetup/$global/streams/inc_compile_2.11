@@ -1,0 +1,574 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes
+compile options:
+8 items
+0 -> -deprecation
+1 -> -unchecked
+2 -> -encoding
+3 -> utf8
+4 -> -deprecation
+5 -> -Xlint
+6 -> -feature
+7 -> -Xplugin:/Users/EdwinGuo/.ivy2/cache/org.brianmckenna/wartremover_2.11/jars/wartremover_2.11-0.14.jar
+javac options:
+3 items
+0 -> -encoding
+1 -> utf8
+2 -> -g
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+36 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController$$anonfun$ajaxCall$1.class
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController$$anonfun$index$1.class
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/ReverseAssets.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/ReverseWeatherController.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/javascript/ReverseWeatherController.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/routes$javascript.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/routes.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned2_invoker$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_WeatherController_ajaxCall1_invoker$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_WeatherController_index0_invoker$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix$.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index$.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$index.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main$.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$main.class
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0.class
+binary dependencies:
+27 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/.ivy2/cache/com.vmunier/play-scalajs-scripts_2.11/jars/play-scalajs-scripts_2.11-0.3.0.jar
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+10 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> /Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+36 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> controllers.WeatherController
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> controllers.WeatherController$$anonfun$ajaxCall$1
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> controllers.WeatherController$$anonfun$index$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseAssets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers.ReverseWeatherController
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseAssets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers.javascript.ReverseWeatherController
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> controllers.routes
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> controllers.routes$javascript
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$documentation$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_Assets_versioned2_invoker$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_WeatherController_ajaxCall1_invoker$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$router$Routes$$controllers_WeatherController_index0_invoker$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$3
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router.RoutesPrefix$$anonfun$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index$
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views.html.index_Scope0$index$$anonfun$f$1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main$
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views.html.main_Scope0$main$$anonfun$f$1
+used names:
+300 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> ->
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Action
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> AnyContent
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Codec
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> ConfigFactory
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> ContentTypeOf
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Controller
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Http
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Map
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Ok
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> WeatherController
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> Writeable
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> apply
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> asString
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> body
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> city
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> com
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> config
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> contentTypeOf_Html
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> getString
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> html
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> http
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> index
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> key
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> load
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> params
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> response
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> scalaj
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> typesafe
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> utf_8
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> views
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> wString
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> writeableOf_Content
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> +
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <byname>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> AnyRef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Asset
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Assets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Call
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> HandlerDef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> JavascriptLiteral
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Map
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> PathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> QueryStringBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseAssets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseRouteContext
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> ReverseWeatherController
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _defaultPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _prefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _root_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> _rrc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> apply
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> assetPathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> bindableString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> city
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> core
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> dynamicString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> empty
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> endsWith
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> file
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> implicitly
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> package
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> queryString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> routing
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> unbind
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> +
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <byname>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> AnyRef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Asset
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Assets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Call
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> HandlerDef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavaScriptReverseRoute
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> JavascriptLiteral
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> PathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> QueryStringBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseAssets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseRouteContext
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> ReverseWeatherController
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _defaultPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _prefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> _root_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> assetPathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> bindableString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> core
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> dynamicString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> empty
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> endsWith
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> implicitly
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascript
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> javascriptUnbind
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> queryString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> routing
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> +
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> ++
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> :+
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> A1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Any
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Asset
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Assets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Assets_0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> B1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Function1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> GeneratedRouter
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Handler
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> HandlerInvokerFactory
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> HttpErrorHandler
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> List
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Nil
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> None
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> PartialFunction
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> PathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> RequestHeader
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> ReverseRouteContext
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Right
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Route
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Routes
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> RoutesPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Seq
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> Tuple3
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> WeatherController
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> WeatherController_1
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> ajaxCall
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> apply
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> asInstanceOf
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> assetPathBindable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> bindableString
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> call
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> canBuildFrom
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> city
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> collection
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned2_invoker
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_Assets_versioned2_route
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_WeatherController_ajaxCall1_invoker
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_WeatherController_ajaxCall1_route
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_WeatherController_index0_invoker
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> controllers_WeatherController_index0_route
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> core
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> createInvoker
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> defaultPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> e
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> empty
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> endsWith
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> errorHandler
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> fakeValue
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> file
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> foldLeft
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> fromPath
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> get
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> getClass
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> getClassLoader
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> http
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> immutable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> index
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> isEmpty
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> isInstanceOf
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> j
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> package
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> params
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> passThrough
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> path
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> prefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> router
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> routing
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> s
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> setPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> unapply
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> unary_!
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> unchecked
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> versioned
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> AnyRef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Function0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> RoutesPrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> Unit
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> _prefix_=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> byNamePrefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> p
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> prefix
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> router
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Any
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> AnyRef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Appendable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> BaseScalaTemplate
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Format
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Function0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> HtmlFormat
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> ManifestFactory
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> PlayMagic
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Seq
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> Template0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> TemplateMagic
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> _display_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> _root_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> apply
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> classType
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> collection
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> dashboardContent
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> data
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> format
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> html
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> i18n
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> index
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> index_Scope0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> main
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> models
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> raw
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> reflect
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> templates
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> twirl
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> views
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> <init>
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Any
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> AnyRef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Appendable
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Asset
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Assets
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> BaseScalaTemplate
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Format
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Function2
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Html
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> HtmlFormat
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> ManifestFactory
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> PlayMagic
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Predef
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Seq
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> String
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> Template2
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> TemplateMagic
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> _display_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> _root_
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> api
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> apply
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> classType
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> collection
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> content
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> controllers
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> data
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> format
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> html
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> i18n
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> main
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> main_Scope0
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> models
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> mvc
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> play
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> playscalajs
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> raw
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> reflect
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> routes
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> scala
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> scripts
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> string2Asset
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> templates
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> title
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> twirl
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> versioned
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> views
+product stamps:
+36 items
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/ReverseAssets.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/ReverseWeatherController.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController$$anonfun$ajaxCall$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController$$anonfun$index$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/WeatherController.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/javascript/ReverseAssets.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/javascript/ReverseWeatherController.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/routes$javascript.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/controllers/routes.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_Assets_versioned2_invoker$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_WeatherController_ajaxCall1_invoker$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_WeatherController_index0_invoker$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/Routes.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix$$anonfun$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix$.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/router/RoutesPrefix.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index$.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$index$$anonfun$f$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0$index.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/index_Scope0.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main$.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$main$$anonfun$f$1.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0$main.class -> lastModified(1470507874000)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/classes/views/html/main_Scope0.class -> lastModified(1470507874000)
+source stamps:
+8 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> hash(6c3fc43355c49f63bb2eaf7c87155e79d7f3159e)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> hash(16d7491804d48868db268ded0585c8c01aeee634)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> hash(a7ce2e6c377bc69d345458965c772916f6c7636a)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> hash(73a75051ada5e31f94c8e952ab4d898e12ba9873)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> hash(a51dcceae96dee3466948f2375aa93cb307eb72f)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> hash(d7a9891518c1d54a870c591da7c824dffb8785b6)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> hash(d54bbd7d11fe3f27d0cd66d9ea39d4091049c760)
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> hash(fea99441232211aad1df78f4f6bcfbfe5b498e71)
+binary stamps:
+7 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1428689516000)
+/Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar -> lastModified(1457021216000)
+/Users/EdwinGuo/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar -> lastModified(1431579649000)
+/Users/EdwinGuo/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar -> lastModified(1431099969000)
+/Users/EdwinGuo/.ivy2/cache/com.vmunier/play-scalajs-scripts_2.11/jars/play-scalajs-scripts_2.11-0.3.0.jar -> lastModified(1434541917000)
+/Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1435004218000)
+/Users/EdwinGuo/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar -> lastModified(1459630353000)
+class names:
+7 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/EdwinGuo/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.0.jar -> controllers.Assets$
+/Users/EdwinGuo/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar -> play.twirl.api.Template2
+/Users/EdwinGuo/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar -> com.typesafe.config.ConfigFactory
+/Users/EdwinGuo/.ivy2/cache/com.vmunier/play-scalajs-scripts_2.11/jars/play-scalajs-scripts_2.11-0.3.0.jar -> playscalajs.html.scripts$
+/Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.collection.generic.GenericCompanion
+/Users/EdwinGuo/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar -> scalaj.http.HttpResponse
+internal apis:
+8 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCC64zbAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAADc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwicMuRHQAD3JlcXVlc3Qyc2Vzc2lvbnNxAH4AC/3hcnJ0AA1yZXF1ZXN0MmZsYXNoc3EAfgALheZKC3QADHJlcXVlc3QybGFuZ3VxAH4ACQAAARpzcQB+AAud9aBddAAMUmVzZXRDb250ZW50c3EAfgALoB6iFnQADU5vdEFjY2VwdGFibGVzcQB+AAvsT8s5dAARVGVtcG9yYXJ5UmVkaXJlY3RzcQB+AAt3c7nUdAAIc2VuZEZpbGVzcQB+AAt4NQbHdAAPYWRkaW5nVG9TZXNzaW9uc3EAfgALyoI6a3QABkxvY2tlZHNxAH4AC/sKcIt0AAZub3RpZnlzcQB+AAu/2kDadAAERlJPTXNxAH4AC7/c2oJ0ABBDT05URU5UX0xBTkdVQUdFc3EAfgAL24mMN3QAB0NSRUFURURzcQB+AAtJmZuqdAAHdW5hcHBseXNxAH4AC7bgtdl0ABBUT09fTUFOWV9SRVFVRVNUc3EAfgALdXB0iXQAEnRvbGVyYW50Qm9keVBhcnNlcnNxAH4AC+vv/aJ0AAdXQVJOSU5Hc3EAfgALIaAMJnQAD1BheW1lbnRSZXF1aXJlZHNxAH4AC8nhn0h0AAhDT05USU5VRXNxAH4AC1ugU090AARib2R5c3EAfgALH8ANKHQADmZvcm0kZGVmYXVsdCQyc3EAfgAL4omtKHQAC1NFVF9DT09LSUUyc3EAfgALfLqdrnQACEhUVFBfMV8xc3EAfgALdglr2nQAE0NPTlRFTlRfRElTUE9TSVRJT05zcQB+AAsllKGDdAANcmF3JGRlZmF1bHQkMXNxAH4AC26IYbh0AAxDT05URU5UX1RZUEVzcQB+AAs19rEzdAAGQklOQVJZc3EAfgALJMmIZXQABHdhaXRzcQB+AAsGWGJadAAcQUNDRVNTX0NPTlRST0xfQUxMT1dfTUVUSE9EU3NxAH4AC7fN6Jd0AApCYWRHYXRld2F5c3EAfgALavjQL3QAEE1ldGhvZE5vdEFsbG93ZWRzcQB+AAsg0L6idAAOVG9vTWFueVJlcXVlc3RzcQB+AAuvSCT9dAAKVVNFUl9BR0VOVHNxAH4AC7uXPEN0ABZzZW5kUmVzb3VyY2UkZGVmYXVsdCQyc3EAfgALk28usHQABEhPU1RzcQB+AAvI7l8fdAALQ09OVEVOVF9NRDVzcQB+AAtSsiukdAAOY29weSRkZWZhdWx0JDJzcQB+AAuVDFf5dAAHQ3JlYXRlZHNxAH4ACwon04B0AA0kYXNJbnN0YW5jZU9mc3EAfgALjC57YXQABWVtcHR5c3EAfgALmMY5iXQAEFhfRk9SV0FSREVEX1BPUlRzcQB+AAsLlbaHdAAKSmF2YVNjcmlwdHNxAH4AC3d/pJ10AAtCQURfUkVRVUVTVHNxAH4ACyusx2d0AAV1c2luZ3NxAH4AC8eRLCl0AA5Ob3RJbXBsZW1lbnRlZHNxAH4AC9/gppF0AAxNQVhfRk9SV0FSRFNzcQB+AAvW1DvbdAAQWF9GT1JXQVJERURfSE9TVHNxAH4AC4BpkcN0AANDU1NzcQB+AAv42EQSdAAMdG9sZXJhbnRKc29uc3EAfgALSJUOWHQACFNlZU90aGVyc3EAfgALHR1e2nQAB1RSQUlMRVJzcQB+AAtv+/2tdAASUFJPWFlfQVVUSEVOVElDQVRFc3EAfgALwHQUfXQADUFVVEhPUklaQVRJT05zcQB+AAsAm0P1dAADWE1Mc3EAfgAL3bsph3QACmFueUNvbnRlbnRzcQB+AAvx2npVdAANQ0FDSEVfQ09OVFJPTHNxAH4ACx9ULot0ABtOb25BdXRob3JpdGF0aXZlSW5mb3JtYXRpb25zcQB+AAuksq4LdAAPTk9UX0lNUExFTUVOVEVEc3EAfgALVcqw/3QADHByb2R1Y3RBcml0eXNxAH4ACzV8wZ50AAZlcXVhbHNzcQB+AAvtBUEMdAAQUEFZTUVOVF9SRVFVSVJFRHNxAH4AC+7/MlV0AARqc29uc3EAfgALwZJ2tnQACEFjY2VwdGVkc3EAfgAL8RGx2nQAC1JFVFJZX0FGVEVSc3EAfgALyCVWIHQAElJlZGlyZWN0JGRlZmF1bHQkMnNxAH4AC4hF+0p0AA51cmxGb3JtRW5jb2RlZHNxAH4ACyHNo4F0AARKU09Oc3EAfgAL1qxQ1XQACFJlZGlyZWN0c3EAfgALMjfR4XQAE1BSRUNPTkRJVElPTl9GQUlMRURzcQB+AAtf8JradAAOUGFydGlhbENvbnRlbnRzcQB+AAtvH4lFdAAUVW5zdXBwb3J0ZWRNZWRpYVR5cGVzcQB+AAuUSscbdAAIQ09ORkxJQ1RzcQB+AAtgTvbbdAASc2VuZEZpbGUkZGVmYXVsdCQyc3EAfgAL7uO9UHQADkFDQ0VQVF9DSEFSU0VUc3EAfgALBPPbpHQAEVBlcm1hbmVudFJlZGlyZWN0c3EAfgAL810qAnQAEUV4cGVjdGF0aW9uRmFpbGVkc3EAfgAL3BTzPnQAA1ZJQXNxAH4AC6CJHhl0AAxhc0luc3RhbmNlT2ZzcQB+AAuarWhBdAAPUkVRVUVTVF9USU1FT1VUc3EAfgAL4RS2CXQAEE1VTFRJUExFX0NIT0lDRVNzcQB+AAtymA1jdAARTU9WRURfUEVSTUFORU5UTFlzcQB+AAvp9ftSdAACVEVzcQB+AAuO0EM2dAAOR2F0ZXdheVRpbWVvdXRzcQB+AAtkHutudAAQQ09OVEVOVF9MT0NBVElPTnNxAH4AC0lQe6x0AA9QQVJUSUFMX0NPTlRFTlRzcQB+AAtQgm7wdAATcmVtb3ZpbmdGcm9tU2Vzc2lvbnNxAH4ACxQWj5N0ABRJTlNVRkZJQ0lFTlRfU1RPUkFHRXNxAH4AC6fg5dd0ABFtdWx0aXBhcnRGb3JtRGF0YXNxAH4AC0CCtxt0AAxFVkVOVF9TVFJFQU1zcQB+AAsynm1JdAAMc3luY2hyb25pemVkc3EAfgALNCJPF3QAEEZhaWxlZERlcGVuZGVuY3lzcQB+AAvgFZE4dAAERVRBR3NxAH4ACwqpYdZ0AA9MRU5HVEhfUkVRVUlSRURzcQB+AAu2RBi5dAAOd2l0aE5ld1Nlc3Npb25zcQB+AAtzfRK1dAAKSkFWQVNDUklQVHNxAH4AC8JZ0Vh0AA5FbnRpdHlUb29MYXJnZXNxAH4AC9XE35N0AAxVTkFVVEhPUklaRURzcQB+AAtK9DSkdAASc2VuZFBhdGgkZGVmYXVsdCQyc3EAfgALZUNuBnQAFlVOU1VQUE9SVEVEX01FRElBX1RZUEVzcQB+AAuww+rVdAANJGlzSW5zdGFuY2VPZnNxAH4AC63JMfN0AAdSRUZFUkVSc3EAfgALWmolpnQAGFJFUVVFU1RfRU5USVRZX1RPT19MQVJHRXNxAH4AC5ZKEVJ0AAZPUklHSU5zcQB+AAtccWA3dAALd2l0aENvb2tpZXNzcQB+AAtyJSBrdAAPQUNDRVBUX0xBTkdVQUdFc3EAfgALnlFCm3QADE5PVF9NT0RJRklFRHNxAH4AC1GGnYB0AAJhc3NxAH4AC5L4F7N0AAt3aXRoU2Vzc2lvbnNxAH4AC69IgQB0ABpIVFRQX1ZFUlNJT05fTk9UX1NVUFBPUlRFRHNxAH4ACz4GsVR0ABtBQ0NFU1NfQ09OVFJPTF9BTExPV19PUklHSU5zcQB+AAuftN4xdAASc2VuZEZpbGUkZGVmYXVsdCQzc3EAfgALw6CSv3QAE1VucHJvY2Vzc2FibGVFbnRpdHlzcQB+AAvi0juVdAANcmF3JGRlZmF1bHQkMnNxAH4ACxNfrSV0AAR0ZXh0c3EAfgALw4BUeHQACGNhbkVxdWFsc3EAfgALMYxXLXQACE5vdEZvdW5kc3EAfgALuXVakHQABmNvbmZpZ3NxAH4AC7lJTsx0AAhJRl9SQU5HRXNxAH4AC3fRfgt0ABJzZW5kRmlsZSRkZWZhdWx0JDRzcQB+AAtFUF4tdAAbbXVsdGlwYXJ0Rm9ybURhdGEkZGVmYXVsdCQyc3EAfgALrgMNLHQACGZsYXNoaW5nc3EAfgAL0aUTL3QABEZPUk1zcQB+AAu4aUQHdAATSUZfVU5NT0RJRklFRF9TSU5DRXNxAH4AC3O8gIN0ABNTV0lUQ0hJTkdfUFJPVE9DT0xTc3EAfgALGYPZ23QAElRFTVBPUkFSWV9SRURJUkVDVHNxAH4ACxkvoVF0AA1wcm9kdWN0UHJlZml4c3EAfgALy4YyNXQADkNPTlRFTlRfTEVOR1RIc3EAfgALfIJjcnQADXRlbXBvcmFyeUZpbGVzcQB+AAvcRDu+dAAKU0VUX0NPT0tJRXNxAH4AC7Zu7qN0AAlub3RpZnlBbGxzcQB+AAtYrw4hdAADQUdFc3EAfgALHCeSOHQAFERlZmF1bHRNYXhUZXh0TGVuZ3Roc3EAfgALhRjDGnQAC0JBRF9HQVRFV0FZc3EAfgALIRU/CXQAEkVYUEVDVEFUSU9OX0ZBSUxFRHNxAH4ACzhSui10AApDT05ORUNUSU9Oc3EAfgALDRSC43QACUZPUldBUkRFRHNxAH4AC827ZYd0AAJPa3NxAH4AC+vRvyp0AAxpc0luc3RhbmNlT2ZzcQB+AAtj3TOQdAAQTW92ZWRQZXJtYW5lbnRseXNxAH4ACz38ZOp0AAJPS3NxAH4ACzMmbol0AAZhc0phdmFzcQB+AAsVCiutdAARZGlzY2FyZGluZ0Nvb2tpZXNzcQB+AAsk+R6OdAAVQXBwbGljYXRpb25YbWxNYXRjaGVyc3EAfgALJBF3j3QAHEFDQ0VTU19DT05UUk9MX0FMTE9XX0hFQURFUlNzcQB+AAv5od7TdAAOQ0FDSEVfTUFOSUZFU1RzcQB+AAsk6khBdAAJRm9yYmlkZGVuc3EAfgAL5rjSJnQAF0h0dHBWZXJzaW9uTm90U3VwcG9ydGVkc3EAfgALhI176nQABFRFWFRzcQB+AAvrCAWldAAKQmFkUmVxdWVzdHNxAH4AC5MifNp0AAVGT1VORHNxAH4AC8j+3Ep0AAY8aW5pdD5zcQB+AAsoK9M4dAALTm90TW9kaWZpZWRzcQB+AAtt+zp5dAAEREFURXNxAH4AC2uASCx0AA9jcmVhdGVCYWRSZXN1bHRzcQB+AAuD0vYUdAAFYXN5bmNzcQB+AAsH1O+8dAANQ09OVEVOVF9SQU5HRXNxAH4ACxjGgMZ0AAlVTkxJTUlURURzcQB+AAtpp2NJdAAEJGFtcHNxAH4ACwDBybR0AAxzZW5kUmVzb3VyY2VzcQB+AAuAsMvUdAAMdG9sZXJhbnRUZXh0c3EAfgALDaTfYHQAB2NodW5rZWRzcQB+AAtRr5ufdAARVFJBTlNGRVJfRU5DT0RJTkdzcQB+AAsQMN6ZdAASUEVSTUFORU5UX1JFRElSRUNUc3EAfgALik+4RnQABWFwcGx5c3EAfgALaPlRf3QAA3Jhd3NxAH4AC0vuGr10AAVlcnJvcnNxAH4AC3U827R0AAN4bWxzcQB+AAtlfVeHdAARVE9PX01BTllfUkVRVUVTVFNzcQB+AAtf2seddAAFcGFyc2VzcQB+AAu+R8KQdAATUFJPWFlfQVVUSE9SSVpBVElPTnNxAH4ACz9gz8t0AAI9PXNxAH4ACwL2/TV0AARHT05Fc3EAfgALDOFVr3QACnN0cmVhbUZpbGVzcQB+AAvY8nUJdAAER29uZXNxAH4AC3bovx10ACBBQ0NFU1NfQ09OVFJPTF9BTExPV19DUkVERU5USUFMU3NxAH4AC2JXRxV0AA5OT1RfQUNDRVBUQUJMRXNxAH4AC0jGBzd0AAVjbG9uZXNxAH4AC+/B6qJ0AAZFWFBFQ1RzcQB+AAut1wyAdAAWc2VuZFJlc291cmNlJGRlZmF1bHQkM3NxAH4AC6/PMjd0AAdkZWZhdWx0c3EAfgALuRKJ/HQAElNlcnZpY2VVbmF2YWlsYWJsZXNxAH4AC4ng9Wh0AAhMT0NBVElPTnNxAH4AC5Sr1Wd0ABJzZW5kUGF0aCRkZWZhdWx0JDRzcQB+AAtAs7JddAAEVkFSWXNxAH4AC1y1GmV0ABBXV1dfQVVUSEVOVElDQVRFc3EAfgALnM2Q7XQABGZlZWRzcQB+AAsWqZvtdAAEVE9ET3NxAH4AC2zaq1l0AA9YX0ZPUldBUkRFRF9GT1JzcQB+AAva0sYhdAAOZm9ybSRkZWZhdWx0JDNzcQB+AAvn2UF/dAASUHJlY29uZGl0aW9uRmFpbGVkc3EAfgALbQ7txnQACEFDQ0VQVEVEc3EAfgAL1zUOaHQABEh0bWxzcQB+AAtwIooNdAAKTk9fQ09OVEVOVHNxAH4ACzRoQ3x0AAhIVFRQXzFfMHNxAH4AC/FOyGN0ABVJTlRFUk5BTF9TRVJWRVJfRVJST1JzcQB+AAsupknvdAAHVVBHUkFERXNxAH4AC3keyz10ABZ0b2xlcmFudEZvcm1VcmxFbmNvZGVkc3EAfgALt3EhS3QACU5PVF9GT1VORHNxAH4AC/A7qWJ0AAdzZXNzaW9uc3EAfgALLeLxVHQAD0FDQ0VQVF9FTkNPRElOR3NxAH4AC446cg50ABNJbnRlcm5hbFNlcnZlckVycm9yc3EAfgALQLxEjXQAB0VYUElSRVNzcQB+AAsysoqWdAAEY29weXNxAH4ACwgyplh0AAhhamF4Q2FsbHNxAH4AC2t9MVJ0AB9SRVFVRVNURURfUkFOR0VfTk9UX1NBVElTRklBQkxFc3EAfgALOFpAoXQABmhlYWRlcnNxAH4AC2QcYgd0ABBVUEdSQURFX1JFUVVJUkVEc3EAfgALuhtqmHQAFERlZmF1bHRNYXhEaXNrTGVuZ3Roc3EAfgALu1lIE3QAD1Rvb01hbnlSZXF1ZXN0c3NxAH4AC9N473d0AAh0b1N0cmluZ3NxAH4ACzS2HP90AAxVbmF1dGhvcml6ZWRzcQB+AAsEH4XzdAAEZmlsZXNxAH4AC2sqrA50AA5SZXF1ZXN0VGltZW91dHNxAH4AC+PNtD10AAZBQ0NFUFRzcQB+AAtoAqLmdAAKVXJpVG9vTG9uZ3NxAH4AC218Ft90AA9HQVRFV0FZX1RJTUVPVVRzcQB+AAt3eYybdAALTXVsdGlTdGF0dXNzcQB+AAuBhf/odAAGU0VSVkVSc3EAfgALjJZ3znQAHUFDQ0VTU19DT05UUk9MX1JFUVVFU1RfTUVUSE9Ec3EAfgALfXGaI3QAFFVOUFJPQ0VTU0FCTEVfRU5USVRZc3EAfgALrLhvUXQAFkFDQ0VTU19DT05UUk9MX01BWF9BR0VzcQB+AAsJhUnEdAAIc2VuZFBhdGhzcQB+AAv/cPx2dAAKc2VuZEVudGl0eXNxAH4AC6KEokx0AAIhPXNxAH4ACyS1vvl0AA1MQVNUX01PRElGSUVEc3EAfgALDDaHvXQAHUFDQ0VTU19DT05UUk9MX0VYUE9TRV9IRUFERVJTc3EAfgALVJa2hnQAHkFDQ0VTU19DT05UUk9MX1JFUVVFU1RfSEVBREVSU3NxAH4AC4b5mhF0AAt3aXRoQ2hhcnNldHNxAH4ACwIhKHZ0AAhDb25mbGljdHNxAH4AC0VPgTx0AAVBTExPV3NxAH4AC+V1U9h0AAZDT09LSUVzcQB+AAteIDn7dAARSUZfTU9ESUZJRURfU0lOQ0VzcQB+AAu6HMfHdAAIZ2V0Q2xhc3NzcQB+AAuqFCkEdAADWG1sc3EAfgALmloteHQAEGVuZm9yY2VNYXhMZW5ndGhzcQB+AAtS7sXwdAAZQ09OVEVOVF9UUkFOU0ZFUl9FTkNPRElOR3NxAH4ACy+LTiV0AA5jb3B5JGRlZmF1bHQkMXNxAH4AC7hdl210AARIVE1Mc3EAfgALrmSkE3QABUZvdW5kc3EAfgALkfE2CXQAHU5PTl9BVVRIT1JJVEFUSVZFX0lORk9STUFUSU9Oc3EAfgALNy9F6HQABGZvcm1zcQB+AAsgFRRudAAGcmVuZGVyc3EAfgALWJB0e3QABlBSQUdNQXNxAH4AC5LJms10AAhJRl9NQVRDSHNxAH4AC2SnvwZ0AB1QUk9YWV9BVVRIRU5USUNBVElPTl9SRVFVSVJFRHNxAH4AC3BQkVx0AA1SRVNFVF9DT05URU5Uc3EAfgALqVfRTHQACVNFRV9PVEhFUnNxAH4AC9zOP7x0ABFGQUlMRURfREVQRU5ERU5DWXNxAH4ACz5qkoZ0AAJuZXNxAH4ACy7U3uh0ABBDT05URU5UX0VOQ09ESU5Hc3EAfgALfcbqG3QAE0luc3VmZmljaWVudFN0b3JhZ2VzcQB+AAtNagMJdAAFUkFOR0VzcQB+AAuFKxCydAAPd2l0aERhdGVIZWFkZXJzc3EAfgAL3/GJw3QACVVTRV9QUk9YWXNxAH4AC1PQ5J50AAdBY2NlcHRzc3EAfgALWkzix3QAB0NIVU5LRURzcQB+AAtQcYL8dAAUUkVRVUVTVF9VUklfVE9PX0xPTkdzcQB+AAsT4IzmdAARV2VhdGhlckNvbnRyb2xsZXJzcQB+AAuaXmo9dAASUmVkaXJlY3QkZGVmYXVsdCQzc3EAfgALv+yrinQABkxPQ0tFRHNxAH4AC9ngiZF0AAR3aGVuc3EAfgALWHJ+BnQAEnNlbmRQYXRoJGRlZmF1bHQkM3NxAH4ACyD9OQZ0AAZpZ25vcmVzcQB+AAvIxgCDdAAESnNvbnNxAH4AC326gH10AAltYXhMZW5ndGhzcQB+AAsankdTdAAJRk9SQklEREVOc3EAfgALgQy1pnQAEk1FVEhPRF9OT1RfQUxMT1dFRHNxAH4AC07uZsZ0AAJlcXNxAH4AC5MAalV0ABljcmVhdGVCYWRSZXN1bHQkZGVmYXVsdCQyc3EAfgAL7uIt8nQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4AC+WbkU90AA1JRl9OT05FX01BVENIc3EAfgAL1134NnQADUFDQ0VQVF9SQU5HRVNzcQB+AAtLI65zdAAJTm9Db250ZW50c3EAfgALWtdp8HQAEFhfUkVRVUVTVEVEX1dJVEhzcQB+AAtbprnHdAARWF9GT1JXQVJERURfUFJPVE9zcQB+AAs7sdugdAALdG9sZXJhbnRYbWxzcQB+AAtFw+XUdAAMTVVMVElfU1RBVFVTc3EAfgAL6fPvtnQAAiMjc3EAfgALwSkVcHQACGZpbmFsaXplc3EAfgALPx81nXQAE1NFUlZJQ0VfVU5BVkFJTEFCTEVzcQB+AAsdXaagdAAFaW5kZXhzcQB+AAstIREudAAOcHJvZHVjdEVsZW1lbnRzcQB+AAt8JguSdAAIaGFzaENvZGVzcQB+AAtRoT/zdAAGU3RhdHVzc3EAfgALBhgdkHQAC3dpdGhIZWFkZXJzc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4CUXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAHWNvbnRyb2xsZXJzLldlYXRoZXJDb250cm9sbGVydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AmkBc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AlFMAAlpbmhlcml0ZWRxAH4CUUwAB3BhcmVudHNxAH4CUXhxAH4CcHNxAH4CaQF1cQB+AkwAAAAAcHNxAH4CaQF1cQB+AkwAAAAAcHNxAH4CaQF1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAADHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+Am90AApDb250cm9sbGVyc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgJvc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAAEc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARwbGF5c3EAfgKIdAADYXBpc3EAfgKIdAADbXZjc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AolzcQB+Anx0AAlSZW5kZXJpbmdxAH4CgnNxAH4CfHQAEVJlcXVlc3RFeHRyYWN0b3JzcQB+AoJzcQB+Anx0ABBBY2NlcHRFeHRyYWN0b3JzcQB+AoJzcQB+Anx0AAxDb250ZW50VHlwZXNzcQB+AoBzcQB+AoN1cQB+AoYAAAAEc3EAfgKIdAAEcGxheXNxAH4CiHEAfgKNc3EAfgKIdAAEaHR0cHEAfgKRc3EAfgJ8dAALSGVhZGVyTmFtZXNxAH4CmnNxAH4CfHQABlN0YXR1c3EAfgKac3EAfgJ8dAAMSHR0cFByb3RvY29scQB+AppzcQB+Anx0AAtCb2R5UGFyc2Vyc3EAfgKCc3EAfgJ8dAAHUmVzdWx0c3EAfgKCc3EAfgJ8dAAGT2JqZWN0c3EAfgKAc3EAfgKDdXEAfgKGAAAAA3NxAH4CiHQABGphdmFzcQB+Aoh0AARsYW5ncQB+ApFzcQB+Anx0AANBbnlzcQB+AoBzcQB+AoN1cQB+AoYAAAACc3EAfgKIdAAFc2NhbGFxAH4CkXBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADHhwdAALY29udHJvbGxlcnNzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVZhGXKfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUbD/EM1XEn2O7Lq98hxVeedfzFZ4=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHArWCJQAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cJT6XYN0AAZub3RpZnlzcQB+AAya0dvUdAAOX2RlZmF1bHRQcmVmaXhzcQB+AAy26BScdAAEd2FpdHNxAH4ADMmk6eV0AA0kYXNJbnN0YW5jZU9mc3EAfgAMGUtgr3QABmVxdWFsc3NxAH4ADN9FlCF0AAxhc0luc3RhbmNlT2ZzcQB+AAz6RwghdAAMc3luY2hyb25pemVkc3EAfgAM3G61i3QADSRpc0luc3RhbmNlT2ZzcQB+AAzUgtJXdAANUmV2ZXJzZUFzc2V0c3NxAH4ADEHkvuZ0AAlub3RpZnlBbGxzcQB+AAy+/Fm/dAAMaXNJbnN0YW5jZU9mc3EAfgAMeAuC+XQAGFJldmVyc2VXZWF0aGVyQ29udHJvbGxlcnNxAH4ADA1FeyB0AAY8aW5pdD5zcQB+AAyfhJrVdAACPT1zcQB+AAxtMywKdAAFY2xvbmVzcQB+AAwi6gmedAAIYWpheENhbGxzcQB+AAx+OZBNdAAIdG9TdHJpbmdzcQB+AAxembwBdAACIT1zcQB+AAwO3OVedAAIZ2V0Q2xhc3NzcQB+AAz1HqGzdAACbmVzcQB+AAyntHFQdAAJdmVyc2lvbmVkc3EAfgAMfgtBnXQAAmVxc3EAfgAM3Je+OnQAAiMjc3EAfgAM++4fRXQACGZpbmFsaXplc3EAfgAMGx0HqXQABWluZGV4c3EAfgAM6mIBKnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AS3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAGWNvbnRyb2xsZXJzLlJldmVyc2VBc3NldHN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4AYwFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AS0wACWluaGVyaXRlZHEAfgBLTAAHcGFyZW50c3EAfgBLeHEAfgBqc3EAfgBjAXVxAH4ARgAAAABwc3EAfgBjAXVxAH4ARgAAAABwc3EAfgBjAXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AaXQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AaXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AgnQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Ag3NxAH4AdnQAA0FueXNxAH4AenNxAH4AfXVxAH4AgAAAAAJzcQB+AIJ0AAVzY2FsYXEAfgCJcHBzcQB+AEhxAH4AVXVxAH4AVgAAAABzcQB+AFgAdAAkY29udHJvbGxlcnMuUmV2ZXJzZVdlYXRoZXJDb250cm9sbGVydXEAfgBbAAAAAHEAfgBfdXEAfgBhAAAAAHNxAH4AYwFxAH4Aa3BzcQB+AGMBc3EAfgBtc3EAfgBjAXVxAH4ARgAAAABwc3EAfgBjAXVxAH4ARgAAAABwc3EAfgBjAXVxAH4AdAAAAAJzcQB+AHZxAH4AeXNxAH4AenNxAH4AfXVxAH4AgAAAAANzcQB+AIJxAH4AhXNxAH4AgnEAfgCHcQB+AIlzcQB+AHZxAH4Ai3NxAH4AenNxAH4AfXVxAH4AgAAAAAJzcQB+AIJxAH4AkHEAfgCJcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAtjb250cm9sbGVyc3NyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmEZcp91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABBL1VzZXJzL0Vkd2luR3VvL2RhdGFsbGl0ZS9saW5kb3Ivc2VydmVyL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQW10kYBNSIaNsmje0FhcjAGu7mNA==
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB+GEqEAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLZVeFh0AAZub3RpZnlzcQB+AAyKysaidAAOX2RlZmF1bHRQcmVmaXhzcQB+AAwlOR+CdAAEd2FpdHNxAH4ADDEApId0AA0kYXNJbnN0YW5jZU9mc3EAfgAMBE9aunQABmVxdWFsc3NxAH4ADNGiu/90AAxhc0luc3RhbmNlT2ZzcQB+AAzLd7B/dAAMc3luY2hyb25pemVkc3EAfgAMJBCIT3QADSRpc0luc3RhbmNlT2ZzcQB+AAym6BizdAANUmV2ZXJzZUFzc2V0c3NxAH4ADHL23Ax0AAlub3RpZnlBbGxzcQB+AAzyCM+kdAAMaXNJbnN0YW5jZU9mc3EAfgAMgc5GxnQAGFJldmVyc2VXZWF0aGVyQ29udHJvbGxlcnNxAH4ADF7mCxl0AAY8aW5pdD5zcQB+AAyj6TJSdAACPT1zcQB+AAyTaOvEdAAFY2xvbmVzcQB+AAwjIQUGdAAIYWpheENhbGxzcQB+AAyhhnNXdAAIdG9TdHJpbmdzcQB+AAwjIvSudAACIT1zcQB+AAzWxsnrdAAIZ2V0Q2xhc3NzcQB+AAxLFk/OdAACbmVzcQB+AAyx/FkzdAAJdmVyc2lvbmVkc3EAfgAMUucbZHQAAmVxc3EAfgAMLSbjIXQAAiMjc3EAfgAMV6TNTHQACGZpbmFsaXplc3EAfgAMd9m8tnQABWluZGV4c3EAfgAMDymYl3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AS3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAJGNvbnRyb2xsZXJzLmphdmFzY3JpcHQuUmV2ZXJzZUFzc2V0c3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgBjAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBLTAAJaW5oZXJpdGVkcQB+AEtMAAdwYXJlbnRzcQB+AEt4cQB+AGpzcQB+AGMBdXEAfgBGAAAAAHBzcQB+AGMBdXEAfgBGAAAAAHBzcQB+AGMBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBpdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBpc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCCdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCDc3EAfgB2dAADQW55c3EAfgB6c3EAfgB9dXEAfgCAAAAAAnNxAH4AgnQABXNjYWxhcQB+AIlwcHNxAH4ASHEAfgBVdXEAfgBWAAAAAHNxAH4AWAB0AC9jb250cm9sbGVycy5qYXZhc2NyaXB0LlJldmVyc2VXZWF0aGVyQ29udHJvbGxlcnVxAH4AWwAAAABxAH4AX3VxAH4AYQAAAABzcQB+AGMBcQB+AGtwc3EAfgBjAXNxAH4AbXNxAH4AYwF1cQB+AEYAAAAAcHNxAH4AYwF1cQB+AEYAAAAAcHNxAH4AYwF1cQB+AHQAAAACc3EAfgB2cQB+AHlzcQB+AHpzcQB+AH11cQB+AIAAAAADc3EAfgCCcQB+AIVzcQB+AIJxAH4Ah3EAfgCJc3EAfgB2cQB+AItzcQB+AHpzcQB+AH11cQB+AIAAAAACc3EAfgCCcQB+AJBxAH4AiXBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAWY29udHJvbGxlcnMuamF2YXNjcmlwdHNxAH4ArXQAC2NvbnRyb2xsZXJzc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFWYRlyn3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEEvVXNlcnMvRWR3aW5HdW8vZGF0YWxsaXRlL2xpbmRvci9zZXJ2ZXIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFKfOLmw3e8adNFRYllx3KRb2x2Nq
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCyADHOAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAADHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cDWEMsN0AAZub3RpZnlzcQB+AAwiIU/tdAAGQXNzZXRzc3EAfgAMbXrq1HQABHdhaXRzcQB+AAwfqLrQdAAGcm91dGVzc3EAfgAMVTZc4nQABmVxdWFsc3NxAH4ADNzwkR50ABFyb3V0ZXMkamF2YXNjcmlwdHNxAH4ADH5hOHh0AAlub3RpZnlBbGxzcQB+AAzRnyHkdAAGPGluaXQ+c3EAfgAMVarO+HQACHRvU3RyaW5nc3EAfgAMIQt8cHQACGdldENsYXNzc3EAfgAMI36xa3QAEVdlYXRoZXJDb250cm9sbGVyc3EAfgAMHufqNnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AL3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAEmNvbnRyb2xsZXJzLnJvdXRlc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQADHNjYWxhLnRocm93c3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgBIAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAvTAAJaW5oZXJpdGVkcQB+AC9MAAdwYXJlbnRzcQB+AC94cQB+AE9zcQB+AEgBdXEAfgAqAAAAAHBzcQB+AEgBdXEAfgAqAAAAAHBzcQB+AEgBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBOdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBOc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBndAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBocHBzcQB+ACxxAH4AOXEAfgA7cQB+AD1xAH4APnEAfgBAfnEAfgBBdAAGTW9kdWxldXEAfgBFAAAAAHNxAH4ASAFxAH4AUHBzcQB+AEgBc3EAfgBSc3EAfgBIAXVxAH4AKgAAAABwc3EAfgBIAXVxAH4AKgAAAABwc3EAfgBIAXVxAH4AWQAAAABwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAC2NvbnRyb2xsZXJzc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFWYRlyn3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEEvVXNlcnMvRWR3aW5HdW8vZGF0YWxsaXRlL2xpbmRvci9zZXJ2ZXIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFHOnUFGtpeMflMjpUqtNiY4Suphz
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAxTDhCAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJ3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cE2B+bZ0AAZub3RpZnlzcQB+AAzkKab/dAAqY29udHJvbGxlcnNfV2VhdGhlckNvbnRyb2xsZXJfaW5kZXgwX3JvdXRlc3EAfgAMZZveUnQACmJhZFJlcXVlc3RzcQB+AAyAmAfSdAAEd2FpdHNxAH4ADHL2lX10AA0kYXNJbnN0YW5jZU9mc3EAfgAMSTZLd3QABnJvdXRlc3NxAH4ADJ57x0l0AA1jcmVhdGVJbnZva2Vyc3EAfgAMOgptHnQABmVxdWFsc3NxAH4ADO7lSZd0AC1jb250cm9sbGVyc19XZWF0aGVyQ29udHJvbGxlcl9hamF4Q2FsbDFfcm91dGVzcQB+AAxUx9/vdAAGcHJlZml4c3EAfgAM7rEG3nQADGFzSW5zdGFuY2VPZnNxAH4ADAJP80p0AA1kb2N1bWVudGF0aW9uc3EAfgAMyAHA4HQADHN5bmNocm9uaXplZHNxAH4ADKhCFIh0AC9jb250cm9sbGVyc19XZWF0aGVyQ29udHJvbGxlcl9hamF4Q2FsbDFfaW52b2tlcnNxAH4ADNpRt4V0AA0kaXNJbnN0YW5jZU9mc3EAfgAMQ6hwr3QACmhhbmRsZXJGb3JzcQB+AAxfHCx4dAAjY29udHJvbGxlcnNfQXNzZXRzX3ZlcnNpb25lZDJfcm91dGVzcQB+AAzxTVAydAAJbm90aWZ5QWxsc3EAfgAMyGaE1HQADGlzSW5zdGFuY2VPZnNxAH4ADFEejfd0AAZhc0phdmFzcQB+AAzOS0WodAAMZXJyb3JIYW5kbGVyc3EAfgAMQui9dHQABjxpbml0PnNxAH4ADFroZ7d0AAI9PXNxAH4ADDHdx6x0AAVjbG9uZXNxAH4ADJIm6kR0AAZSb3V0ZXNzcQB+AAy3SOvwdAAIdG9TdHJpbmdzcQB+AAzJvyfIdAACIT1zcQB+AAzKUeMrdAAJZmFrZVZhbHVlc3EAfgAMdKL/GHQACGdldENsYXNzc3EAfgAM8apEInQALGNvbnRyb2xsZXJzX1dlYXRoZXJDb250cm9sbGVyX2luZGV4MF9pbnZva2Vyc3EAfgAMMmBJpHQAAm5lc3EAfgAMBXHxLHQACndpdGhQcmVmaXhzcQB+AAwdlrCudAAEY2FsbHNxAH4ADPdUv350AAJlcXNxAH4ADMXuRTh0AA1kZWZhdWx0UHJlZml4c3EAfgAM91K9EHQAAiMjc3EAfgAMAO6iNHQAJWNvbnRyb2xsZXJzX0Fzc2V0c192ZXJzaW9uZWQyX2ludm9rZXJzcQB+AAxtA/WddAAIZmluYWxpemVzcQB+AAyFs1FvdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBleHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAANcm91dGVyLlJvdXRlc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAXQAE2phdmF4LmluamVjdC5JbmplY3RzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4AfgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AZUwACWluaGVyaXRlZHEAfgBlTAAHcGFyZW50c3EAfgBleHEAfgCFc3EAfgB+AXVxAH4AYAAAAABwc3EAfgB+AXVxAH4AYAAAAABwc3EAfgB+AXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAEc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AhHQAD0dlbmVyYXRlZFJvdXRlcnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AhHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAABHNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEcGxheXNxAH4AnXQABGNvcmVzcQB+AJ10AAdyb3V0aW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJ5zcQB+AJF0AAZSb3V0ZXJzcQB+AJVzcQB+AJh1cQB+AJsAAAAEc3EAfgCddAAEcGxheXNxAH4AnXQAA2FwaXNxAH4AnXQAB3JvdXRpbmdxAH4ApnNxAH4AkXQABk9iamVjdHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ10AARqYXZhc3EAfgCddAAEbGFuZ3EAfgCmc3EAfgCRdAADQW55c3EAfgCVc3EAfgCYdXEAfgCbAAAAAnNxAH4AnXQABXNjYWxhcQB+AKZwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQABnJvdXRlcnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmEZcp91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABBL1VzZXJzL0Vkd2luR3VvL2RhdGFsbGl0ZS9saW5kb3Ivc2VydmVyL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSlHczq6W3uNGaUjyN1qpPLMH63Lw==
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBcdvxBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cN0jWmN0AAZub3RpZnlzcQB+AAw6mfPpdAAMYnlOYW1lUHJlZml4c3EAfgAMGqAuKnQABHdhaXRzcQB+AAwiihQedAANJGFzSW5zdGFuY2VPZnNxAH4ADGlC0gh0AAZlcXVhbHNzcQB+AAxzjiBXdAAGcHJlZml4c3EAfgAMoe4en3QADGFzSW5zdGFuY2VPZnNxAH4ADLjZuch0AAxSb3V0ZXNQcmVmaXhzcQB+AAzBVSPudAAMc3luY2hyb25pemVkc3EAfgAM3PW0o3QADSRpc0luc3RhbmNlT2ZzcQB+AAxQkfPHdAAHX3ByZWZpeHNxAH4ADL28U7F0AAlub3RpZnlBbGxzcQB+AAz/ysYxdAAMaXNJbnN0YW5jZU9mc3EAfgAM2W34NHQAAj09c3EAfgAMxTNSy3QABWNsb25lc3EAfgAM+6h7k3QACHRvU3RyaW5nc3EAfgAMjL/9EnQAAiE9c3EAfgAMFWcPZ3QACGdldENsYXNzc3EAfgAMRJBH63QACXNldFByZWZpeHNxAH4ADA44Ta90AAJuZXNxAH4ADBnhnUh0AAJlcXNxAH4ADBp2Pzd0AAIjI3NxAH4ADAff5nh0AAhmaW5hbGl6ZXNxAH4ADIIAnnp0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AEd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABNyb3V0ZXIuUm91dGVzUHJlZml4dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgBfAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBHTAAJaW5oZXJpdGVkcQB+AEdMAAdwYXJlbnRzcQB+AEd4cQB+AGZzcQB+AF8BdXEAfgBCAAAAAHBzcQB+AF8BdXEAfgBCAAAAAHBzcQB+AF8BdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBldAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBlc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgB+dAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgB/c3EAfgBydAADQW55c3EAfgB2c3EAfgB5dXEAfgB8AAAAAnNxAH4AfnQABXNjYWxhcQB+AIVwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQABnJvdXRlcnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmEZcp91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABBL1VzZXJzL0Vkd2luR3VvL2RhdGFsbGl0ZS9saW5kb3Ivc2VydmVyL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTXqYkVGMHVSocMWR2nyCTf+4eFtg==
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAsf9gzAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLS+QU10AAZub3RpZnlzcQB+AAxQf3PrdAAGZm9ybWF0c3EAfgAMVtIRoXQABHdhaXRzcQB+AAxKygp4dAANJGFzSW5zdGFuY2VPZnNxAH4ADCKh30h0AAxwcm9kdWN0QXJpdHlzcQB+AAx/zHL+dAAGZXF1YWxzc3EAfgAMUyrnj3QADGFzSW5zdGFuY2VPZnNxAH4ADHeAxkV0AAFmc3EAfgAMkLniQXQADHN5bmNocm9uaXplZHNxAH4ADB1SNXV0AAlfZGlzcGxheV9zcQB+AAyY8Oy2dAANJGlzSW5zdGFuY2VPZnNxAH4ADCzIbWR0AANyZWZzcQB+AAyjSKeidAAIY2FuRXF1YWxzcQB+AAzQ/BnBdAAMaW5kZXhfU2NvcGUwc3EAfgAMs6ty1nQADXByb2R1Y3RQcmVmaXhzcQB+AAxpq4t3dAAJbm90aWZ5QWxsc3EAfgAM1hxODHQAC3JlYWRSZXNvbHZlc3EAfgAMu41roHQADGlzSW5zdGFuY2VPZnNxAH4ADI25paV0AAY8aW5pdD5zcQB+AAzj0OxPdAAFYXBwbHlzcQB+AAzXQQF9dAACPT1zcQB+AAyP2tpCdAAFY2xvbmVzcQB+AAx3dajcdAAEY29weXNxAH4ADEYLyvp0AAh0b1N0cmluZ3NxAH4ADHsslD90AAIhPXNxAH4ADIfoUUx0AAhnZXRDbGFzc3NxAH4ADLIMbAF0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADFr6frp0AAZyZW5kZXJzcQB+AAypHxuedAACbmVzcQB+AAyRuGGXdAACZXFzcQB+AAxOmHwzdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMmBGk5XQAAiMjc3EAfgAMWGIkOXQACGZpbmFsaXplc3EAfgAMdCYN+nQABWluZGV4c3EAfgAMR9kkDnQADnByb2R1Y3RFbGVtZW50c3EAfgAMAD7BwnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AX3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAF3ZpZXdzLmh0bWwuaW5kZXhfU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgB3AXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AH5zcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB9dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB9c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCWdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCXc3EAfgCKdAADQW55c3EAfgCOc3EAfgCRdXEAfgCUAAAAAnNxAH4AlnQABXNjYWxhcQB+AJ1wcHNxAH4AXHEAfgBpdXEAfgBqAAAAAHNxAH4AbAB0ABB2aWV3cy5odG1sLmluZGV4dXEAfgBvAAAAAHEAfgBzdXEAfgB1AAAAAHNxAH4AdwFxAH4Af3BzcQB+AHcBc3EAfgCBc3EAfgB3AXVxAH4AWgAAAABwc3EAfgB3AXVxAH4AWgAAAABwc3EAfgB3AXVxAH4AiAAAAAlzcQB+AIp0AAVpbmRleHNxAH4AinQADGluZGV4X1Njb3BlMHNxAH4AjnNxAH4AkXVxAH4AlAAAAANzcQB+AJZ0AAV2aWV3c3NxAH4AlnQABGh0bWxxAH4AnXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4Ai1sADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AfXNxAH4AinQACVRlbXBsYXRlMHNxAH4AjnNxAH4AkXVxAH4AlAAAAARzcQB+AJZ0AARwbGF5c3EAfgCWdAAFdHdpcmxzcQB+AJZ0AANhcGlxAH4AnXVxAH4AiAAAAAFzcQB+AIp0AARIdG1scQB+AMRzcQB+AL9zcQB+AIp0ABFCYXNlU2NhbGFUZW1wbGF0ZXEAfgDEdXEAfgCIAAAAAnEAfgDOc3EAfgC/c3EAfgCKdAAGRm9ybWF0cQB+AMR1cQB+AIgAAAABcQB+AM5zcQB+AIp0AAxTZXJpYWxpemFibGVzcQB+AI5zcQB+AJF1cQB+AJQAAAACc3EAfgCWcQB+AKRxAH4AnXNxAH4AinEAfgDZc3EAfgCOc3EAfgCRdXEAfgCUAAAAA3NxAH4AlnEAfgCZc3EAfgCWdAACaW9xAH4AnXNxAH4AinQAB1Byb2R1Y3RxAH4A2nNxAH4AinQABkVxdWFsc3EAfgDac3EAfgCKcQB+AI1zcQB+AI5zcQB+AJF1cQB+AJQAAAADc3EAfgCWcQB+AJlzcQB+AJZxAH4Am3EAfgCdc3EAfgCKcQB+AJ9xAH4A2nBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAFdmlld3NzcQB+APJ0AAp2aWV3cy5odG1sc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFWYRlyn3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEEvVXNlcnMvRWR3aW5HdW8vZGF0YWxsaXRlL2xpbmRvci9zZXJ2ZXIvdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFNVLvX0R/j8n0M1m2eo51AkQScdg
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCKVquGAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cK7QIOp0AAZub3RpZnlzcQB+AAz4wsn4dAAGZm9ybWF0c3EAfgAMuAM/X3QABHdhaXRzcQB+AAwRusk1dAANJGFzSW5zdGFuY2VPZnNxAH4ADKwjYYZ0AAxwcm9kdWN0QXJpdHlzcQB+AAwrnx3QdAAGZXF1YWxzc3EAfgAMOmWTIHQADGFzSW5zdGFuY2VPZnNxAH4ADKYQPFN0AAFmc3EAfgAMP7s1THQADHN5bmNocm9uaXplZHNxAH4ADGX6KSl0AAlfZGlzcGxheV9zcQB+AAwdRe37dAANJGlzSW5zdGFuY2VPZnNxAH4ADBPHuxV0AANyZWZzcQB+AAza0S78dAAIY2FuRXF1YWxzcQB+AAwtXV9EdAAEbWFpbnNxAH4ADCP9qbt0AA1wcm9kdWN0UHJlZml4c3EAfgAMK+/Fe3QACW5vdGlmeUFsbHNxAH4ADHntALR0AAtyZWFkUmVzb2x2ZXNxAH4ADA700bR0AAxpc0luc3RhbmNlT2ZzcQB+AAylgtkPdAAGPGluaXQ+c3EAfgAMn8nYI3QABWFwcGx5c3EAfgAMnoiwMHQAAj09c3EAfgAMwg1sxHQABWNsb25lc3EAfgAMkdDvXnQAC21haW5fU2NvcGUwc3EAfgAMCTdDKXQABGNvcHlzcQB+AAzX13bHdAAIdG9TdHJpbmdzcQB+AAxU2ScrdAACIT1zcQB+AAw0BWpodAAIZ2V0Q2xhc3NzcQB+AAxbY/72dAAOY29weSRkZWZhdWx0JDFzcQB+AAxI2uyOdAAGcmVuZGVyc3EAfgAMNwb2AXQAAm5lc3EAfgAMuLvRynQAAmVxc3EAfgAMGiVaC3QAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADEVwPB10AAIjI3NxAH4ADKZIUSx0AAhmaW5hbGl6ZXNxAH4ADFR3k4F0AA5wcm9kdWN0RWxlbWVudHNxAH4ADAgCCRN0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABZ2aWV3cy5odG1sLm1haW5fU2NvcGUwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgB3AXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AH5zcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB9dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB9c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCWdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCXc3EAfgCKdAADQW55c3EAfgCOc3EAfgCRdXEAfgCUAAAAAnNxAH4AlnQABXNjYWxhcQB+AJ1wcHNxAH4AXHEAfgBpdXEAfgBqAAAAAHNxAH4AbAB0AA92aWV3cy5odG1sLm1haW51cQB+AG8AAAAAcQB+AHN1cQB+AHUAAAAAc3EAfgB3AXEAfgB/cHNxAH4AdwFzcQB+AIFzcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXEAfgBaAAAAAHBzcQB+AHcBdXEAfgCIAAAACXNxAH4AinQABG1haW5zcQB+AIp0AAttYWluX1Njb3BlMHNxAH4AjnNxAH4AkXVxAH4AlAAAAANzcQB+AJZ0AAV2aWV3c3NxAH4AlnQABGh0bWxxAH4AnXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4Ai1sADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AfXNxAH4AinQACVRlbXBsYXRlMnNxAH4AjnNxAH4AkXVxAH4AlAAAAARzcQB+AJZ0AARwbGF5c3EAfgCWdAAFdHdpcmxzcQB+AJZ0AANhcGlxAH4AnXVxAH4AiAAAAANzcQB+AIp0AAZTdHJpbmdzcQB+AI5zcQB+AJF1cQB+AJQAAAADc3EAfgCWcQB+AJlzcQB+AJZxAH4Am3EAfgCdc3EAfgCKdAAESHRtbHEAfgDEc3EAfgCKdAAESHRtbHEAfgDEc3EAfgC/c3EAfgCKdAARQmFzZVNjYWxhVGVtcGxhdGVxAH4AxHVxAH4AiAAAAAJxAH4A13NxAH4Av3NxAH4AinQABkZvcm1hdHEAfgDEdXEAfgCIAAAAAXEAfgDXc3EAfgCKdAAMU2VyaWFsaXphYmxlc3EAfgCOc3EAfgCRdXEAfgCUAAAAAnNxAH4AlnEAfgCkcQB+AJ1zcQB+AIpxAH4A4nNxAH4AjnNxAH4AkXVxAH4AlAAAAANzcQB+AJZxAH4AmXNxAH4AlnQAAmlvcQB+AJ1zcQB+AIp0AAdQcm9kdWN0cQB+AONzcQB+AIp0AAZFcXVhbHNxAH4A43NxAH4AinEAfgCNcQB+ANBzcQB+AIpxAH4An3EAfgDjcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAV2aWV3c3NxAH4A9nQACnZpZXdzLmh0bWxzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVZhGXKfdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU/qmUQSMiEarR33j09rz7/ltJjnE=
+external apis:
+0 items
+source infos:
+8 items
+/Users/EdwinGuo/datallite/lindor/server/app/controllers/WeatherController.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/controllers/routes.java -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/Routes.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/routes/main/router/RoutesPrefix.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/index.template.scala -> 
+AAAAAAAAAAA=
+/Users/EdwinGuo/datallite/lindor/server/target/scala-2.11/twirl/main/views/html/main.template.scala -> 
+AAAAAAAAAAA=
+compilations:
+4 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmD3PLB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmD3WBF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmEZZhV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVmEZcp91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQS9Vc2Vycy9FZHdpbkd1by9kYXRhbGxpdGUvbGluZG9yL3NlcnZlci90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABLw==
