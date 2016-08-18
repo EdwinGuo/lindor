@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, cpd"
-		date="20160806174004"/>
+		date="20160818014329"/>
 	<dependencies>
 		<module organisation="org.scalaj" name="scalaj-http_2.11">
 			<revision name="2.3.0" status="release" pubdate="20160402205234" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/scalaj/scalaj-http" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="59">
@@ -803,7 +803,7 @@
 			</revision>
 		</module>
 		<module organisation="shared" name="shared_2.11">
-			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160806174003" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160818014329" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="server" name="server_2.11" conf="compile-internal, compile, provided, optional" rev="0.1-SNAPSHOT" rev-constraint-default="0.1-SNAPSHOT" rev-constraint-dynamic="0.1-SNAPSHOT" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>

@@ -7,9 +7,10 @@ object ReportStyles extends StyleSheet.Inline {
   import dsl._
 
   val mainDiv = style(
+    //position := "fixed",
     addClassName("col-md-12"),
     borderBottom := "1px solid #eee",
-    backgroundColor(Color("#3D4048"))
+    backgroundColor(Color("#000000"))
   )
 
   val heading = style(
@@ -28,6 +29,11 @@ object ReportStyles extends StyleSheet.Inline {
     textShadow := "1px 1px 1px #000"
   )
 
+  val thirdSpan = style(
+    textShadow := "1px 1px 1px #000",
+    marginTop(80 %%)
+  )
+
   val imageCommon = mixin(
     height(60 px),
     width(60 px)
@@ -44,6 +50,12 @@ object ReportStyles extends StyleSheet.Inline {
     addClassName("col-md-12"),
     marginTop(10 %%)
   )
+
+  val thirdDiv = style(
+    addClassName("col-md-12"),
+    marginTop(20 %%)
+  )
+
   val search = style(
     width(60 %%),
     height(35 px),
@@ -70,12 +82,14 @@ object ReportStyles extends StyleSheet.Inline {
   )
 
   val innerDiv = style(
-    width(530 px),
-    height(400 px),
-    marginLeft(60 px)
+    width(620 px),
+    height(200 px),
+    marginLeft(60 px),
+    overflow.auto
   )
 
   val city = style(
+    marginLeft(60 px),
     fontSize(28 px),
     color := "#67890a",
     fontWeight.bold
@@ -83,7 +97,7 @@ object ReportStyles extends StyleSheet.Inline {
 
   val table = style(
     addClassName("table-bordered table-striped"),
-    width(540 px),
+    width(620 px),
     textAlign.center,
     marginTop(10 px)
   )
@@ -94,7 +108,8 @@ object ReportStyles extends StyleSheet.Inline {
   )
 
   val td = style(
-    padding(20 px)
+    padding(20 px),
+    textAlign.left
   )
 
   val firstTd = style(
@@ -105,7 +120,17 @@ object ReportStyles extends StyleSheet.Inline {
   val secondTd = style(commonTD)
 
   val mapCanvas = style(
-    height(430 px),
-    width(512 px)
+    height(830 px),
+    width(912 px)
   )
+
+  val innerDivEdwin = style(
+    width(700 px),
+    height(600 px),
+    marginTop(30 px),
+    marginLeft(5 px),
+    float := "right"
+  //outline := "#00FF00 dotted thick"
+  )
+
 }

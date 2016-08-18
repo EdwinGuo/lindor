@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="cpd"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, phantom-js-jetty, cpd"
-		date="20160806174717"/>
+		date="20160818014348"/>
 	<dependencies>
 		<module organisation="net.sourceforge.pmd" name="pmd">
 			<revision name="5.1.1" status="release" pubdate="20140427063123" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pmd.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="0">

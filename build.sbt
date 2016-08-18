@@ -1,7 +1,11 @@
 import sbt.Keys._
 import sbt.Project.projectToRef
 import de.johoop.cpd4sbt.CopyPasteDetector._
+import com.lihaoyi.workbench.Plugin._
 
+enablePlugins(ScalaJSPlugin)
+
+workbenchSettings
 
 name := "Knoldus-Scala.js"
 
@@ -23,11 +27,15 @@ lazy val server = (project in file("server")).settings(
     "com.vmunier" %%% "play-scalajs-scripts" % "0.3.0",
     "org.scalaj" % "scalaj-http_2.11" % "2.3.0",
     specs2 % Test
+      //    "com.datallite.tango" %%% "map.core" % "1.0.0"
   )
 ).enablePlugins(PlayScala).
   aggregate(clients.map(projectToRef): _*).
   dependsOn(sharedJvm)
 
+bootSnippet := "com.knoldus.weather.Weather().main();"
+
+updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
 
 lazy val client = (project in file("client")).settings(
   scalaVersion := scalaV,
@@ -41,6 +49,7 @@ lazy val client = (project in file("client")).settings(
     "com.lihaoyi" %%% "scalatags" % "0.5.4",
     "com.github.japgolly.scalacss" %%% "ext-scalatags" % "0.4.0",
     "com.github.japgolly.scalacss" %%% "core" % "0.4.0"
+      //"com.datallite.tango" %%% "map.core" % "1.0.0"
   ),
 
   jsDependencies ++= Seq(
@@ -54,6 +63,7 @@ lazy val client = (project in file("client")).settings(
   testFrameworks += new TestFramework("utest.runner.Framework")
 ).enablePlugins(ScalaJSPlugin, ScalaJSPlay).
   dependsOn(sharedJs)
+
 
 
 lazy val shared = (crossProject.crossType(CrossType.Pure) in file("shared")).

@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for server#server_2.11;0.1-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies server#server_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c682b7c[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50190e74[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -6028,7 +6028,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jdom#jdom;1.0!jdom.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xom#xom;1.0!xom.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] xerces#xmlParserAPIs;2.6.2!xmlParserAPIs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1313ms :: artifacts dl 51ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1725ms :: artifacts dl 86ms[0m
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT compile produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT runtime produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT test produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-test.xml[0m
@@ -6043,5 +6043,5 @@
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT pom produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT scala-tool produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for server#server_2.11;0.1-SNAPSHOT cpd produced in /Users/EdwinGuo/datallite/lindor/server/target/resolution-cache/reports/server-server_2.11-cpd.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1313ms resolve - 51ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1725ms resolve - 86ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

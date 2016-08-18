@@ -4,7 +4,7 @@
 		module="lindor-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160806173851"
+		publication="20160818004524"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
@@ -43,6 +43,8 @@
 			<artifact name="global-plugins" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.5.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
+		<dependency org="org.scala-js" name="sbt-scalajs" rev="0.6.6" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
+		<dependency org="com.lihaoyi" name="workbench" rev="0.2.3" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="org.scala-js" name="sbt-scalajs" rev="0.6.7" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-gzip" rev="1.0.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.vmunier" name="sbt-play-scalajs" rev="0.3.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>

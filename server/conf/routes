@@ -8,6 +8,14 @@ GET        /                    controllers.WeatherController.index
 # Refresh Weather Information
 GET        /weather/:city           controllers.WeatherController.ajaxCall(city:String)
 
+#get twitter information
+GET        /twitter           controllers.WeatherController.twitterCall()
+
+#get bus information
+GET        /bus           controllers.WeatherController.busCall()
+
+#get bus information
+GET        /chart         controllers.WeatherController.busStatus()
 
 # Map static resources from the /public folder to the /assets URL path
 GET        /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)

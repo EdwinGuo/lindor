@@ -9,10 +9,10 @@
 		extra-sbtVersion="0.13"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160806173851"/>
+		date="20160818004524"/>
 	<dependencies>
 		<module organisation="org.brianmckenna" name="sbt-wartremover">
-			<revision name="0.14" status="release" pubdate="20150830025150" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/puffnfresh/wartremover" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="106">
+			<revision name="0.14" status="release" pubdate="20150830025150" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/puffnfresh/wartremover" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="120">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3013" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/org.brianmckenna/sbt-wartremover/ivy-0.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/brianmckenna/sbt-wartremover_2.10_0.13/0.14/sbt-wartremover-0.14.pom"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.14" rev-constraint-default="0.14" rev-constraint-dynamic="0.14" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -24,7 +24,7 @@
 			</revision>
 		</module>
 		<module organisation="de.johoop" name="cpd4sbt">
-			<revision name="1.1.5" status="release" pubdate="20140523144756" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="105">
+			<revision name="1.1.5" status="release" pubdate="20140523144756" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="119">
 				<metadata-artifact status="no" details="" size="1395" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/de.johoop/cpd4sbt/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/de.johoop/cpd4sbt/scala_2.10/sbt_0.13/1.1.5/ivys/ivy.xml"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -35,7 +35,7 @@
 			</revision>
 		</module>
 		<module organisation="com.orrsella" name="sbt-stats">
-			<revision name="1.0.5" status="release" pubdate="20130831142134" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/orrsella/sbt-stats" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="104">
+			<revision name="1.0.5" status="release" pubdate="20130831142134" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/orrsella/sbt-stats" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="118">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3079" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.orrsella/sbt-stats/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/orrsella/sbt-stats_2.10_0.13/1.0.5/sbt-stats-1.0.5.pom"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -47,7 +47,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalastyle" name="scalastyle-sbt-plugin">
-			<revision name="0.8.0" status="release" pubdate="20151201205054" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalastyle.org" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="102">
+			<revision name="0.8.0" status="release" pubdate="20151201205054" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalastyle.org" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="116">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3133" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/org.scalastyle/scalastyle-sbt-plugin/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalastyle/scalastyle-sbt-plugin_2.10_0.13/0.8.0/scalastyle-sbt-plugin-0.8.0.pom"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -59,7 +59,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scalastyle" name="scalastyle_2.10">
-			<revision name="0.8.0" status="release" pubdate="20151201204424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalastyle.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
+			<revision name="0.8.0" status="release" pubdate="20151201204424" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalastyle.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="117">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3427" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalastyle/scalastyle_2.10/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalastyle/scalastyle_2.10/0.8.0/scalastyle_2.10-0.8.0.pom"/>
 				<caller organisation="org.scalastyle" name="scalastyle-sbt-plugin" conf="default, compile, runtime, master" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="0.8.0"/>
@@ -92,7 +92,7 @@
 			</revision>
 		</module>
 		<module organisation="com.vmunier" name="sbt-play-scalajs">
-			<revision name="0.3.0" status="release" pubdate="20160229162803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/vmunier/sbt-play-scalajs" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="101">
+			<revision name="0.3.0" status="release" pubdate="20160229162803" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/vmunier/sbt-play-scalajs" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="115">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2121" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.vmunier/sbt-play-scalajs/ivy-0.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.vmunier/sbt-play-scalajs/scala_2.10/sbt_0.13/0.3.0/ivys/ivy.xml"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
@@ -104,12 +104,197 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-gzip">
-			<revision name="1.0.0" status="release" pubdate="20140528155236" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="100">
+			<revision name="1.0.0" status="release" pubdate="20140528155236" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="114">
 				<metadata-artifact status="no" details="" size="1560" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-gzip/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-gzip/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
 					<artifact name="sbt-gzip" type="jar" ext="jar" status="no" details="" size="16685" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-gzip/jars/sbt-gzip-1.0.0.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-gzip/scala_2.10/sbt_0.13/1.0.0/jars/sbt-gzip.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="workbench">
+			<revision name="0.2.3" status="release" pubdate="20141108195234" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/workbench" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="100">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3673" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.lihaoyi/workbench/ivy-0.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/workbench_2.10_0.13/0.2.3/workbench-0.2.3.pom"/>
+				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.2.3" rev-constraint-default="0.2.3" rev-constraint-dynamic="0.2.3" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="workbench" type="jar" ext="jar" status="no" details="" size="135092" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/com.lihaoyi/workbench/jars/workbench-0.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/workbench_2.10_0.13/0.2.3/workbench-0.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="upickle_2.10">
+			<revision name="0.2.5" status="release" pubdate="20140928074620" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/upickle" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3242" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.lihaoyi/upickle_2.10/ivy-0.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.10/0.2.5/upickle_2.10-0.2.5.pom"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="0.2.5" rev-constraint-default="0.2.5" rev-constraint-dynamic="0.2.5" callerrev="0.2.3"/>
+				<artifacts>
+					<artifact name="upickle_2.10" type="jar" ext="jar" status="no" details="" size="401454" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.lihaoyi/upickle_2.10/jars/upickle_2.10-0.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/upickle_2.10/0.2.5/upickle_2.10-0.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="autowire_2.10">
+			<revision name="0.2.3" status="release" pubdate="20140904062528" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/ajax" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3595" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.lihaoyi/autowire_2.10/ivy-0.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/autowire_2.10/0.2.3/autowire_2.10-0.2.3.pom"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="0.2.3" rev-constraint-default="0.2.3" rev-constraint-dynamic="0.2.3" callerrev="0.2.3"/>
+				<artifacts>
+					<artifact name="autowire_2.10" type="jar" ext="jar" status="no" details="" size="109321" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.lihaoyi/autowire_2.10/jars/autowire_2.10-0.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/autowire_2.10/0.2.3/autowire_2.10-0.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalamacros" name="quasiquotes_2.10">
+			<revision name="2.0.0" status="release" pubdate="20140417090710" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="no" details="" size="2742" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalamacros/quasiquotes_2.10/ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.0/quasiquotes_2.10-2.0.0.pom"/>
+				<evicted-by rev="2.0.1"/>
+				<caller organisation="com.lihaoyi" name="autowire_2.10" conf="compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.2.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.0.1" status="release" pubdate="20150927151915" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="149">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
+				<metadata-artifact status="no" details="" size="2742" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalamacros/quasiquotes_2.10/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom"/>
+				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.10.0"/>
+				<caller organisation="com.lihaoyi" name="autowire_2.10" conf="compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.2.3"/>
+				<artifacts>
+					<artifact name="quasiquotes_2.10" type="jar" ext="jar" status="no" details="" size="720704" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-routing">
+			<revision name="1.3.1" status="release" pubdate="20140317095636" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3589" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-routing/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-routing/1.3.1/spray-routing-1.3.1.pom"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="0.2.3"/>
+				<artifacts>
+					<artifact name="spray-routing" type="bundle" ext="jar" status="no" details="" size="1090095" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-routing/bundles/spray-routing-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing/1.3.1/spray-routing-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.10">
+			<revision name="1.2.4" status="release" pubdate="20130226195121" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2646" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.chuusai/shapeless_2.10/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.pom"/>
+				<caller organisation="io.spray" name="spray-routing" conf="compile, runtime" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="shapeless_2.10" type="jar" ext="jar" status="no" details="" size="1280423" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.chuusai/shapeless_2.10/jars/shapeless_2.10-1.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.10/1.2.4/shapeless_2.10-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-httpx">
+			<revision name="1.3.1" status="release" pubdate="20140317100028" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4178" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-httpx/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-httpx/1.3.1/spray-httpx-1.3.1.pom"/>
+				<caller organisation="io.spray" name="spray-routing" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="spray-httpx" type="bundle" ext="jar" status="no" details="" size="459478" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-httpx/bundles/spray-httpx-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-httpx/1.3.1/spray-httpx-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jvnet.mimepull" name="mimepull">
+			<revision name="1.9.4" status="release" pubdate="20131112104917" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mimepull.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3827" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.jvnet.mimepull/mimepull/ivy-1.9.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.pom"/>
+				<caller organisation="io.spray" name="spray-httpx" conf="compile, runtime" rev="1.9.4" rev-constraint-default="1.9.4" rev-constraint-dynamic="1.9.4" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="mimepull" type="jar" ext="jar" status="no" details="" size="63134" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-can">
+			<revision name="1.3.1" status="release" pubdate="20140317095418" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3398" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-can/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-can/1.3.1/spray-can-1.3.1.pom"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="0.2.3"/>
+				<artifacts>
+					<artifact name="spray-can" type="bundle" ext="jar" status="no" details="" size="732303" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-can/bundles/spray-can-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-can/1.3.1/spray-can-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-io">
+			<revision name="1.3.1" status="release" pubdate="20140317100323" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3164" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-io/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-io/1.3.1/spray-io-1.3.1.pom"/>
+				<caller organisation="io.spray" name="spray-can" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="spray-io" type="bundle" ext="jar" status="no" details="" size="194124" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-io/bundles/spray-io-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-io/1.3.1/spray-io-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-http">
+			<revision name="1.3.1" status="release" pubdate="20140317095911" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3150" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-http/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-http/1.3.1/spray-http-1.3.1.pom"/>
+				<caller organisation="io.spray" name="spray-httpx" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-io" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-routing" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-can" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="spray-http" type="bundle" ext="jar" status="no" details="" size="1530285" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-http/bundles/spray-http-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-http/1.3.1/spray-http-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.10">
+			<revision name="1.1.6" status="release" pubdate="20130826105413" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2970" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.parboiled/parboiled-scala_2.10/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.pom"/>
+				<caller organisation="io.spray" name="spray-http" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.10" type="bundle" ext="jar" status="no" details="" size="237780" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.6/parboiled-scala_2.10-1.1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.6" status="release" pubdate="20130822153221" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2666" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="1.1.6"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="bundle" ext="jar" status="no" details="" size="187091" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.6/parboiled-core-1.1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-util">
+			<revision name="1.3.1" status="release" pubdate="20140317095511" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3142" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-util/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-util/1.3.1/spray-util-1.3.1.pom"/>
+				<caller organisation="io.spray" name="spray-httpx" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-io" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-routing" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-can" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-http" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.3.1"/>
+				<artifacts>
+					<artifact name="spray-util" type="bundle" ext="jar" status="no" details="" size="129492" time="0" location="/Users/EdwinGuo/.ivy2/cache/io.spray/spray-util/bundles/spray-util-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-util/1.3.1/spray-util-1.3.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -124,6 +309,12 @@
 					<artifact name="sbt-scalajs" type="jar" ext="jar" status="no" details="" size="326249" time="0" location="/Users/EdwinGuo/.ivy2/cache/scala_2.10/sbt_0.13/org.scala-js/sbt-scalajs/jars/sbt-scalajs-0.6.7.jar">
 						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.7/jars/sbt-scalajs.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.6.6" evicted="latest-revision" evicted-reason="" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" conf="compile, default(compile)" position="-1">
+				<evicted-by rev="0.6.7"/>
+				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.6.6" rev-constraint-default="0.6.6" rev-constraint-dynamic="0.6.6" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -638,6 +829,7 @@
 				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="1.1.2"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="compile, runtime" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="2.3.11"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-web" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.3.0"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.2.3"/>
 				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="1.1.1"/>
 				<caller organisation="com.typesafe.akka" name="akka-persistence-experimental_2.10" conf="compile, runtime" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="2.3.11"/>
 				<artifacts>
@@ -651,6 +843,12 @@
 				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.3.9/akka-actor_2.10-2.3.9.pom"/>
 				<evicted-by rev="2.3.11"/>
 				<caller organisation="com.typesafe.sbt" name="sbt-web" conf="compile" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.3.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.3.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.11"/>
+				<caller organisation="com.lihaoyi" name="workbench" conf="default, compile, runtime, master" rev="2.3.0" rev-constraint-default="2.3.0" rev-constraint-dynamic="2.3.0" callerrev="0.2.3"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -1401,7 +1599,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20160806173848" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20160818004521" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -1421,7 +1619,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="sbt">
-			<revision name="0.13.9" status="release" pubdate="20150810202742" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="107">
+			<revision name="0.13.9" status="release" pubdate="20150810202742" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="121">
 				<metadata-artifact status="no" details="" size="1772" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/sbt/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
@@ -1432,7 +1630,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="precompiled-2_9_3">
-			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="155">
+			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="168">
 				<metadata-artifact status="no" details="" size="1486" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/precompiled-2_9_3/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_3/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1443,7 +1641,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="precompiled-2_9_2">
-			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="154">
+			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="167">
 				<metadata-artifact status="no" details="" size="1486" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/precompiled-2_9_2/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_9_2/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1454,7 +1652,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="precompiled-2_8_2">
-			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="153">
+			<revision name="0.13.9" status="release" pubdate="20150810201712" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="166">
 				<metadata-artifact status="no" details="" size="1492" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/precompiled-2_8_2/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/precompiled-2_8_2/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1465,7 +1663,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="compiler-interface">
-			<revision name="0.13.9" status="release" pubdate="20150810202502" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="152">
+			<revision name="0.13.9" status="release" pubdate="20150810202502" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="165">
 				<metadata-artifact status="no" details="" size="1758" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/compiler-interface/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-interface/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1479,7 +1677,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="main">
-			<revision name="0.13.9" status="release" pubdate="20150810202718" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="108">
+			<revision name="0.13.9" status="release" pubdate="20150810202718" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="122">
 				<metadata-artifact status="no" details="" size="2539" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/main/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/main/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1490,7 +1688,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="logic">
-			<revision name="0.13.9" status="release" pubdate="20150810202324" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="151">
+			<revision name="0.13.9" status="release" pubdate="20150810202324" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="164">
 				<metadata-artifact status="no" details="" size="1649" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/logic/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/logic/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1501,7 +1699,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="main-settings">
-			<revision name="0.13.9" status="release" pubdate="20150810202703" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="148">
+			<revision name="0.13.9" status="release" pubdate="20150810202703" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="161">
 				<metadata-artifact status="no" details="" size="2687" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/main-settings/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/main-settings/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1512,7 +1710,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="command">
-			<revision name="0.13.9" status="release" pubdate="20150810202652" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="150">
+			<revision name="0.13.9" status="release" pubdate="20150810202652" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="163">
 				<metadata-artifact status="no" details="" size="2170" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/command/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/command/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="main-settings" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1524,7 +1722,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="apply-macro">
-			<revision name="0.13.9" status="release" pubdate="20150810202145" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="149">
+			<revision name="0.13.9" status="release" pubdate="20150810202145" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="162">
 				<metadata-artifact status="no" details="" size="1677" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/apply-macro/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/apply-macro/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main-settings" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1535,7 +1733,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="actions">
-			<revision name="0.13.9" status="release" pubdate="20150810202641" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="109">
+			<revision name="0.13.9" status="release" pubdate="20150810202641" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="123">
 				<metadata-artifact status="no" details="" size="3054" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/actions/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/actions/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1546,7 +1744,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="testing">
-			<revision name="0.13.9" status="release" pubdate="20150810202354" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="146">
+			<revision name="0.13.9" status="release" pubdate="20150810202354" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="159">
 				<metadata-artifact status="no" details="" size="1777" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/testing/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/testing/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1557,7 +1755,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="test-agent">
-			<revision name="0.13.9" status="release" pubdate="20150810202403" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="147">
+			<revision name="0.13.9" status="release" pubdate="20150810202403" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="160">
 				<metadata-artifact status="no" details="" size="1291" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/test-agent/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/test-agent/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="testing" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1582,7 +1780,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="tracking">
-			<revision name="0.13.9" status="release" pubdate="20150810202444" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="144">
+			<revision name="0.13.9" status="release" pubdate="20150810202444" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="157">
 				<metadata-artifact status="no" details="" size="1369" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/tracking/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/tracking/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1593,7 +1791,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="cache">
-			<revision name="0.13.9" status="release" pubdate="20150810202433" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="145">
+			<revision name="0.13.9" status="release" pubdate="20150810202433" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="158">
 				<metadata-artifact status="no" details="" size="1685" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/cache/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/cache/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="tracking" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1604,7 +1802,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="task-system">
-			<revision name="0.13.9" status="release" pubdate="20150810202424" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="142">
+			<revision name="0.13.9" status="release" pubdate="20150810202424" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="155">
 				<metadata-artifact status="no" details="" size="1967" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/task-system/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/task-system/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="main-settings" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1616,7 +1814,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="tasks">
-			<revision name="0.13.9" status="release" pubdate="20150810202413" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="143">
+			<revision name="0.13.9" status="release" pubdate="20150810202413" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="156">
 				<metadata-artifact status="no" details="" size="1648" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/tasks/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/tasks/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="task-system" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1628,7 +1826,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="run">
-			<revision name="0.13.9" status="release" pubdate="20150810202453" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="141">
+			<revision name="0.13.9" status="release" pubdate="20150810202453" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="154">
 				<metadata-artifact status="no" details="" size="1849" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/run/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/run/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1640,7 +1838,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="compiler-ivy-integration">
-			<revision name="0.13.9" status="release" pubdate="20150810202556" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="128">
+			<revision name="0.13.9" status="release" pubdate="20150810202556" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="142">
 				<metadata-artifact status="no" details="" size="1436" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/compiler-ivy-integration/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-ivy-integration/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1651,7 +1849,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="ivy">
-			<revision name="0.13.9" status="release" pubdate="20150810202336" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="129">
+			<revision name="0.13.9" status="release" pubdate="20150810202336" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="143">
 				<metadata-artifact status="no" details="" size="2260" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/ivy/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/ivy/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1665,7 +1863,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="serialization_2.10">
-			<revision name="0.1.1" status="integration" pubdate="20150309200637" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="133">
+			<revision name="0.1.1" status="integration" pubdate="20150309200637" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="147">
 				<metadata-artifact status="no" details="" size="2206" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/serialization_2.10/ivy-0.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/serialization_2.10/0.1.1/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="0.1.1" rev-constraint-default="0.1.1" rev-constraint-dynamic="0.1.1" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="cache" conf="compile" rev="0.1.1" rev-constraint-default="0.1.1" rev-constraint-dynamic="0.1.1" callerrev="0.13.9"/>
@@ -1677,7 +1875,7 @@
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="json4s-support_2.10">
-			<revision name="0.6.0" status="release" pubdate="20140923200847" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="140">
+			<revision name="0.6.0" status="release" pubdate="20140923200847" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="153">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="3061" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.spire-math/json4s-support_2.10/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.10/0.6.0/json4s-support_2.10-0.6.0.pom"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.1"/>
@@ -1689,10 +1887,11 @@
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="jawn-parser_2.10">
-			<revision name="0.6.0" status="release" pubdate="20140923200838" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="139">
+			<revision name="0.6.0" status="release" pubdate="20140923200838" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="113">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
 				<metadata-artifact status="no" details="" size="2758" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.spire-math/jawn-parser_2.10/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.10/0.6.0/jawn-parser_2.10-0.6.0.pom"/>
 				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.6.0"/>
+				<caller organisation="com.lihaoyi" name="upickle_2.10" conf="compile, runtime" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.2.5"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.1"/>
 				<artifacts>
 					<artifact name="jawn-parser_2.10" type="jar" ext="jar" status="no" details="" size="78301" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.spire-math/jawn-parser_2.10/jars/jawn-parser_2.10-0.6.0.jar">
@@ -1702,7 +1901,7 @@
 			</revision>
 		</module>
 		<module organisation="org.json4s" name="json4s-core_2.10">
-			<revision name="3.2.10" status="release" pubdate="20140513171913" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="136">
+			<revision name="3.2.10" status="release" pubdate="20140513171913" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="150">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2962" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.json4s/json4s-core_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.1.1"/>
@@ -1714,7 +1913,7 @@
 			</revision>
 		</module>
 		<module organisation="com.thoughtworks.paranamer" name="paranamer">
-			<revision name="2.6" status="release" pubdate="20131009035654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="138">
+			<revision name="2.6" status="release" pubdate="20131009035654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="152">
 				<metadata-artifact status="no" details="" size="4159" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
 				<caller organisation="org.json4s" name="json4s-core_2.10" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="3.2.10"/>
 				<artifacts>
@@ -1738,7 +1937,7 @@
 			</revision>
 		</module>
 		<module organisation="org.json4s" name="json4s-ast_2.10">
-			<revision name="3.2.10" status="release" pubdate="20140513171837" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
+			<revision name="3.2.10" status="release" pubdate="20140513171837" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="151">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2522" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.json4s/json4s-ast_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom"/>
 				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.6.0"/>
@@ -1751,7 +1950,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-pickling_2.10">
-			<revision name="0.10.0" status="release" pubdate="20150206195759" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scala/pickling" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="134">
+			<revision name="0.10.0" status="release" pubdate="20150206195759" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scala/pickling" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="148">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html "/>
 				<metadata-artifact status="no" details="" size="3247" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-lang.modules/scala-pickling_2.10/ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-pickling_2.10/0.10.0/scala-pickling_2.10-0.10.0.pom"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.10" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1.1"/>
@@ -1762,20 +1961,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.scalamacros" name="quasiquotes_2.10">
-			<revision name="2.0.1" status="release" pubdate="20150927151915" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scalamacros/paradise" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="135">
-				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html"/>
-				<metadata-artifact status="no" details="" size="2742" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalamacros/quasiquotes_2.10/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom"/>
-				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.10.0"/>
-				<artifacts>
-					<artifact name="quasiquotes_2.10" type="jar" ext="jar" status="no" details="" size="720704" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.jcraft" name="jsch">
-			<revision name="0.1.46" status="release" pubdate="20120202123927" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="132">
+			<revision name="0.1.46" status="release" pubdate="20120202123927" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="146">
 				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="3215" time="0" location="/Users/EdwinGuo/.ivy2/cache/com.jcraft/jsch/ivy-0.1.46.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.46/jsch-0.1.46.pom"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="0.1.46" rev-constraint-default="0.1.46" rev-constraint-dynamic="0.1.46" callerrev="0.13.9"/>
@@ -1787,7 +1974,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt.ivy" name="ivy">
-			<revision name="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93" status="release" pubdate="20150626163650" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/ivy" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="131">
+			<revision name="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93" status="release" pubdate="20150626163650" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sbt/ivy" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="145">
 				<license name="Apache-2.0" url="https://github.com/sbt/ivy/blob/2.3.x-sbt/LICENSE"/>
 				<metadata-artifact status="no" details="" size="3556" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt.ivy/ivy/ivy-2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/ivy/ivy/2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93/ivy-2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93.pom"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93" rev-constraint-default="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93" rev-constraint-dynamic="2.3.0-sbt-c5d1b95fdcc1e1007740ffbecf4eb07abc51ec93" callerrev="0.13.9"/>
@@ -1799,7 +1986,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="cross">
-			<revision name="0.13.9" status="release" pubdate="20150810202315" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="130">
+			<revision name="0.13.9" status="release" pubdate="20150810202315" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="144">
 				<metadata-artifact status="no" details="" size="1170" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/cross/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/cross/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1811,7 +1998,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="compiler-integration">
-			<revision name="0.13.9" status="release" pubdate="20150810202545" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="119">
+			<revision name="0.13.9" status="release" pubdate="20150810202545" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="133">
 				<metadata-artifact status="no" details="" size="1726" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/compiler-integration/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compiler-integration/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1822,7 +2009,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="persist">
-			<revision name="0.13.9" status="release" pubdate="20150810202524" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="126">
+			<revision name="0.13.9" status="release" pubdate="20150810202524" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="140">
 				<metadata-artifact status="no" details="" size="1783" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/persist/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/persist/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<artifacts>
@@ -1833,7 +2020,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-tools.sbinary" name="sbinary_2.10">
-			<revision name="0.4.2" status="release" pubdate="20140522001025" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="127">
+			<revision name="0.4.2" status="release" pubdate="20140522001025" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="141">
 				<metadata-artifact status="no" details="" size="1401" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.10/ivy-0.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-tools.sbinary/sbinary_2.10/0.4.2/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main-settings" conf="compile" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="persist" conf="compile" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="0.13.9"/>
@@ -1846,7 +2033,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="compile">
-			<revision name="0.13.9" status="release" pubdate="20150810202534" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="124">
+			<revision name="0.13.9" status="release" pubdate="20150810202534" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="138">
 				<metadata-artifact status="no" details="" size="2288" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/compile/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/compile/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compiler-ivy-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1858,7 +2045,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="classfile">
-			<revision name="0.13.9" status="release" pubdate="20150810202257" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="125">
+			<revision name="0.13.9" status="release" pubdate="20150810202257" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="139">
 				<metadata-artifact status="no" details="" size="1774" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/classfile/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/classfile/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="compile" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1870,7 +2057,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="incremental-compiler">
-			<revision name="0.13.9" status="release" pubdate="20150810202512" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="120">
+			<revision name="0.13.9" status="release" pubdate="20150810202512" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="134">
 				<metadata-artifact status="no" details="" size="1989" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/incremental-compiler/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/incremental-compiler/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="persist" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1882,7 +2069,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="relation">
-			<revision name="0.13.9" status="release" pubdate="20150810202247" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="123">
+			<revision name="0.13.9" status="release" pubdate="20150810202247" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="137">
 				<metadata-artifact status="no" details="" size="1678" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/relation/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/relation/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="incremental-compiler" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1896,7 +2083,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="logging">
-			<revision name="0.13.9" status="release" pubdate="20150810202237" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="121">
+			<revision name="0.13.9" status="release" pubdate="20150810202237" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="135">
 				<metadata-artifact status="no" details="" size="1759" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/logging/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/logging/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="run" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compile" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1917,7 +2104,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="process">
-			<revision name="0.13.9" status="release" pubdate="20150810202155" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="122">
+			<revision name="0.13.9" status="release" pubdate="20150810202155" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="136">
 				<metadata-artifact status="no" details="" size="1255" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/process/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/process/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="logging" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="run" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1934,7 +2121,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="api">
-			<revision name="0.13.9" status="release" pubdate="20150810202109" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="118">
+			<revision name="0.13.9" status="release" pubdate="20150810202109" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="132">
 				<metadata-artifact status="no" details="" size="1561" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/api/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/api/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="compile" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1949,7 +2136,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="completion">
-			<revision name="0.13.9" status="release" pubdate="20150810202227" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="115">
+			<revision name="0.13.9" status="release" pubdate="20150810202227" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="129">
 				<metadata-artifact status="no" details="" size="1845" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/completion/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/completion/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1962,7 +2149,7 @@
 			</revision>
 		</module>
 		<module organisation="jline" name="jline">
-			<revision name="2.11" status="release" pubdate="20130519190100" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="117">
+			<revision name="2.11" status="release" pubdate="20130519190100" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="131">
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="3773" time="0" location="/Users/EdwinGuo/.ivy2/cache/jline/jline/ivy-2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/jline/jline/2.11/jline-2.11.pom"/>
 				<caller organisation="org.scala-sbt" name="logging" conf="compile" rev="2.11" rev-constraint-default="2.11" rev-constraint-dynamic="2.11" callerrev="0.13.9"/>
@@ -1975,7 +2162,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="collections">
-			<revision name="0.13.9" status="release" pubdate="20150810202135" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="116">
+			<revision name="0.13.9" status="release" pubdate="20150810202135" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="130">
 				<metadata-artifact status="no" details="" size="1474" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/collections/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/collections/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="apply-macro" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="tasks" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -1992,7 +2179,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="classpath">
-			<revision name="0.13.9" status="release" pubdate="20150810202218" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="110">
+			<revision name="0.13.9" status="release" pubdate="20150810202218" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="124">
 				<metadata-artifact status="no" details="" size="1889" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/classpath/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/classpath/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="run" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compile" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -2009,7 +2196,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="launcher-interface">
-			<revision name="1.0.0-M1" status="release" pubdate="20150325152932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="114">
+			<revision name="1.0.0-M1" status="release" pubdate="20150325152932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-sbt.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="128">
 				<license name="BSD" url="http://opensource.org/licenses/BSD-2-Clause"/>
 				<metadata-artifact status="no" details="" size="2381" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/launcher-interface/ivy-1.0.0-M1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/launcher-interface/1.0.0-M1/launcher-interface-1.0.0-M1.pom"/>
 				<caller organisation="org.scala-sbt" name="classpath" conf="compile" rev="1.0.0-M1" rev-constraint-default="1.0.0-M1" rev-constraint-dynamic="1.0.0-M1" callerrev="0.13.9"/>
@@ -2026,7 +2213,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="io">
-			<revision name="0.13.9" status="release" pubdate="20150810202205" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="112">
+			<revision name="0.13.9" status="release" pubdate="20150810202205" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="126">
 				<metadata-artifact status="no" details="" size="1634" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/io/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/io/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -2051,7 +2238,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="control">
-			<revision name="0.13.9" status="release" pubdate="20150810202126" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="113">
+			<revision name="0.13.9" status="release" pubdate="20150810202126" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="127">
 				<metadata-artifact status="no" details="" size="1178" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/control/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/control/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="io" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="tasks" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9"/>
@@ -2064,7 +2251,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="interface">
-			<revision name="0.13.9" status="release" pubdate="20150810202043" resolver="sbt-chain" artresolver="sbt-chain" extra-component="xsbti" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="111">
+			<revision name="0.13.9" status="release" pubdate="20150810202043" resolver="sbt-chain" artresolver="sbt-chain" extra-component="xsbti" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="125">
 				<metadata-artifact status="no" details="" size="1206" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-sbt/interface/ivy-0.13.9.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/interface/0.13.9/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="main" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9" extra-component="xsbti"/>
 				<caller organisation="org.scala-sbt" name="precompiled-2_8_2" conf="compile" rev="0.13.9" rev-constraint-default="0.13.9" rev-constraint-dynamic="0.13.9" callerrev="0.13.9" extra-component="xsbti"/>
@@ -2108,6 +2295,8 @@
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5.pom"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.10.0"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="2.0.0"/>
+				<caller organisation="com.lihaoyi" name="autowire_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.2.3"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="2.10.5"/>
 				<caller organisation="org.scala-sbt" name="ivy" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
@@ -2123,10 +2312,12 @@
 			<revision name="2.10.5" status="release" pubdate="20150227015430" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="false" default="false" conf="master(*), default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="4">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
 				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.2" callerrev="1.1.6"/>
 				<caller organisation="org.scala-sbt" name="sbt" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="apply-macro" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="com.typesafe.play" name="twirl-api_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.1.1"/>
-				<caller organisation="org.spire-math" name="jawn-parser_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
+				<caller organisation="com.lihaoyi" name="autowire_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.2.3"/>
+				<caller organisation="org.spire-math" name="jawn-parser_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-contrib_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="2.3.11"/>
 				<caller organisation="org.scala-sbt" name="compiler-integration" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="logging" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
@@ -2134,6 +2325,7 @@
 				<caller organisation="com.typesafe.play" name="twirl-compiler_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.1.1"/>
 				<caller organisation="org.scala-js" name="scalajs-ir_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="0.6.7"/>
 				<caller organisation="org.scala-sbt" name="compile" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
+				<caller organisation="com.chuusai" name="shapeless_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.0" callerrev="1.2.4"/>
 				<caller organisation="org.scala-sbt" name="collections" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="compiler-ivy-integration" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="cross" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
@@ -2144,6 +2336,7 @@
 				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="0.6.7"/>
 				<caller organisation="com.typesafe" name="jse_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="1.1.2"/>
 				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="io.spray" name="spray-routing" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
 				<caller organisation="org.scala-sbt" name="test-agent" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="com.typesafe.play" name="twirl-parser_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.1.1"/>
 				<caller organisation="com.typesafe" name="npm_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="1.1.1"/>
@@ -2154,9 +2347,11 @@
 				<caller organisation="org.json4s" name="json4s-core_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
 				<caller organisation="org.spire-math" name="json4s-support_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.6.0"/>
 				<caller organisation="org.scala-sbt" name="io" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
+				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="2.0.0"/>
 				<caller organisation="org.scala-js" name="scalajs-js-envs_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="0.6.7"/>
 				<caller organisation="org.scala-sbt" name="control" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="default" name="lindor-build" conf="compile-internal, compile, provided, optional" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="io.spray" name="spray-can" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
 				<caller organisation="org.scala-sbt" name="command" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="incremental-compiler" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scalariform" name="scalariform_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="0.1.8"/>
@@ -2178,13 +2373,18 @@
 				<caller organisation="io.spray" name="spray-json_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.3.2"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="2.10.5"/>
 				<caller organisation="org.scala-tools.sbinary" name="sbinary_2.10" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.2" callerrev="0.4.2"/>
+				<caller organisation="io.spray" name="spray-httpx" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
+				<caller organisation="com.lihaoyi" name="upickle_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="0.2.5"/>
 				<caller organisation="org.scala-sbt" name="actions" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="precompiled-2_9_2" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.9.2" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="testing" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="main-settings" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="tracking" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
 				<caller organisation="org.scala-sbt" name="run" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>
+				<caller organisation="io.spray" name="spray-util" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
+				<caller organisation="io.spray" name="spray-io" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
 				<caller organisation="org.scala-js" name="scalajs-tools_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="0.6.7"/>
+				<caller organisation="io.spray" name="spray-http" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.3" callerrev="1.3.1"/>
 				<caller organisation="org.scalamacros" name="quasiquotes_2.10" conf="compile, runtime" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="2.0.1"/>
 				<caller organisation="com.typesafe.play" name="sbt-run-support_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.6" callerrev="2.5.0"/>
 				<caller organisation="org.scala-sbt" name="relation" conf="compile" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="0.13.9"/>

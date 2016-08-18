@@ -1051,6 +1051,11 @@ function $isArrayOf_Ljava_io_Closeable(obj, depth) {
 function $asArrayOf_Ljava_io_Closeable(obj, depth) {
   return (($isArrayOf_Ljava_io_Closeable(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.Closeable;", depth))
 }
+var $d_Lorg_scalajs_jquery_JQuery = new $TypeData().initClass({
+  Lorg_scalajs_jquery_JQuery: 0
+}, false, "org.scalajs.jquery.JQuery", {
+  Lorg_scalajs_jquery_JQuery: 1
+}, true, (void 0), $noIsInstance);
 function $is_Lscalacss_CanIUse$Support(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalacss_CanIUse$Support)))
 }
@@ -1252,26 +1257,6 @@ var $d_scm_HashEntry = new $TypeData().initClass({
 }, true, "scala.collection.mutable.HashEntry", {
   scm_HashEntry: 1
 });
-function $s_Lcom_knoldus_weather_DataGenerator$class__initialize__Lcom_knoldus_weather_DataGenerator__D__D__V($$this, lat, $long) {
-  var map_canvas = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("map_canvas");
-  var map_options = {
-    "center": new $g.google.maps.LatLng(lat, $long),
-    "zoom": 3,
-    "mapTypeId": $g.google.maps.MapTypeId.ROADMAP
-  };
-  var gogleMap = new $g.google.maps.Map(map_canvas, map_options);
-  new $g.google.maps.Marker({
-    "map": gogleMap,
-    "position": new $g.google.maps.LatLng(lat, $long)
-  })
-}
-function $s_Lcom_knoldus_weather_DataGenerator$class__msToTime__Lcom_knoldus_weather_DataGenerator__J__T($$this, unix_timestamp) {
-  var date = new $g.Date(new $c_sjsr_RuntimeLong().init___I__I(1000, 0).$$times__sjsr_RuntimeLong__sjsr_RuntimeLong(unix_timestamp).toDouble__D());
-  var hrs = $uI(date.getHours());
-  var mins = $uI(date.getMinutes());
-  var secs = $uI(date.getSeconds());
-  return ((((hrs + ":") + mins) + ":") + secs)
-}
 /** @constructor */
 function $c_Lcom_knoldus_weather_WeatherFrag() {
   $c_O.call(this);
@@ -1287,190 +1272,138 @@ function $h_Lcom_knoldus_weather_WeatherFrag() {
 $h_Lcom_knoldus_weather_WeatherFrag.prototype = $c_Lcom_knoldus_weather_WeatherFrag.prototype;
 $c_Lcom_knoldus_weather_WeatherFrag.prototype.init___Lscalatags_generic_Bundle = (function(bundle) {
   this.bundle$1 = bundle;
-  var jsx$85 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().html__Lscalatags_generic_TypedTag());
+  var jsx$55 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().html__Lscalatags_generic_TypedTag());
   var this$4 = $m_Lcom_knoldus_weather_ReportStyles$();
   var this$1 = $m_Lscalacss_Defaults$();
   var s = $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$1).stringRenderer__Lscalacss_Renderer();
   var r = new $c_Lscalacss_ScalatagsTextRenderer().init___Lscalacss_Renderer(s);
   $m_Lscalacss_Defaults$();
   var env = $m_Lscalacss_js_JsEnv$().value__Lscalacss_Env();
-  var jsx$84 = $as_Lscalatags_generic_Modifier(this$4.register$2.render__Lscalacss_Renderer__Lscalacss_Env__O(r, env));
-  var jsx$83 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().body__Lscalatags_generic_TypedTag());
-  var jsx$82 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$54 = $as_Lscalatags_generic_Modifier(this$4.register$2.render__Lscalacss_Renderer__Lscalacss_Env__O(r, env));
+  var jsx$53 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().body__Lscalatags_generic_TypedTag());
+  var jsx$52 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
   var this$5 = $m_Lscalacss_ScalatagsCss$();
   var s$1 = $m_Lcom_knoldus_weather_ReportStyles$().mainDiv$3;
-  var jsx$81 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$5, s$1);
-  var jsx$80 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().h1__Lscalatags_generic_TypedTag());
+  var jsx$51 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$5, s$1);
+  var jsx$50 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().h1__Lscalatags_generic_TypedTag());
   var this$6 = $m_Lscalacss_ScalatagsCss$();
   var s$2 = $m_Lcom_knoldus_weather_ReportStyles$().heading$3;
-  var jsx$79 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$6, s$2);
-  var jsx$78 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().img__Lscalatags_generic_TypedTag());
+  var jsx$49 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$6, s$2);
+  var jsx$48 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().img__Lscalatags_generic_TypedTag());
   var this$7 = $m_Lscalacss_ScalatagsCss$();
   var s$3 = $m_Lcom_knoldus_weather_ReportStyles$().firstImg$3;
-  var jsx$77 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$7, s$3);
+  var jsx$47 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$7, s$3);
   var this$8 = $m_Lscalatags_Text$all$().src__Lscalatags_generic_Attr();
   var ev = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$76 = jsx$78.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$77, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$8, "/assets/images/image.png", ev)]));
-  var jsx$75 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().span__Lscalatags_generic_TypedTag());
+  var jsx$46 = jsx$48.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$47, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$8, "/assets/images/name.png", ev)]));
+  var jsx$45 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().span__Lscalatags_generic_TypedTag());
   var this$9 = $m_Lscalacss_ScalatagsCss$();
   var s$4 = $m_Lcom_knoldus_weather_ReportStyles$().firstSpan$3;
-  var jsx$74 = jsx$75.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$9, s$4), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Weather Report - "))]));
-  var jsx$73 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().span__Lscalatags_generic_TypedTag());
+  var jsx$44 = jsx$45.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$9, s$4), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Demo -"))]));
+  var jsx$43 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().span__Lscalatags_generic_TypedTag());
   var this$11 = $m_Lscalacss_ScalatagsCss$();
   var s$5 = $m_Lcom_knoldus_weather_ReportStyles$().secondSpan$3;
-  var jsx$72 = jsx$73.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$11, s$5), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Get the mood of your city on one click"))]));
-  var jsx$71 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().img__Lscalatags_generic_TypedTag());
+  var jsx$42 = jsx$43.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$11, s$5), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Track and Trace"))]));
+  var jsx$41 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().img__Lscalatags_generic_TypedTag());
   var this$13 = $m_Lscalacss_ScalatagsCss$();
   var s$6 = $m_Lcom_knoldus_weather_ReportStyles$().secondImg$3;
-  var jsx$70 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$13, s$6);
+  var jsx$40 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$13, s$6);
   var this$14 = $m_Lscalatags_Text$all$().src__Lscalatags_generic_Attr();
   var ev$1 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$69 = jsx$82.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$81, jsx$80.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$79, jsx$76, jsx$74, jsx$72, jsx$71.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$70, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$14, "/assets/images/image.png", ev$1)]))]))]));
-  var jsx$68 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$39 = jsx$52.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$51, jsx$50.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$49, jsx$46, jsx$44, jsx$42, jsx$41.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$40, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$14, "/assets/images/satellite.png", ev$1)]))]))]));
+  var jsx$38 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
   var this$15 = $m_Lscalacss_ScalatagsCss$();
   var s$7 = $m_Lcom_knoldus_weather_ReportStyles$().secondDiv$3;
-  var jsx$67 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$15, s$7);
+  var jsx$37 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$15, s$7);
   var this$16 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$2 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$66 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$16, "search", ev$2);
-  var jsx$65 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().input__Lscalatags_generic_TypedTag());
+  var jsx$36 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$16, "search", ev$2);
+  var jsx$35 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().input__Lscalatags_generic_TypedTag());
   var this$17 = $m_Lscalacss_ScalatagsCss$();
   var s$8 = $m_Lcom_knoldus_weather_ReportStyles$().search$3;
-  var jsx$64 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$17, s$8);
+  var jsx$34 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$17, s$8);
   var this$18 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$3 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$63 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$18, "name", ev$3);
+  var jsx$33 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$18, "name", ev$3);
   var this$19 = $m_Lscalatags_Text$all$().name__Lscalatags_generic_Attr();
   var ev$4 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$62 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$19, "name", ev$4);
+  var jsx$32 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$19, "name", ev$4);
   var this$20 = $m_Lscalatags_Text$all$().placeholder__Lscalatags_generic_Attr();
   var ev$5 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$61 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$20, "Enter a city", ev$5);
+  var jsx$31 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$20, "Enter a route name", ev$5);
   var this$21 = $m_Lscalatags_Text$all$().type__Lscalatags_generic_Attr();
   var ev$6 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$60 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$21, "text", ev$6);
+  var jsx$30 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$21, "text", ev$6);
   var this$22 = $m_Lscalatags_Text$all$().value__Lscalatags_generic_Attr();
   var ev$7 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$59 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$22, "Delhi", ev$7);
+  var jsx$29 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$22, "", ev$7);
   var this$23 = $m_Lscalatags_Text$all$().size__Lscalatags_generic_Attr();
   var ev$8 = $m_Lscalatags_Text$all$().intAttr$1;
-  var jsx$58 = jsx$65.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$64, jsx$63, jsx$62, jsx$61, jsx$60, jsx$59, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$23, 15, ev$8)]));
-  var jsx$57 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().button__Lscalatags_generic_TypedTag());
+  var jsx$28 = jsx$35.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$34, jsx$33, jsx$32, jsx$31, jsx$30, jsx$29, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$23, 15, ev$8)]));
+  var jsx$27 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().button__Lscalatags_generic_TypedTag());
   var this$24 = $m_Lscalacss_ScalatagsCss$();
   var s$9 = $m_Lcom_knoldus_weather_ReportStyles$().bootstrapButton$3;
-  var jsx$56 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$24, s$9);
+  var jsx$26 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$24, s$9);
   var this$25 = $m_Lscalatags_Text$all$().type__Lscalatags_generic_Attr();
   var ev$9 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$55 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$25, "button", ev$9);
+  var jsx$25 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$25, "button", ev$9);
   var this$26 = $m_Lscalatags_Text$all$().name__Lscalatags_generic_Attr();
   var ev$10 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$54 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$26, "submit", ev$10);
+  var jsx$24 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$26, "submit", ev$10);
   var this$27 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$11 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$53 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$27, "submit", ev$11);
+  var jsx$23 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$27, "submit", ev$11);
   var this$28 = $m_Lscalatags_Text$all$().onclick__Lscalatags_generic_Attr();
   var ev$12 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$52 = jsx$68.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$67, jsx$66, jsx$58, jsx$57.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$56, jsx$55, jsx$54, jsx$53, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$28, "com.knoldus.weather.Weather().showDetail();", ev$12), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Search"))]))]));
-  var jsx$51 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$22 = jsx$38.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$37, jsx$36, jsx$28, jsx$27.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$26, jsx$25, jsx$24, jsx$23, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$28, "com.knoldus.weather.Weather().showDetail();", ev$12), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Search"))]))]));
+  var jsx$21 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
   var this$30 = $m_Lscalacss_ScalatagsCss$();
   var s$10 = $m_Lcom_knoldus_weather_ReportStyles$().mainContainer$3;
-  var jsx$50 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$30, s$10);
+  var jsx$20 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$30, s$10);
   var this$31 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$13 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$49 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$31, "tempDetail", ev$13);
-  var jsx$48 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var jsx$47 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$19 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$31, "tempDetail", ev$13);
+  var jsx$18 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$17 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
   var this$32 = $m_Lscalatags_Text$all$().$class__Lscalatags_generic_Attr();
   var ev$14 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$46 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$32, "col-md-6", ev$14);
-  var jsx$45 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var jsx$16 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$32, "col-md-6", ev$14);
+  var jsx$15 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
   var this$33 = $m_Lscalacss_ScalatagsCss$();
-  var s$11 = $m_Lcom_knoldus_weather_ReportStyles$().innerDiv$3;
-  var jsx$44 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$33, s$11);
-  var jsx$43 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var this$34 = $m_Lscalacss_ScalatagsCss$();
-  var s$12 = $m_Lcom_knoldus_weather_ReportStyles$().city$3;
-  var jsx$42 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$34, s$12);
-  var this$35 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
+  var s$11 = $m_Lcom_knoldus_weather_ReportStyles$().city$3;
+  var jsx$14 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$33, s$11);
+  var this$34 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$15 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$41 = jsx$43.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$42, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$35, "cityName", ev$15)]));
-  var jsx$40 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().table__Lscalatags_generic_TypedTag());
+  var jsx$13 = jsx$15.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$14, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$34, "cityName", ev$15)]));
+  var jsx$12 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var this$35 = $m_Lscalacss_ScalatagsCss$();
+  var s$12 = $m_Lcom_knoldus_weather_ReportStyles$().innerDiv$3;
+  var jsx$11 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$35, s$12);
+  var jsx$10 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().table__Lscalatags_generic_TypedTag());
   var this$36 = $m_Lscalacss_ScalatagsCss$();
   var s$13 = $m_Lcom_knoldus_weather_ReportStyles$().table$3;
-  var jsx$39 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$36, s$13);
-  var jsx$38 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$37 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$37 = $m_Lscalacss_ScalatagsCss$();
-  var s$14 = $m_Lcom_knoldus_weather_ReportStyles$().firstTd$3;
-  var jsx$36 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$37, s$14);
-  var jsx$35 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var this$38 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
+  var jsx$9 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$36, s$13);
+  var this$37 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$16 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$34 = jsx$37.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$36, jsx$35.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$38, "temp", ev$16)]))]));
-  var jsx$33 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$39 = $m_Lscalacss_ScalatagsCss$();
-  var s$15 = $m_Lcom_knoldus_weather_ReportStyles$().secondTd$3;
-  var jsx$32 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$39, s$15);
-  var jsx$31 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var this$40 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
+  var jsx$8 = jsx$12.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$11, jsx$10.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$9, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$37, "twitterTable", ev$16)]))]));
+  var jsx$7 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
+  var this$38 = $m_Lscalacss_ScalatagsCss$();
+  var s$14 = $m_Lcom_knoldus_weather_ReportStyles$().innerDivEdwin$3;
+  var jsx$6 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$38, s$14);
+  var this$39 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
   var ev$17 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$30 = jsx$38.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$34, jsx$33.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$32, jsx$31.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$40, "weather", ev$17)]))]))]));
-  var jsx$29 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$28 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$41 = $m_Lscalacss_ScalatagsCss$();
-  var s$16 = $m_Lcom_knoldus_weather_ReportStyles$().td$3;
-  var jsx$27 = jsx$28.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$41, s$16), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Pressure"))]));
-  var jsx$26 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$43 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$18 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$25 = jsx$29.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$27, jsx$26.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$43, "pressure", ev$18)]))]));
-  var jsx$24 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$23 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$44 = $m_Lscalacss_ScalatagsCss$();
-  var s$17 = $m_Lcom_knoldus_weather_ReportStyles$().td$3;
-  var jsx$22 = jsx$23.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$44, s$17), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Humidity"))]));
-  var jsx$21 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$46 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$19 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$20 = jsx$24.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$22, jsx$21.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$46, "humidity", ev$19)]))]));
-  var jsx$19 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$18 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$47 = $m_Lscalacss_ScalatagsCss$();
-  var s$18 = $m_Lcom_knoldus_weather_ReportStyles$().td$3;
-  var jsx$17 = jsx$18.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$47, s$18), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Sunrise"))]));
-  var jsx$16 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$49 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$20 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$15 = jsx$19.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$17, jsx$16.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$49, "sunrise", ev$20)]))]));
-  var jsx$14 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$13 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$50 = $m_Lscalacss_ScalatagsCss$();
-  var s$19 = $m_Lcom_knoldus_weather_ReportStyles$().td$3;
-  var jsx$12 = jsx$13.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$50, s$19), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Sunset"))]));
-  var jsx$11 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$52 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$21 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$10 = jsx$14.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$12, jsx$11.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$52, "sunset", ev$21)]))]));
-  var jsx$9 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().tr__Lscalatags_generic_TypedTag());
-  var jsx$8 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$53 = $m_Lscalacss_ScalatagsCss$();
-  var s$20 = $m_Lcom_knoldus_weather_ReportStyles$().td$3;
-  var jsx$7 = jsx$8.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$53, s$20), ($m_Lscalatags_Text$all$(), new $c_Lscalatags_Text$StringFrag().init___T("Geo coords"))]));
-  var jsx$6 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().td__Lscalatags_generic_TypedTag());
-  var this$55 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$22 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$5 = jsx$47.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$46, jsx$45.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$44, jsx$41, jsx$40.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$39, jsx$30, jsx$25, jsx$20, jsx$15, jsx$10, jsx$9.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$7, jsx$6.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$55, "geocoords", ev$22)]))]))]))]))]));
+  var jsx$5 = jsx$17.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$16, jsx$13, jsx$8, jsx$7.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$6, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$39, "edwinTest", ev$17)]))]));
   var jsx$4 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var this$56 = $m_Lscalatags_Text$all$().$class__Lscalatags_generic_Attr();
-  var ev$23 = $m_Lscalatags_Text$all$().stringAttr$1;
-  var jsx$3 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$56, "col-md-6", ev$23);
+  var this$40 = $m_Lscalatags_Text$all$().$class__Lscalatags_generic_Attr();
+  var ev$18 = $m_Lscalatags_Text$all$().stringAttr$1;
+  var jsx$3 = new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$40, "col-md-6", ev$18);
   var jsx$2 = $as_Lscalatags_Text$TypedTag($m_Lscalatags_Text$all$().div__Lscalatags_generic_TypedTag());
-  var this$57 = $m_Lscalacss_ScalatagsCss$();
-  var s$21 = $m_Lcom_knoldus_weather_ReportStyles$().mapCanvas$3;
-  var jsx$1 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$57, s$21);
-  var this$58 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
-  var ev$24 = $m_Lscalatags_Text$all$().stringAttr$1;
-  this.htmlFrag$1 = jsx$85.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$84, jsx$83.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$69, jsx$52, jsx$51.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$50, jsx$49, jsx$48.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$5, jsx$4.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$3, jsx$2.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$1, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$58, "map_canvas", ev$24)]))]))]))]))]))]));
+  var this$41 = $m_Lscalacss_ScalatagsCss$();
+  var s$15 = $m_Lcom_knoldus_weather_ReportStyles$().mapCanvas$3;
+  var jsx$1 = new $c_Lscalacss_ScalatagsTextImplicits$$anon$1().init___Lscalacss_ScalatagsTextImplicits__Lscalacss_package$StyleA(this$41, s$15);
+  var this$42 = $m_Lscalatags_Text$all$().id__Lscalatags_generic_Attr();
+  var ev$19 = $m_Lscalatags_Text$all$().stringAttr$1;
+  this.htmlFrag$1 = jsx$55.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$54, jsx$53.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$39, jsx$22, jsx$21.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$20, jsx$19, jsx$18.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$5, jsx$4.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$3, jsx$2.apply__sc_Seq__Lscalatags_Text$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$1, new $c_Lscalatags_generic_AttrPair().init___Lscalatags_generic_Attr__O__Lscalatags_generic_AttrValue(this$42, "map_canvas", ev$19)]))]))]))]))]))]));
   return this
 });
 var $d_Lcom_knoldus_weather_WeatherFrag = new $TypeData().initClass({
@@ -13408,9 +13341,6 @@ function $s_Lscalatags_text_Tags$class__body__Lscalatags_text_Tags__Lscalatags_g
 function $s_Lscalatags_text_Tags$class__span__Lscalatags_text_Tags__Lscalatags_generic_TypedTag($$this) {
   return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "span").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
 }
-function $s_Lscalatags_text_Tags$class__tr__Lscalatags_text_Tags__Lscalatags_generic_TypedTag($$this) {
-  return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "tr").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
-}
 function $s_Lscalatags_text_Tags$class__h1__Lscalatags_text_Tags__Lscalatags_generic_TypedTag($$this) {
   return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "h1").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
 }
@@ -13419,9 +13349,6 @@ function $s_Lscalatags_text_Tags$class__html__Lscalatags_text_Tags__Lscalatags_g
 }
 function $s_Lscalatags_text_Tags$class__table__Lscalatags_text_Tags__Lscalatags_generic_TypedTag($$this) {
   return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "table").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
-}
-function $s_Lscalatags_text_Tags$class__td__Lscalatags_text_Tags__Lscalatags_generic_TypedTag($$this) {
-  return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "td").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
 }
 function $s_Lscalatags_text_Tags2$class__style__Lscalatags_text_Tags2__Lscalatags_generic_TypedTag($$this) {
   return new $c_Lscalatags_generic_Util$ExtendedString().init___Lscalatags_generic_Util__T($$this, "style").tag__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag($m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1)
@@ -14040,44 +13967,6 @@ $h_jl_Long$.prototype = $c_jl_Long$.prototype;
 $c_jl_Long$.prototype.init___ = (function() {
   return this
 });
-$c_jl_Long$.prototype.StringRadixInfos__p1__sjs_js_Array = (function() {
-  return ((!this.bitmap$0$1) ? this.StringRadixInfos$lzycompute__p1__sjs_js_Array() : this.StringRadixInfos$1)
-});
-$c_jl_Long$.prototype.parseLong__T__I__J = (function(s, radix) {
-  if ((s === "")) {
-    this.parseLongError__p1__T__sr_Nothing$(s)
-  };
-  var start = 0;
-  var neg = false;
-  var x1 = (65535 & $uI(s.charCodeAt(0)));
-  switch (x1) {
-    case 43: {
-      start = 1;
-      break
-    }
-    case 45: {
-      start = 1;
-      neg = true;
-      break
-    }
-    default: {
-      /*<skip>*/
-    }
-  };
-  var unsignedResult = this.parseUnsignedLongInternal__T__I__I__J(s, radix, start);
-  if (neg) {
-    var result = unsignedResult.unary$und$minus__sjsr_RuntimeLong();
-    if (result.$$greater__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong())) {
-      this.parseLongError__p1__T__sr_Nothing$(s)
-    };
-    return result
-  } else {
-    if (unsignedResult.$$less__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong())) {
-      this.parseLongError__p1__T__sr_Nothing$(s)
-    };
-    return unsignedResult
-  }
-});
 $c_jl_Long$.prototype.toOctalString__J__T = (function(l) {
   var lo = l.lo$2;
   var hi = l.hi$2;
@@ -14113,116 +14002,6 @@ $c_jl_Long$.prototype.toOctalString__J__T = (function(l) {
     return $as_T(jsx$9)
   }
 });
-$c_jl_Long$.prototype.parseLongError__p1__T__sr_Nothing$ = (function(s) {
-  throw new $c_jl_NumberFormatException().init___T(new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["For input string: \"", "\""])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([s])))
-});
-$c_jl_Long$.prototype.parseUnsignedLongInternal__T__I__I__J = (function(s, radix, start) {
-  var length = $uI(s.length);
-  if ((((start >= length) || (radix < 2)) || (radix > 36))) {
-    this.parseLongError__p1__T__sr_Nothing$(s)
-  } else {
-    var radixInfo = $as_jl_Long$StringRadixInfo(this.StringRadixInfos__p1__sjs_js_Array()[radix]);
-    var chunkLen = radixInfo.chunkLength$1;
-    var firstChunkStart = start;
-    while (true) {
-      if ((firstChunkStart < length)) {
-        var index = firstChunkStart;
-        var jsx$1 = ((65535 & $uI(s.charCodeAt(index))) === 48)
-      } else {
-        var jsx$1 = false
-      };
-      if (jsx$1) {
-        firstChunkStart = ((1 + firstChunkStart) | 0)
-      } else {
-        break
-      }
-    };
-    if ((((length - firstChunkStart) | 0) > $imul(3, chunkLen))) {
-      this.parseLongError__p1__T__sr_Nothing$(s)
-    };
-    var i = firstChunkStart;
-    while ((i < length)) {
-      var jsx$2 = $m_jl_Character$();
-      var index$1 = i;
-      if ((jsx$2.digit__C__I__I((65535 & $uI(s.charCodeAt(index$1))), radix) < 0)) {
-        this.parseLongError__p1__T__sr_Nothing$(s)
-      };
-      i = ((1 + i) | 0)
-    };
-    var firstChunkLength = ((1 + (((((-1) + ((length - firstChunkStart) | 0)) | 0) % chunkLen) | 0)) | 0);
-    var firstChunkEnd = ((firstChunkStart + firstChunkLength) | 0);
-    var chunkStart = firstChunkStart;
-    var chunk = $as_T(s.substring(chunkStart, firstChunkEnd));
-    var chunkValueDouble = $uD($g.parseInt(chunk, radix));
-    var x = $doubleToInt(chunkValueDouble);
-    var firstResult = new $c_sjsr_RuntimeLong().init___I__I((-1), 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(new $c_sjsr_RuntimeLong().init___I(x));
-    if ((firstChunkEnd === length)) {
-      return firstResult
-    } else {
-      var multiplier = radixInfo.radixPowLength$1;
-      var secondChunkEnd = ((firstChunkEnd + chunkLen) | 0);
-      var chunk$1 = $as_T(s.substring(firstChunkEnd, secondChunkEnd));
-      var chunkValueDouble$1 = $uD($g.parseInt(chunk$1, radix));
-      var x$1 = $doubleToInt(chunkValueDouble$1);
-      var secondResult = firstResult.$$times__sjsr_RuntimeLong__sjsr_RuntimeLong(multiplier).$$plus__sjsr_RuntimeLong__sjsr_RuntimeLong(new $c_sjsr_RuntimeLong().init___I__I((-1), 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(new $c_sjsr_RuntimeLong().init___I(x$1)));
-      if ((secondChunkEnd === length)) {
-        return secondResult
-      } else {
-        $m_s_Predef$().assert__Z__V((((secondChunkEnd + chunkLen) | 0) === length));
-        var overflowBarrier = radixInfo.overflowBarrier$1;
-        var chunk$2 = $as_T(s.substring(secondChunkEnd, length));
-        var chunkValueDouble$2 = $uD($g.parseInt(chunk$2, radix));
-        var x$2 = $doubleToInt(chunkValueDouble$2);
-        var thirdChunk = new $c_sjsr_RuntimeLong().init___I__I((-1), 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(new $c_sjsr_RuntimeLong().init___I(x$2));
-        if (secondResult.$$greater__sjsr_RuntimeLong__Z(overflowBarrier)) {
-          this.parseLongError__p1__T__sr_Nothing$(s)
-        };
-        var thirdResult = secondResult.$$times__sjsr_RuntimeLong__sjsr_RuntimeLong(multiplier).$$plus__sjsr_RuntimeLong__sjsr_RuntimeLong(thirdChunk);
-        if (new $c_sjsr_RuntimeLong().init___I__I(0, (-2147483648)).$$up__sjsr_RuntimeLong__sjsr_RuntimeLong(thirdResult).$$less__sjsr_RuntimeLong__Z(new $c_sjsr_RuntimeLong().init___I__I(0, (-2147483648)).$$up__sjsr_RuntimeLong__sjsr_RuntimeLong(thirdChunk))) {
-          this.parseLongError__p1__T__sr_Nothing$(s)
-        };
-        return thirdResult
-      }
-    }
-  }
-});
-$c_jl_Long$.prototype.StringRadixInfos$lzycompute__p1__sjs_js_Array = (function() {
-  if ((!this.bitmap$0$1)) {
-    var r = [];
-    var i = 0;
-    var count = 0;
-    while ((i !== 2)) {
-      var arg1 = i;
-      r.push(null);
-      count = ((1 + count) | 0);
-      i = ((1 + i) | 0)
-    };
-    var i$1 = 2;
-    var count$1 = 0;
-    while ((i$1 !== 37)) {
-      var arg1$1 = i$1;
-      var barrier = ((2147483647 / arg1$1) | 0);
-      var radixPowLength = arg1$1;
-      var chunkLength = 1;
-      var paddingZeros = "0";
-      while ((radixPowLength <= barrier)) {
-        radixPowLength = $imul(radixPowLength, arg1$1);
-        chunkLength = ((1 + chunkLength) | 0);
-        paddingZeros = (paddingZeros + "0")
-      };
-      var x = radixPowLength;
-      var radixPowLengthLong = new $c_sjsr_RuntimeLong().init___I(x);
-      var overflowBarrier = $as_sjsr_RuntimeLong(new $c_sjsr_RuntimeLong().init___I__I((-1), (-1))).divideUnsigned__sjsr_RuntimeLong__sjsr_RuntimeLong($as_sjsr_RuntimeLong(radixPowLengthLong));
-      var elem = new $c_jl_Long$StringRadixInfo().init___I__J__T__J(chunkLength, radixPowLengthLong, paddingZeros, overflowBarrier);
-      r.push(elem);
-      count$1 = ((1 + count$1) | 0);
-      i$1 = ((1 + i$1) | 0)
-    };
-    this.StringRadixInfos$1 = r;
-    this.bitmap$0$1 = true
-  };
-  return this.StringRadixInfos$1
-});
 $c_jl_Long$.prototype.toHexString__J__T = (function(l) {
   var lo = l.lo$2;
   var hi = l.hi$2;
@@ -14255,47 +14034,6 @@ function $m_jl_Long$() {
   };
   return $n_jl_Long$
 }
-/** @constructor */
-function $c_jl_Long$StringRadixInfo() {
-  $c_O.call(this);
-  this.chunkLength$1 = 0;
-  this.radixPowLength$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong();
-  this.paddingZeros$1 = null;
-  this.overflowBarrier$1 = $m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()
-}
-$c_jl_Long$StringRadixInfo.prototype = new $h_O();
-$c_jl_Long$StringRadixInfo.prototype.constructor = $c_jl_Long$StringRadixInfo;
-/** @constructor */
-function $h_jl_Long$StringRadixInfo() {
-  /*<skip>*/
-}
-$h_jl_Long$StringRadixInfo.prototype = $c_jl_Long$StringRadixInfo.prototype;
-$c_jl_Long$StringRadixInfo.prototype.init___I__J__T__J = (function(chunkLength, radixPowLength, paddingZeros, overflowBarrier) {
-  this.chunkLength$1 = chunkLength;
-  this.radixPowLength$1 = radixPowLength;
-  this.paddingZeros$1 = paddingZeros;
-  this.overflowBarrier$1 = overflowBarrier;
-  return this
-});
-function $is_jl_Long$StringRadixInfo(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.jl_Long$StringRadixInfo)))
-}
-function $as_jl_Long$StringRadixInfo(obj) {
-  return (($is_jl_Long$StringRadixInfo(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "java.lang.Long$StringRadixInfo"))
-}
-function $isArrayOf_jl_Long$StringRadixInfo(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Long$StringRadixInfo)))
-}
-function $asArrayOf_jl_Long$StringRadixInfo(obj, depth) {
-  return (($isArrayOf_jl_Long$StringRadixInfo(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Long$StringRadixInfo;", depth))
-}
-var $d_jl_Long$StringRadixInfo = new $TypeData().initClass({
-  jl_Long$StringRadixInfo: 0
-}, false, "java.lang.Long$StringRadixInfo", {
-  jl_Long$StringRadixInfo: 1,
-  O: 1
-});
-$c_jl_Long$StringRadixInfo.prototype.$classData = $d_jl_Long$StringRadixInfo;
 /** @constructor */
 function $c_jl_Number() {
   $c_O.call(this)
@@ -15283,6 +15021,12 @@ function $s_sc_GenSetLike$class__equals__sc_GenSetLike__O__Z($$this, that) {
     return false
   }
 }
+function $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer($$this) {
+  var result = new $c_scm_ArrayBuffer().init___I($$this.size__I());
+  var xs = $$this.seq__sc_TraversableOnce();
+  result.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(xs);
+  return result
+}
 function $s_sc_IndexedSeqOptimized$class__lengthCompare__sc_IndexedSeqOptimized__I__I($$this, len) {
   return (($$this.length__I() - len) | 0)
 }
@@ -15693,6 +15437,12 @@ function $s_sc_MapLike$class__isEmpty__sc_MapLike__Z($$this) {
 function $s_sc_MapLike$class__contains__sc_MapLike__O__Z($$this, key) {
   return $$this.get__O__s_Option(key).isDefined__Z()
 }
+function $s_sc_MapLike$class__toBuffer__sc_MapLike__scm_Buffer($$this) {
+  var result = new $c_scm_ArrayBuffer().init___I($$this.size__I());
+  var xs = $$this.seq__sc_TraversableOnce();
+  result.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(xs);
+  return result
+}
 function $s_sc_MapLike$class__$default__sc_MapLike__O__O($$this, key) {
   throw new $c_ju_NoSuchElementException().init___T(("key not found: " + key))
 }
@@ -15773,6 +15523,12 @@ function $s_sc_SetLike$class__$$plus$plus__sc_SetLike__sc_GenTraversableOnce__sc
       return x$2.$$plus__O__sc_Set(x$3$2)
     })
   })($$this))))
+}
+function $s_sc_SetLike$class__toBuffer__sc_SetLike__scm_Buffer($$this) {
+  var result = new $c_scm_ArrayBuffer().init___I($$this.size__I());
+  var xs = $$this.seq__sc_TraversableOnce();
+  result.$$plus$plus$eq__sc_TraversableOnce__scm_ArrayBuffer(xs);
+  return result
 }
 function $s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O($$this, cbf) {
   var b = cbf.apply__scm_Builder();
@@ -15898,6 +15654,15 @@ function $s_sc_TraversableOnce$class__reduceLeft__sc_TraversableOnce__F2__O($$th
     })
   })($$this, first, acc, op)));
   return acc.elem$1
+}
+function $s_sc_TraversableOnce$class__toArray__sc_TraversableOnce__s_reflect_ClassTag__O($$this, evidence$1) {
+  if ($$this.isTraversableAgain__Z()) {
+    var result = evidence$1.newArray__I__O($$this.size__I());
+    $$this.copyToArray__O__I__V(result, 0);
+    return result
+  } else {
+    return $$this.toBuffer__scm_Buffer().toArray__s_reflect_ClassTag__O(evidence$1)
+  }
 }
 function $s_sc_TraversableOnce$class__foldLeft__sc_TraversableOnce__O__F2__O($$this, z, op) {
   var result = new $c_sr_ObjectRef().init___O(z);
@@ -16146,6 +15911,25 @@ var $d_sci_StreamIterator$LazyCell = new $TypeData().initClass({
   O: 1
 });
 $c_sci_StreamIterator$LazyCell.prototype.$classData = $d_sci_StreamIterator$LazyCell;
+function $s_sci_StringLike$class__format__sci_StringLike__sc_Seq__T($$this, args) {
+  var jsx$3 = $m_sjsr_RuntimeString$();
+  var jsx$2 = $$this.toString__T();
+  var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($$this$1) {
+    return (function(arg$2) {
+      return $s_sci_StringLike$class__unwrapArg__p0__sci_StringLike__O__O($$this$1, arg$2)
+    })
+  })($$this));
+  var this$1 = $m_sc_Seq$();
+  return jsx$3.format__T__AO__T(jsx$2, $asArrayOf_O($as_sc_TraversableOnce(args.map__F1__scg_CanBuildFrom__O(jsx$1, this$1.ReusableCBFInstance$2)).toArray__s_reflect_ClassTag__O($m_s_reflect_ManifestFactory$ObjectManifest$()), 1))
+}
+function $s_sci_StringLike$class__unwrapArg__p0__sci_StringLike__O__O($$this, arg) {
+  if ($is_s_math_ScalaNumber(arg)) {
+    var x2 = $as_s_math_ScalaNumber(arg);
+    return x2.underlying__O()
+  } else {
+    return arg
+  }
+}
 function $s_sci_StringLike$class__slice__sci_StringLike__I__I__O($$this, from, until) {
   var start = ((from > 0) ? from : 0);
   var that = $$this.length__I();
@@ -17539,6 +17323,25 @@ $c_sjsr_RuntimeString$.prototype.indexOf__T__I__I__I = (function(thiz, ch, fromI
 $c_sjsr_RuntimeString$.prototype.valueOf__C__T = (function(value) {
   return $as_T($g.String.fromCharCode(value))
 });
+$c_sjsr_RuntimeString$.prototype.split__T__T__I__AT = (function(thiz, regex, limit) {
+  if ((thiz === null)) {
+    throw new $c_jl_NullPointerException().init___()
+  };
+  var this$1 = $m_ju_regex_Pattern$();
+  return this$1.compile__T__I__ju_regex_Pattern(regex, 0).split__jl_CharSequence__I__AT(thiz, limit)
+});
+$c_sjsr_RuntimeString$.prototype.toCharArray__T__AC = (function(thiz) {
+  var length = $uI(thiz.length);
+  var result = $newArrayObject($d_C.getArrayOf(), [length]);
+  var i = 0;
+  while ((i < length)) {
+    var jsx$1 = i;
+    var index = i;
+    result.u[jsx$1] = (65535 & $uI(thiz.charCodeAt(index)));
+    i = ((1 + i) | 0)
+  };
+  return result
+});
 $c_sjsr_RuntimeString$.prototype.valueOf__O__T = (function(value) {
   return ((value === null) ? "null" : $objectToString(value))
 });
@@ -18731,7 +18534,8 @@ function $m_sr_Statics$() {
 }
 /** @constructor */
 function $c_Lcom_knoldus_weather_WeatherReport() {
-  $c_O.call(this)
+  $c_O.call(this);
+  this.busData$1 = null
 }
 $c_Lcom_knoldus_weather_WeatherReport.prototype = new $h_O();
 $c_Lcom_knoldus_weather_WeatherReport.prototype.constructor = $c_Lcom_knoldus_weather_WeatherReport;
@@ -18740,19 +18544,40 @@ function $h_Lcom_knoldus_weather_WeatherReport() {
   /*<skip>*/
 }
 $h_Lcom_knoldus_weather_WeatherReport.prototype = $c_Lcom_knoldus_weather_WeatherReport.prototype;
-$c_Lcom_knoldus_weather_WeatherReport.prototype.showDetail__V = (function() {
-  this.cleanUI__p1__Lorg_scalajs_jquery_JQuery();
-  var name = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#name").val();
-  var jsx$1 = $m_Lorg_scalajs_jquery_package$().jQuery$1;
-  var s = ("/weather/" + name);
-  jsx$1.ajax({
+$c_Lcom_knoldus_weather_WeatherReport.prototype.init___ = (function() {
+  this.busData$1 = $m_sci_Nil$();
+  return this
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.polulateChart__V = (function() {
+  $m_Lorg_scalajs_jquery_package$().jQuery$1.ajax({
     "type": "GET",
-    "url": s,
+    "async": false,
+    "timeout": 3000,
+    "url": "/chart",
+    "success": (function(f) {
+      return (function(arg1, arg2, arg3) {
+        return f.apply__O__O__O__O(arg1, arg2, arg3)
+      })
+    })(new $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1().init___Lcom_knoldus_weather_WeatherReport(this))
+  })
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$prop$busData__sci_List__O = (function(x$1) {
+  this.busData$1 = x$1
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$meth$polulateChart__O = (function() {
+  this.polulateChart__V()
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.showDetail__V = (function() {
+  this.clearTwitterBoard__p1__Lorg_scalajs_jquery_JQuery();
+  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#name").val();
+  $m_Lorg_scalajs_jquery_package$().jQuery$1.ajax({
+    "type": "GET",
+    "url": "/twitter",
     "success": (function(arg$outer) {
       return (function(data$2, textStatus$2, jqXHR$2) {
         var data = $as_T(data$2);
         $as_T(textStatus$2);
-        arg$outer.com$knoldus$weather$WeatherReport$$populateWeatherReprt__T__V(data)
+        return arg$outer.com$knoldus$weather$WeatherReport$$populateMyWork__T__ALorg_scalajs_jquery_JQuery(data)
       })
     })(this)
   })
@@ -18761,74 +18586,146 @@ $c_Lcom_knoldus_weather_WeatherReport.prototype.showReport__V = (function() {
   var renderHtml = new $c_Lcom_knoldus_weather_WeatherFrag().init___Lscalatags_generic_Bundle($m_Lscalatags_Text$());
   var jsx$1 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body;
   var this$1 = renderHtml.htmlFrag$1;
-  jsx$1.innerHTML = this$1.toString__T()
+  jsx$1.innerHTML = this$1.toString__T();
+  var map_canvas = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().getElementById("map_canvas");
+  var map_options = {
+    "center": new $g.google.maps.LatLng(43.76805, (-79.371202)),
+    "zoom": 10,
+    "mapTypeId": $g.google.maps.MapTypeId.ROADMAP
+  };
+  var gogleMap = new $g.google.maps.Map(map_canvas, map_options);
+  this.polulateBus__V();
+  var this$13 = this.busData$1;
+  var f = (function(gogleMap$2) {
+    return (function(w$2) {
+      var w = $as_T2(w$2);
+      var jsx$4 = $g.google.maps.Marker;
+      var jsx$3 = $g.google.maps.LatLng;
+      var value = w.$$und1$mcD$sp__D();
+      var value$1 = w.$$und2$mcD$sp__D();
+      var jsx$2 = new jsx$3(value, value$1);
+      return new jsx$4({
+        "map": gogleMap$2,
+        "position": jsx$2
+      })
+    })
+  })(gogleMap);
+  var this$12 = $m_sci_List$();
+  var bf = this$12.ReusableCBFInstance$2;
+  if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
+    if ((this$13 === $m_sci_Nil$())) {
+      var jsx$5 = $m_sci_Nil$()
+    } else {
+      var arg1 = this$13.head__O();
+      var h = new $c_sci_$colon$colon().init___O__sci_List(f(arg1), $m_sci_Nil$());
+      var t = h;
+      var rest = $as_sci_List(this$13.tail__O());
+      while ((rest !== $m_sci_Nil$())) {
+        var arg1$1 = rest.head__O();
+        var nx = new $c_sci_$colon$colon().init___O__sci_List(f(arg1$1), $m_sci_Nil$());
+        t.tl$5 = nx;
+        t = nx;
+        rest = $as_sci_List(rest.tail__O())
+      };
+      var jsx$5 = h
+    }
+  } else {
+    var b = $s_sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$13, bf);
+    var these = this$13;
+    while ((!these.isEmpty__Z())) {
+      var arg1$2 = these.head__O();
+      b.$$plus$eq__O__scm_Builder(f(arg1$2));
+      these = $as_sci_List(these.tail__O())
+    };
+    var jsx$5 = b.result__O()
+  };
+  var elem = $as_sci_List(jsx$5);
+  var markers = new $c_sr_ObjectRef().init___O(elem);
+  this.showDetail__V();
+  this.polulateChart__V();
+  $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().setInterval((function(arg$outer) {
+    return (function() {
+      arg$outer.polulateChart__V()
+    })
+  })(this), 50000.0);
+  $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().setInterval((function(f$1) {
+    return (function() {
+      return f$1.apply__O()
+    })
+  })(new $c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2().init___Lcom_knoldus_weather_WeatherReport__sjs_js_Object__sr_ObjectRef(this, gogleMap, markers)), 50000.0);
+  $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().setInterval((function(arg$outer$1) {
+    return (function() {
+      arg$outer$1.showDetail__V()
+    })
+  })(this), 50000.0)
 });
-$c_Lcom_knoldus_weather_WeatherReport.prototype.com$knoldus$weather$WeatherReport$$populateWeatherReprt__T__V = (function(data) {
-  var result = $g.JSON.parse(data);
-  var weather = result.weather[0];
+$c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$meth$polulateBus__O = (function() {
+  this.polulateBus__V()
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.polulateBus__V = (function() {
+  this.busData$1 = $m_sci_Nil$();
+  $m_Lorg_scalajs_jquery_package$().jQuery$1.ajax({
+    "type": "GET",
+    "async": false,
+    "timeout": 3000,
+    "url": "/bus",
+    "success": (function(f) {
+      return (function(arg1, arg2, arg3) {
+        return f.apply__O__O__O__O(arg1, arg2, arg3)
+      })
+    })(new $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1().init___Lcom_knoldus_weather_WeatherReport(this))
+  })
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.com$knoldus$weather$WeatherReport$$populateMyWork__T__ALorg_scalajs_jquery_JQuery = (function(data) {
   (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#tempDetail").attr("style", "display:block;");
-  var jsx$1 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#cityName");
-  var s = (("" + $m_s_Predef$any2stringadd$().$$plus$extension__O__T__T(result.name, ",")) + result.sys.country);
-  jsx$1.append(s);
-  var image = (("http://openweathermap.org/img/w/" + weather.icon) + ".png");
-  var jsx$2 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#temp");
-  var this$5 = new $c_sci_StringOps().init___T($objectToString(result.main.temp));
-  var a = ((-273.15) + $m_jl_Double$().parseDouble__T__D(this$5.repr$1));
-  var s$1 = ((("<img src=" + image) + " >") + $uD($g.Math.floor(a)));
-  jsx$2.append(s$1);
-  var jsx$3 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#weather");
-  var s$2 = ("" + weather.main);
-  jsx$3.append(s$2);
-  var jsx$4 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#pressure");
-  var s$3 = (result.main.pressure + " hpa");
-  jsx$4.append(s$3);
-  var jsx$5 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#humidity");
-  var s$4 = $m_s_Predef$any2stringadd$().$$plus$extension__O__T__T(result.main.humidity, " %");
-  jsx$5.append(s$4);
-  var jsx$6 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#sunrise");
-  var this$14 = new $c_sci_StringOps().init___T($objectToString(result.sys.sunrise));
-  var this$16 = $m_jl_Long$();
-  var s$5 = this$14.repr$1;
-  var unix_timestamp = this$16.parseLong__T__I__J(s$5, 10);
-  var s$6 = $s_Lcom_knoldus_weather_DataGenerator$class__msToTime__Lcom_knoldus_weather_DataGenerator__J__T(this, unix_timestamp);
-  jsx$6.append(s$6);
-  var jsx$7 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#sunset");
-  var this$19 = new $c_sci_StringOps().init___T($objectToString(result.sys.sunset));
-  var this$21 = $m_jl_Long$();
-  var s$7 = this$19.repr$1;
-  var unix_timestamp$1 = this$21.parseLong__T__I__J(s$7, 10);
-  var s$8 = $s_Lcom_knoldus_weather_DataGenerator$class__msToTime__Lcom_knoldus_weather_DataGenerator__J__T(this, unix_timestamp$1);
-  jsx$7.append(s$8);
-  var jsx$8 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#geocoords");
-  var s$9 = (((("[" + result.coord.lon) + ", ") + result.coord.lat) + "]");
-  jsx$8.append(s$9);
-  var this$25 = new $c_sci_StringOps().init___T($objectToString(result.coord.lat));
-  var lat = $m_jl_Double$().parseDouble__T__D(this$25.repr$1);
-  var this$28 = new $c_sci_StringOps().init___T($objectToString(result.coord.lon));
-  var $long = $m_jl_Double$().parseDouble__T__D(this$28.repr$1);
-  $s_Lcom_knoldus_weather_DataGenerator$class__initialize__Lcom_knoldus_weather_DataGenerator__D__D__V(this, lat, $long)
-});
-$c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$meth$showDetail__O = (function() {
-  this.showDetail__V()
+  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#cityName").append("Twitter Board");
+  var xs = $m_sjsr_RuntimeString$().split__T__T__I__AT(data, "\\|", 0);
+  var elems$2 = [];
+  var i = 0;
+  var len = xs.u.length;
+  while ((i < len)) {
+    var index = i;
+    var arg1 = xs.u[index];
+    var g = $as_T(arg1);
+    var jsx$1 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#twitterTable");
+    var this$12 = new $c_sci_StringOps().init___T("<tr class=\"child\" align=\"left\"><td>%s</td></tr>");
+    var args = new $c_sjs_js_WrappedArray().init___sjs_js_Array([g]);
+    var s = $s_sci_StringLike$class__format__sci_StringLike__sc_Seq__T(this$12, args);
+    var elem = jsx$1.append(s);
+    var unboxedElem = ((elem === null) ? null : elem);
+    elems$2.push(unboxedElem);
+    i = ((1 + i) | 0)
+  };
+  return $makeNativeArrayWrapper($d_Lorg_scalajs_jquery_JQuery.getArrayOf(), elems$2)
 });
 $c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$meth$showReport__O = (function() {
   this.showReport__V()
 });
-$c_Lcom_knoldus_weather_WeatherReport.prototype.cleanUI__p1__Lorg_scalajs_jquery_JQuery = (function() {
+$c_Lcom_knoldus_weather_WeatherReport.prototype.clearTwitterBoard__p1__Lorg_scalajs_jquery_JQuery = (function() {
   (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#cityName").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#weather").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#pressure").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#humidity").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#sunrise").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#sunset").empty();
-  (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#geocoords").empty();
-  return (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#temp").empty()
+  return (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#twitterTable").empty()
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.$$js$exported$prop$busData__O = (function() {
+  return this.busData$1
+});
+Object.defineProperty($c_Lcom_knoldus_weather_WeatherReport.prototype, "busData", {
+  "set": (function(arg$1) {
+    var prep0 = $as_sci_List(arg$1);
+    this.$$js$exported$prop$busData__sci_List__O(prep0)
+  }),
+  "get": (function() {
+    return this.$$js$exported$prop$busData__O()
+  }),
+  "enumerable": true
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.polulateBus = (function() {
+  return this.$$js$exported$meth$polulateBus__O()
+});
+$c_Lcom_knoldus_weather_WeatherReport.prototype.polulateChart = (function() {
+  return this.$$js$exported$meth$polulateChart__O()
 });
 $c_Lcom_knoldus_weather_WeatherReport.prototype.showReport = (function() {
   return this.$$js$exported$meth$showReport__O()
-});
-$c_Lcom_knoldus_weather_WeatherReport.prototype.showDetail = (function() {
-  return this.$$js$exported$meth$showDetail__O()
 });
 /** @constructor */
 function $c_Lscalacss_AliasAttr() {
@@ -19283,6 +19180,41 @@ function $m_Lscalacss_Attrs$flexWrap$() {
   return $n_Lscalacss_Attrs$flexWrap$
 }
 /** @constructor */
+function $c_Lscalacss_Attrs$float$() {
+  $c_Lscalacss_ValueT$TypedAttrBase.call(this);
+  this.attr$2 = null
+}
+$c_Lscalacss_Attrs$float$.prototype = new $h_Lscalacss_ValueT$TypedAttrBase();
+$c_Lscalacss_Attrs$float$.prototype.constructor = $c_Lscalacss_Attrs$float$;
+/** @constructor */
+function $h_Lscalacss_Attrs$float$() {
+  /*<skip>*/
+}
+$h_Lscalacss_Attrs$float$.prototype = $c_Lscalacss_Attrs$float$.prototype;
+$c_Lscalacss_Attrs$float$.prototype.init___ = (function() {
+  $n_Lscalacss_Attrs$float$ = this;
+  this.attr$2 = $m_Lscalacss_Attr$().real__T__Lscalacss_Transform__Lscalacss_Attr("float", $m_Lscalacss_Transform$().values__sci_Map__T__sc_Seq__Lscalacss_Transform($m_Lscalacss_CanIUse$().logicalProps__sci_Map(), "inline-start", $m_s_Predef$().wrapRefArray__AO__scm_WrappedArray($makeNativeArrayWrapper($d_T.getArrayOf(), ["inline-end"]))));
+  return this
+});
+$c_Lscalacss_Attrs$float$.prototype.attr__Lscalacss_Attr = (function() {
+  return this.attr$2
+});
+var $d_Lscalacss_Attrs$float$ = new $TypeData().initClass({
+  Lscalacss_Attrs$float$: 0
+}, false, "scalacss.Attrs$float$", {
+  Lscalacss_Attrs$float$: 1,
+  Lscalacss_ValueT$TypedAttrBase: 1,
+  O: 1
+});
+$c_Lscalacss_Attrs$float$.prototype.$classData = $d_Lscalacss_Attrs$float$;
+var $n_Lscalacss_Attrs$float$ = (void 0);
+function $m_Lscalacss_Attrs$float$() {
+  if ((!$n_Lscalacss_Attrs$float$)) {
+    $n_Lscalacss_Attrs$float$ = new $c_Lscalacss_Attrs$float$().init___()
+  };
+  return $n_Lscalacss_Attrs$float$
+}
+/** @constructor */
 function $c_Lscalacss_Attrs$fontFamily$() {
   $c_Lscalacss_ValueT$TypedAttrBase.call(this);
   this.attr$2 = null
@@ -19493,6 +19425,41 @@ function $m_Lscalacss_Attrs$listStylePosition$() {
   return $n_Lscalacss_Attrs$listStylePosition$
 }
 /** @constructor */
+function $c_Lscalacss_Attrs$overflow$() {
+  $c_Lscalacss_ValueT$TypedAttrBase.call(this);
+  this.attr$2 = null
+}
+$c_Lscalacss_Attrs$overflow$.prototype = new $h_Lscalacss_ValueT$TypedAttrBase();
+$c_Lscalacss_Attrs$overflow$.prototype.constructor = $c_Lscalacss_Attrs$overflow$;
+/** @constructor */
+function $h_Lscalacss_Attrs$overflow$() {
+  /*<skip>*/
+}
+$h_Lscalacss_Attrs$overflow$.prototype = $c_Lscalacss_Attrs$overflow$.prototype;
+$c_Lscalacss_Attrs$overflow$.prototype.init___ = (function() {
+  $n_Lscalacss_Attrs$overflow$ = this;
+  this.attr$2 = $m_Lscalacss_Attr$().real__T__Lscalacss_Attr("overflow");
+  return this
+});
+$c_Lscalacss_Attrs$overflow$.prototype.attr__Lscalacss_Attr = (function() {
+  return this.attr$2
+});
+var $d_Lscalacss_Attrs$overflow$ = new $TypeData().initClass({
+  Lscalacss_Attrs$overflow$: 0
+}, false, "scalacss.Attrs$overflow$", {
+  Lscalacss_Attrs$overflow$: 1,
+  Lscalacss_ValueT$TypedAttrBase: 1,
+  O: 1
+});
+$c_Lscalacss_Attrs$overflow$.prototype.$classData = $d_Lscalacss_Attrs$overflow$;
+var $n_Lscalacss_Attrs$overflow$ = (void 0);
+function $m_Lscalacss_Attrs$overflow$() {
+  if ((!$n_Lscalacss_Attrs$overflow$)) {
+    $n_Lscalacss_Attrs$overflow$ = new $c_Lscalacss_Attrs$overflow$().init___()
+  };
+  return $n_Lscalacss_Attrs$overflow$
+}
+/** @constructor */
 function $c_Lscalacss_Attrs$textAlign$() {
   $c_Lscalacss_ValueT$TypedAttrBase.call(this);
   this.attr$2 = null
@@ -19667,6 +19634,36 @@ var $d_Lscalacss_Compose$Rules$$anon$1 = new $TypeData().initClass({
   Lscalacss_Compose$Rules: 1
 });
 $c_Lscalacss_Compose$Rules$$anon$1.prototype.$classData = $d_Lscalacss_Compose$Rules$$anon$1;
+/** @constructor */
+function $c_Lscalacss_Literal$Typed$auto$() {
+  $c_Lscalacss_Literal.call(this)
+}
+$c_Lscalacss_Literal$Typed$auto$.prototype = new $h_Lscalacss_Literal();
+$c_Lscalacss_Literal$Typed$auto$.prototype.constructor = $c_Lscalacss_Literal$Typed$auto$;
+/** @constructor */
+function $h_Lscalacss_Literal$Typed$auto$() {
+  /*<skip>*/
+}
+$h_Lscalacss_Literal$Typed$auto$.prototype = $c_Lscalacss_Literal$Typed$auto$.prototype;
+$c_Lscalacss_Literal$Typed$auto$.prototype.init___ = (function() {
+  $c_Lscalacss_Literal.prototype.init___T.call(this, "auto");
+  return this
+});
+var $d_Lscalacss_Literal$Typed$auto$ = new $TypeData().initClass({
+  Lscalacss_Literal$Typed$auto$: 0
+}, false, "scalacss.Literal$Typed$auto$", {
+  Lscalacss_Literal$Typed$auto$: 1,
+  Lscalacss_Literal: 1,
+  O: 1
+});
+$c_Lscalacss_Literal$Typed$auto$.prototype.$classData = $d_Lscalacss_Literal$Typed$auto$;
+var $n_Lscalacss_Literal$Typed$auto$ = (void 0);
+function $m_Lscalacss_Literal$Typed$auto$() {
+  if ((!$n_Lscalacss_Literal$Typed$auto$)) {
+    $n_Lscalacss_Literal$Typed$auto$ = new $c_Lscalacss_Literal$Typed$auto$().init___()
+  };
+  return $n_Lscalacss_Literal$Typed$auto$
+}
 /** @constructor */
 function $c_Lscalacss_NonEmptyVector$() {
   $c_O.call(this)
@@ -19941,10 +19938,9 @@ $c_Lscalacss_StringRenderer$Default.prototype.apply__sci_Stream__T = (function(c
       }
     })
   })(fmt)));
-  var this$1 = fmt.done$1;
-  this$1.apply__O();
-  var this$2 = sb.underlying$5;
-  return this$2.content$1
+  fmt.done$1.apply$mcV$sp__V();
+  var this$1 = sb.underlying$5;
+  return this$1.content$1
 });
 var $d_Lscalacss_StringRenderer$Default = new $TypeData().initClass({
   Lscalacss_StringRenderer$Default: 0
@@ -22267,6 +22263,9 @@ $h_sr_AbstractFunction0.prototype = $c_sr_AbstractFunction0.prototype;
 $c_sr_AbstractFunction0.prototype.toString__T = (function() {
   return "<function0>"
 });
+$c_sr_AbstractFunction0.prototype.apply$mcV$sp__V = (function() {
+  this.apply__O()
+});
 /** @constructor */
 function $c_sr_AbstractFunction1() {
   $c_O.call(this)
@@ -24442,6 +24441,74 @@ $c_ju_regex_Pattern.prototype.init___sjs_js_RegExp__T__I = (function(jsRegExp, _
 $c_ju_regex_Pattern.prototype.toString__T = (function() {
   return this.$$undpattern$1
 });
+$c_ju_regex_Pattern.prototype.split__jl_CharSequence__I__AT = (function(input, limit) {
+  var lim = ((limit > 0) ? limit : 2147483647);
+  var result = [];
+  var inputStr = $objectToString(input);
+  var matcher = new $c_ju_regex_Matcher().init___ju_regex_Pattern__jl_CharSequence__I__I(this, inputStr, 0, $uI(inputStr.length));
+  var prevEnd = 0;
+  while ((($uI(result.length) < (((-1) + lim) | 0)) && matcher.find__Z())) {
+    var beginIndex = prevEnd;
+    var endIndex = matcher.start__I();
+    result.push($as_T(inputStr.substring(beginIndex, endIndex)));
+    prevEnd = matcher.end__I()
+  };
+  var beginIndex$1 = prevEnd;
+  result.push($as_T(inputStr.substring(beginIndex$1)));
+  if ((((prevEnd === 0) && ($uI(result.length) === 2)) && ((lim > 2) || (!matcher.find__Z())))) {
+    var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array([inputStr]);
+    var len = $uI(xs.array$6.length);
+    var array = $newArrayObject($d_T.getArrayOf(), [len]);
+    var elem$1 = 0;
+    elem$1 = 0;
+    var this$9 = new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(xs, 0, $uI(xs.array$6.length));
+    while (this$9.hasNext__Z()) {
+      var arg1 = this$9.next__O();
+      array.u[elem$1] = arg1;
+      elem$1 = ((1 + elem$1) | 0)
+    };
+    return array
+  } else {
+    var len$1 = $uI(result.length);
+    if ((limit === 0)) {
+      while (true) {
+        if ((len$1 > 1)) {
+          var thiz = $as_T(result[(((-1) + len$1) | 0)]);
+          if ((thiz === null)) {
+            var jsx$2;
+            throw new $c_jl_NullPointerException().init___()
+          } else {
+            var jsx$2 = thiz
+          };
+          var jsx$1 = (jsx$2 === "")
+        } else {
+          var jsx$1 = false
+        };
+        if (jsx$1) {
+          len$1 = (((-1) + len$1) | 0)
+        } else {
+          break
+        }
+      }
+    };
+    var actualResult = $newArrayObject($d_T.getArrayOf(), [len$1]);
+    var len$2 = actualResult.u.length;
+    var i = 0;
+    var j = 0;
+    var $$this = $uI(result.length);
+    var $$this$1 = (($$this < len$2) ? $$this : len$2);
+    var that = actualResult.u.length;
+    var end = (($$this$1 < that) ? $$this$1 : that);
+    while ((i < end)) {
+      var jsx$3 = j;
+      var index = i;
+      actualResult.u[jsx$3] = result[index];
+      i = ((1 + i) | 0);
+      j = ((1 + j) | 0)
+    };
+    return actualResult
+  }
+});
 $c_ju_regex_Pattern.prototype.newJSRegExp__sjs_js_RegExp = (function() {
   var r = new $g.RegExp(this.jsRegExp$1);
   if ((r !== this.jsRegExp$1)) {
@@ -25513,6 +25580,16 @@ function $m_scm_StringBuilder$() {
   };
   return $n_scm_StringBuilder$
 }
+var $d_sjs_js_Array = new $TypeData().initClass({
+  sjs_js_Array: 0
+}, false, "scala.scalajs.js.Array", {
+  sjs_js_Array: 1,
+  sjs_js_Object: 1,
+  O: 1,
+  sjs_js_Any: 1
+}, true, (void 0), (function(x) {
+  return (x instanceof $g.Array)
+}));
 /** @constructor */
 function $c_sjsr_AnonFunction0() {
   $c_sr_AbstractFunction0.call(this);
@@ -25706,10 +25783,12 @@ function $c_Lcom_knoldus_weather_ReportStyles$() {
   this.heading$3 = null;
   this.firstSpan$3 = null;
   this.secondSpan$3 = null;
+  this.thirdSpan$3 = null;
   this.imageCommon$3 = null;
   this.firstImg$3 = null;
   this.secondImg$3 = null;
   this.secondDiv$3 = null;
+  this.thirdDiv$3 = null;
   this.search$3 = null;
   this.bootstrapButton$3 = null;
   this.mainContainer$3 = null;
@@ -25720,7 +25799,8 @@ function $c_Lcom_knoldus_weather_ReportStyles$() {
   this.td$3 = null;
   this.firstTd$3 = null;
   this.secondTd$3 = null;
-  this.mapCanvas$3 = null
+  this.mapCanvas$3 = null;
+  this.innerDivEdwin$3 = null
 }
 $c_Lcom_knoldus_weather_ReportStyles$.prototype = new $h_Lscalacss_mutable_StyleSheet$Inline();
 $c_Lcom_knoldus_weather_ReportStyles$.prototype.constructor = $c_Lcom_knoldus_weather_ReportStyles$;
@@ -25758,7 +25838,7 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var this$17 = $m_Lscalacss_Attrs$backgroundColor$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var v = new $c_Lscalacss_ValueT().init___T("#3D4048");
+  var v = new $c_Lscalacss_ValueT().init___T("#000000");
   var v$1 = v.value$1;
   var x$3 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$17.attr$4, v$1);
   var x$4 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$3, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
@@ -25932,20 +26012,36 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var jsx$37 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$8, jsx$40, jsx$39, jsx$38, this$106.NIL$6))]);
   var this$107 = $m_Lscalacss_Defaults$();
   this.secondSpan$3 = jsx$41.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$37, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$107).composition__Lscalacss_Compose());
+  var jsx$50 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "thirdSpan");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$116 = $m_Lscalacss_Attrs$height$();
+  var a$3 = $m_Lscalacss_Attrs$().textShadow$1;
+  var $$this$5 = a$3;
+  var x$19 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$5, "1px 1px 1px #000");
+  var x$20 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$19, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$9 = $m_Lscalacss_Cond$().empty$1;
+  var d$9 = new $c_sci_Map$Map1().init___O__O(c$9, x$20);
+  var this$115 = $m_s_package$().Vector$1;
+  var jsx$49 = this$115.NIL$6;
+  var jsx$48 = $m_s_None$();
+  var this$116 = $m_s_package$().Vector$1;
+  var jsx$47 = this$116.NIL$6;
+  var this$117 = $m_s_package$().Vector$1;
+  var jsx$46 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$9, jsx$49, jsx$48, jsx$47, this$117.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$5 = 60;
-  var u$2 = $m_Lscalacss_LengthUnit$px$();
-  var f$5 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$5, u$2);
+  var this$126 = $m_Lscalacss_Attrs$marginTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$2 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$2) {
-    var x$3$4 = $as_Lscalacss_Length(x$3$2$2);
-    return x$3$4.value__T()
+  var $$this$6 = 80;
+  var f$5 = new $c_Lscalacss_Percentage().init___O($$this$6);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$2 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2) {
+    var x$4$1 = $as_Lscalacss_Percentage(x$4$2);
+    return x$4$1.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$2) {
@@ -25956,31 +26052,34 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$2 = ab$2.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$2);
   var v$6 = r$2.apply__O__Lscalacss_ValueT(f$5);
   var v$7 = v$6.value$1;
-  var x$19 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$116.attr$3, v$7);
-  var x$20 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$19, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$21 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$126.attr$4, v$7);
+  var x$22 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$21, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$9 = $m_Lscalacss_Cond$().empty$1;
-  var d$9 = new $c_sci_Map$Map1().init___O__O(c$9, x$20);
-  var this$121 = $m_s_package$().Vector$1;
-  var jsx$48 = this$121.NIL$6;
-  var jsx$47 = $m_s_None$();
-  var this$122 = $m_s_package$().Vector$1;
-  var jsx$46 = this$122.NIL$6;
-  var this$123 = $m_s_package$().Vector$1;
-  var jsx$45 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$9, jsx$48, jsx$47, jsx$46, this$123.NIL$6));
+  var c$10 = $m_Lscalacss_Cond$().empty$1;
+  var d$10 = new $c_sci_Map$Map1().init___O__O(c$10, x$22);
+  var this$131 = $m_s_package$().Vector$1;
+  var jsx$45 = this$131.NIL$6;
+  var jsx$44 = $m_s_None$();
+  var this$132 = $m_s_package$().Vector$1;
+  var jsx$43 = this$132.NIL$6;
+  var this$133 = $m_s_package$().Vector$1;
+  var jsx$42 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$46, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$10, jsx$45, jsx$44, jsx$43, this$133.NIL$6))]);
+  var this$134 = $m_Lscalacss_Defaults$();
+  this.thirdSpan$3 = jsx$50.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$42, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$134).composition__Lscalacss_Compose());
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$132 = $m_Lscalacss_Attrs$width$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$143 = $m_Lscalacss_Attrs$height$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$6 = 60;
-  var u$3 = $m_Lscalacss_LengthUnit$px$();
-  var f$7 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$6, u$3);
+  var $$this$7 = 60;
+  var u$2 = $m_Lscalacss_LengthUnit$px$();
+  var f$7 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$7, u$2);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$3 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$3) {
-    var x$3$5 = $as_Lscalacss_Length(x$3$2$3);
-    return x$3$5.value__T()
+  var ab$3 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$2) {
+    var x$3$4 = $as_Lscalacss_Length(x$3$2$2);
+    return x$3$4.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$3) {
@@ -25991,44 +26090,31 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$3 = ab$3.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$3);
   var v$8 = r$3.apply__O__Lscalacss_ValueT(f$7);
   var v$9 = v$8.value$1;
-  var x$21 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$132.attr$3, v$9);
-  var x$22 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$21, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$23 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$143.attr$3, v$9);
+  var x$24 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$23, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$10 = $m_Lscalacss_Cond$().empty$1;
-  var d$10 = new $c_sci_Map$Map1().init___O__O(c$10, x$22);
-  var this$137 = $m_s_package$().Vector$1;
-  var jsx$44 = this$137.NIL$6;
-  var jsx$43 = $m_s_None$();
-  var this$138 = $m_s_package$().Vector$1;
-  var jsx$42 = this$138.NIL$6;
-  var this$139 = $m_s_package$().Vector$1;
-  var t = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$45, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$10, jsx$44, jsx$43, jsx$42, this$139.NIL$6))]);
-  var this$140 = $m_Lscalacss_Defaults$();
-  var c$11 = $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$140).composition__Lscalacss_Compose();
-  this.imageCommon$3 = $m_Lscalacss_Dsl$().style__sc_Seq__Lscalacss_Compose__Lscalacss_StyleS(t, c$11);
-  var jsx$50 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "firstImg");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$23 = this.imageCommon$3;
-  var jsx$49 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$23)]);
-  var this$143 = $m_Lscalacss_Defaults$();
-  this.firstImg$3 = jsx$50.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$49, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$143).composition__Lscalacss_Compose());
-  var jsx$56 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondImg");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$24 = this.imageCommon$3;
-  var jsx$55 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$24);
+  var c$11 = $m_Lscalacss_Cond$().empty$1;
+  var d$11 = new $c_sci_Map$Map1().init___O__O(c$11, x$24);
+  var this$148 = $m_s_package$().Vector$1;
+  var jsx$57 = this$148.NIL$6;
+  var jsx$56 = $m_s_None$();
+  var this$149 = $m_s_package$().Vector$1;
+  var jsx$55 = this$149.NIL$6;
+  var this$150 = $m_s_package$().Vector$1;
+  var jsx$54 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$11, jsx$57, jsx$56, jsx$55, this$150.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$153 = $m_Lscalacss_Attrs$marginLeft$();
+  var this$159 = $m_Lscalacss_Attrs$width$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$7 = 20;
-  var u$4 = $m_Lscalacss_LengthUnit$px$();
-  var f$9 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$7, u$4);
+  var $$this$8 = 60;
+  var u$3 = $m_Lscalacss_LengthUnit$px$();
+  var f$9 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$8, u$3);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$4 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$4) {
-    var x$3$6 = $as_Lscalacss_Length(x$3$2$4);
-    return x$3$6.value__T()
+  var ab$4 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$3) {
+    var x$3$5 = $as_Lscalacss_Length(x$3$2$3);
+    return x$3$5.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$4) {
@@ -26039,36 +26125,44 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$4 = ab$4.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$4);
   var v$10 = r$4.apply__O__Lscalacss_ValueT(f$9);
   var v$11 = v$10.value$1;
-  var x$25 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$153.attr$4, v$11);
+  var x$25 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$159.attr$3, v$11);
   var x$26 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$25, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$12 = $m_Lscalacss_Cond$().empty$1;
-  var d$11 = new $c_sci_Map$Map1().init___O__O(c$12, x$26);
-  var this$158 = $m_s_package$().Vector$1;
-  var jsx$54 = this$158.NIL$6;
-  var jsx$53 = $m_s_None$();
-  var this$159 = $m_s_package$().Vector$1;
-  var jsx$52 = this$159.NIL$6;
-  var this$160 = $m_s_package$().Vector$1;
-  var jsx$51 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$55, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$11, jsx$54, jsx$53, jsx$52, this$160.NIL$6))]);
-  var this$161 = $m_Lscalacss_Defaults$();
-  this.secondImg$3 = jsx$56.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$51, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$161).composition__Lscalacss_Compose());
-  var jsx$62 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondDiv");
+  var d$12 = new $c_sci_Map$Map1().init___O__O(c$12, x$26);
+  var this$164 = $m_s_package$().Vector$1;
+  var jsx$53 = this$164.NIL$6;
+  var jsx$52 = $m_s_None$();
+  var this$165 = $m_s_package$().Vector$1;
+  var jsx$51 = this$165.NIL$6;
+  var this$166 = $m_s_package$().Vector$1;
+  var t = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$54, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$12, jsx$53, jsx$52, jsx$51, this$166.NIL$6))]);
+  var this$167 = $m_Lscalacss_Defaults$();
+  var c$13 = $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$167).composition__Lscalacss_Compose();
+  this.imageCommon$3 = $m_Lscalacss_Dsl$().style__sc_Seq__Lscalacss_Compose__Lscalacss_StyleS(t, c$13);
+  var jsx$59 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "firstImg");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$27 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("col-md-12");
-  var jsx$61 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$27);
+  var x$27 = this.imageCommon$3;
+  var jsx$58 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$27)]);
+  var this$170 = $m_Lscalacss_Defaults$();
+  this.firstImg$3 = jsx$59.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$58, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$170).composition__Lscalacss_Compose());
+  var jsx$65 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondImg");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$28 = this.imageCommon$3;
+  var jsx$64 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$28);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$171 = $m_Lscalacss_Attrs$marginTop$();
+  var this$180 = $m_Lscalacss_Attrs$marginLeft$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$8 = 10;
-  var f$11 = new $c_Lscalacss_Percentage().init___O($$this$8);
+  var $$this$9 = 20;
+  var u$4 = $m_Lscalacss_LengthUnit$px$();
+  var f$11 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$9, u$4);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$5 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2) {
-    var x$4$1 = $as_Lscalacss_Percentage(x$4$2);
-    return x$4$1.value__T()
+  var ab$5 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$4) {
+    var x$3$6 = $as_Lscalacss_Length(x$3$2$4);
+    return x$3$6.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$10 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$5) {
@@ -26079,28 +26173,31 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$5 = ab$5.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$5);
   var v$12 = r$5.apply__O__Lscalacss_ValueT(f$11);
   var v$13 = v$12.value$1;
-  var x$28 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$171.attr$4, v$13);
-  var x$29 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$28, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$29 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$180.attr$4, v$13);
+  var x$30 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$29, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$13 = $m_Lscalacss_Cond$().empty$1;
-  var d$12 = new $c_sci_Map$Map1().init___O__O(c$13, x$29);
-  var this$176 = $m_s_package$().Vector$1;
-  var jsx$60 = this$176.NIL$6;
-  var jsx$59 = $m_s_None$();
-  var this$177 = $m_s_package$().Vector$1;
-  var jsx$58 = this$177.NIL$6;
-  var this$178 = $m_s_package$().Vector$1;
-  var jsx$57 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$61, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$12, jsx$60, jsx$59, jsx$58, this$178.NIL$6))]);
-  var this$179 = $m_Lscalacss_Defaults$();
-  this.secondDiv$3 = jsx$62.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$57, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$179).composition__Lscalacss_Compose());
-  var jsx$83 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "search");
+  var c$14 = $m_Lscalacss_Cond$().empty$1;
+  var d$13 = new $c_sci_Map$Map1().init___O__O(c$14, x$30);
+  var this$185 = $m_s_package$().Vector$1;
+  var jsx$63 = this$185.NIL$6;
+  var jsx$62 = $m_s_None$();
+  var this$186 = $m_s_package$().Vector$1;
+  var jsx$61 = this$186.NIL$6;
+  var this$187 = $m_s_package$().Vector$1;
+  var jsx$60 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$64, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$13, jsx$63, jsx$62, jsx$61, this$187.NIL$6))]);
+  var this$188 = $m_Lscalacss_Defaults$();
+  this.secondImg$3 = jsx$65.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$60, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$188).composition__Lscalacss_Compose());
+  var jsx$71 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondDiv");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$31 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("col-md-12");
+  var jsx$70 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$31);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$188 = $m_Lscalacss_Attrs$width$();
+  var this$198 = $m_Lscalacss_Attrs$marginTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$9 = 60;
-  var f$13 = new $c_Lscalacss_Percentage().init___O($$this$9);
+  var $$this$10 = 10;
+  var f$13 = new $c_Lscalacss_Percentage().init___O($$this$10);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var ab$6 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2$1) {
@@ -26116,31 +26213,36 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$6 = ab$6.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$6);
   var v$14 = r$6.apply__O__Lscalacss_ValueT(f$13);
   var v$15 = v$14.value$1;
-  var x$30 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$188.attr$3, v$15);
-  var x$31 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$30, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$32 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$198.attr$4, v$15);
+  var x$33 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$32, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$14 = $m_Lscalacss_Cond$().empty$1;
-  var d$13 = new $c_sci_Map$Map1().init___O__O(c$14, x$31);
-  var this$193 = $m_s_package$().Vector$1;
-  var jsx$82 = this$193.NIL$6;
-  var jsx$81 = $m_s_None$();
-  var this$194 = $m_s_package$().Vector$1;
-  var jsx$80 = this$194.NIL$6;
-  var this$195 = $m_s_package$().Vector$1;
-  var jsx$79 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$13, jsx$82, jsx$81, jsx$80, this$195.NIL$6));
+  var c$15 = $m_Lscalacss_Cond$().empty$1;
+  var d$14 = new $c_sci_Map$Map1().init___O__O(c$15, x$33);
+  var this$203 = $m_s_package$().Vector$1;
+  var jsx$69 = this$203.NIL$6;
+  var jsx$68 = $m_s_None$();
+  var this$204 = $m_s_package$().Vector$1;
+  var jsx$67 = this$204.NIL$6;
+  var this$205 = $m_s_package$().Vector$1;
+  var jsx$66 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$70, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$14, jsx$69, jsx$68, jsx$67, this$205.NIL$6))]);
+  var this$206 = $m_Lscalacss_Defaults$();
+  this.secondDiv$3 = jsx$71.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$66, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$206).composition__Lscalacss_Compose());
+  var jsx$77 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "thirdDiv");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$34 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("col-md-12");
+  var jsx$76 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$34);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$204 = $m_Lscalacss_Attrs$height$();
+  var this$216 = $m_Lscalacss_Attrs$marginTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$10 = 35;
-  var u$5 = $m_Lscalacss_LengthUnit$px$();
-  var f$15 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$10, u$5);
+  var $$this$11 = 20;
+  var f$15 = new $c_Lscalacss_Percentage().init___O($$this$11);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$7 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$5) {
-    var x$3$7 = $as_Lscalacss_Length(x$3$2$5);
-    return x$3$7.value__T()
+  var ab$7 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2$2) {
+    var x$4$4 = $as_Lscalacss_Percentage(x$4$2$2);
+    return x$4$4.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$14 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$7) {
@@ -26151,48 +26253,33 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$7 = ab$7.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$7);
   var v$16 = r$7.apply__O__Lscalacss_ValueT(f$15);
   var v$17 = v$16.value$1;
-  var x$32 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$204.attr$3, v$17);
-  var x$33 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$32, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$15 = $m_Lscalacss_Cond$().empty$1;
-  var d$14 = new $c_sci_Map$Map1().init___O__O(c$15, x$33);
-  var this$209 = $m_s_package$().Vector$1;
-  var jsx$78 = this$209.NIL$6;
-  var jsx$77 = $m_s_None$();
-  var this$210 = $m_s_package$().Vector$1;
-  var jsx$76 = this$210.NIL$6;
-  var this$211 = $m_s_package$().Vector$1;
-  var jsx$75 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$14, jsx$78, jsx$77, jsx$76, this$211.NIL$6));
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var a$3 = $m_Lscalacss_Attrs$margin$();
-  var $$this$11 = a$3;
-  var x$34 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$11.attr$3, "0% 0px 0px 16%");
-  var x$35 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$34, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$35 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$216.attr$4, v$17);
+  var x$36 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$35, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$16 = $m_Lscalacss_Cond$().empty$1;
-  var d$15 = new $c_sci_Map$Map1().init___O__O(c$16, x$35);
-  var this$220 = $m_s_package$().Vector$1;
-  var jsx$74 = this$220.NIL$6;
-  var jsx$73 = $m_s_None$();
+  var d$15 = new $c_sci_Map$Map1().init___O__O(c$16, x$36);
   var this$221 = $m_s_package$().Vector$1;
-  var jsx$72 = this$221.NIL$6;
+  var jsx$75 = this$221.NIL$6;
+  var jsx$74 = $m_s_None$();
   var this$222 = $m_s_package$().Vector$1;
-  var jsx$71 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$15, jsx$74, jsx$73, jsx$72, this$222.NIL$6));
+  var jsx$73 = this$222.NIL$6;
+  var this$223 = $m_s_package$().Vector$1;
+  var jsx$72 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$76, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$15, jsx$75, jsx$74, jsx$73, this$223.NIL$6))]);
+  var this$224 = $m_Lscalacss_Defaults$();
+  this.thirdDiv$3 = jsx$77.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$72, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$224).composition__Lscalacss_Compose());
+  var jsx$98 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "search");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  $m_Lscalacss_Attrs$borderRadius$();
+  var this$233 = $m_Lscalacss_Attrs$width$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$12 = 0;
-  var u$6 = $m_Lscalacss_LengthUnit$px$();
-  var f$17 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$12, u$6);
+  var $$this$12 = 60;
+  var f$17 = new $c_Lscalacss_Percentage().init___O($$this$12);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$8 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$6) {
-    var x$3$8 = $as_Lscalacss_Length(x$3$2$6);
-    return x$3$8.value__T()
+  var ab$8 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2$3) {
+    var x$4$5 = $as_Lscalacss_Percentage(x$4$2$3);
+    return x$4$5.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$16 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$8) {
@@ -26201,34 +26288,33 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$8 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$16);
   var r$8 = ab$8.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$8);
-  var radius = r$8.apply__O__Lscalacss_ValueT(f$17);
-  var v$18 = radius.value$1;
-  var x$36 = new $c_Lscalacss_Attrs$BorderRadiusNext().init___T(v$18);
-  var x$37 = x$36.av__Lscalacss_AV();
+  var v$18 = r$8.apply__O__Lscalacss_ValueT(f$17);
+  var v$19 = v$18.value$1;
+  var x$37 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$233.attr$3, v$19);
   var x$38 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$37, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$17 = $m_Lscalacss_Cond$().empty$1;
   var d$16 = new $c_sci_Map$Map1().init___O__O(c$17, x$38);
-  var this$236 = $m_s_package$().Vector$1;
-  var jsx$70 = this$236.NIL$6;
-  var jsx$69 = $m_s_None$();
-  var this$237 = $m_s_package$().Vector$1;
-  var jsx$68 = this$237.NIL$6;
   var this$238 = $m_s_package$().Vector$1;
-  var jsx$67 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$16, jsx$70, jsx$69, jsx$68, this$238.NIL$6));
+  var jsx$97 = this$238.NIL$6;
+  var jsx$96 = $m_s_None$();
+  var this$239 = $m_s_package$().Vector$1;
+  var jsx$95 = this$239.NIL$6;
+  var this$240 = $m_s_package$().Vector$1;
+  var jsx$94 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$16, jsx$97, jsx$96, jsx$95, this$240.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$247 = $m_Lscalacss_Attrs$paddingLeft$();
+  var this$249 = $m_Lscalacss_Attrs$height$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$13 = 5;
-  var u$7 = $m_Lscalacss_LengthUnit$px$();
-  var f$19 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$13, u$7);
+  var $$this$13 = 35;
+  var u$5 = $m_Lscalacss_LengthUnit$px$();
+  var f$19 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$13, u$5);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$9 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$7) {
-    var x$3$9 = $as_Lscalacss_Length(x$3$2$7);
-    return x$3$9.value__T()
+  var ab$9 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$5) {
+    var x$3$7 = $as_Lscalacss_Length(x$3$2$5);
+    return x$3$7.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$18 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$9) {
@@ -26237,39 +26323,50 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$9 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$18);
   var r$9 = ab$9.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$9);
-  var v$19 = r$9.apply__O__Lscalacss_ValueT(f$19);
-  var v$20 = v$19.value$1;
-  var x$39 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$247.attr$3, v$20);
+  var v$20 = r$9.apply__O__Lscalacss_ValueT(f$19);
+  var v$21 = v$20.value$1;
+  var x$39 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$249.attr$3, v$21);
   var x$40 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$39, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$18 = $m_Lscalacss_Cond$().empty$1;
   var d$17 = new $c_sci_Map$Map1().init___O__O(c$18, x$40);
-  var this$252 = $m_s_package$().Vector$1;
-  var jsx$66 = this$252.NIL$6;
-  var jsx$65 = $m_s_None$();
-  var this$253 = $m_s_package$().Vector$1;
-  var jsx$64 = this$253.NIL$6;
   var this$254 = $m_s_package$().Vector$1;
-  var jsx$63 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$79, jsx$75, jsx$71, jsx$67, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$17, jsx$66, jsx$65, jsx$64, this$254.NIL$6))]);
-  var this$255 = $m_Lscalacss_Defaults$();
-  this.search$3 = jsx$83.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$63, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$255).composition__Lscalacss_Compose());
-  var jsx$97 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "bootstrapButton");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$41 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("btn btn-info");
-  var jsx$96 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$41);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$265 = $m_Lscalacss_Attrs$height$();
+  var jsx$93 = this$254.NIL$6;
+  var jsx$92 = $m_s_None$();
+  var this$255 = $m_s_package$().Vector$1;
+  var jsx$91 = this$255.NIL$6;
+  var this$256 = $m_s_package$().Vector$1;
+  var jsx$90 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$17, jsx$93, jsx$92, jsx$91, this$256.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$14 = 35;
-  var u$8 = $m_Lscalacss_LengthUnit$px$();
-  var f$21 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$14, u$8);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var a$4 = $m_Lscalacss_Attrs$margin$();
+  var $$this$14 = a$4;
+  var x$41 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$14.attr$3, "0% 0px 0px 16%");
+  var x$42 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$41, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$19 = $m_Lscalacss_Cond$().empty$1;
+  var d$18 = new $c_sci_Map$Map1().init___O__O(c$19, x$42);
+  var this$265 = $m_s_package$().Vector$1;
+  var jsx$89 = this$265.NIL$6;
+  var jsx$88 = $m_s_None$();
+  var this$266 = $m_s_package$().Vector$1;
+  var jsx$87 = this$266.NIL$6;
+  var this$267 = $m_s_package$().Vector$1;
+  var jsx$86 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$18, jsx$89, jsx$88, jsx$87, this$267.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$10 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$8) {
-    var x$3$10 = $as_Lscalacss_Length(x$3$2$8);
-    return x$3$10.value__T()
+  $m_Lscalacss_Attrs$borderRadius$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$15 = 0;
+  var u$6 = $m_Lscalacss_LengthUnit$px$();
+  var f$21 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$15, u$6);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$10 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$6) {
+    var x$3$8 = $as_Lscalacss_Length(x$3$2$6);
+    return x$3$8.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$20 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$10) {
@@ -26278,50 +26375,34 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$10 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$20);
   var r$10 = ab$10.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$10);
-  var v$21 = r$10.apply__O__Lscalacss_ValueT(f$21);
-  var v$22 = v$21.value$1;
-  var x$42 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$265.attr$3, v$22);
-  var x$43 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$42, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$19 = $m_Lscalacss_Cond$().empty$1;
-  var d$18 = new $c_sci_Map$Map1().init___O__O(c$19, x$43);
-  var this$270 = $m_s_package$().Vector$1;
-  var jsx$95 = this$270.NIL$6;
-  var jsx$94 = $m_s_None$();
-  var this$271 = $m_s_package$().Vector$1;
-  var jsx$93 = this$271.NIL$6;
-  var this$272 = $m_s_package$().Vector$1;
-  var jsx$92 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$18, jsx$95, jsx$94, jsx$93, this$272.NIL$6));
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var a$4 = $m_Lscalacss_Attrs$margin$();
-  var $$this$15 = a$4;
-  var x$44 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$15.attr$3, "-1px 0px 0px 0%");
+  var radius = r$10.apply__O__Lscalacss_ValueT(f$21);
+  var v$22 = radius.value$1;
+  var x$43 = new $c_Lscalacss_Attrs$BorderRadiusNext().init___T(v$22);
+  var x$44 = x$43.av__Lscalacss_AV();
   var x$45 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$44, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$20 = $m_Lscalacss_Cond$().empty$1;
   var d$19 = new $c_sci_Map$Map1().init___O__O(c$20, x$45);
   var this$281 = $m_s_package$().Vector$1;
-  var jsx$91 = this$281.NIL$6;
-  var jsx$90 = $m_s_None$();
+  var jsx$85 = this$281.NIL$6;
+  var jsx$84 = $m_s_None$();
   var this$282 = $m_s_package$().Vector$1;
-  var jsx$89 = this$282.NIL$6;
+  var jsx$83 = this$282.NIL$6;
   var this$283 = $m_s_package$().Vector$1;
-  var jsx$88 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$19, jsx$91, jsx$90, jsx$89, this$283.NIL$6));
+  var jsx$82 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$19, jsx$85, jsx$84, jsx$83, this$283.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  $m_Lscalacss_Attrs$borderRadius$();
+  var this$292 = $m_Lscalacss_Attrs$paddingLeft$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$16 = 0;
-  var u$9 = $m_Lscalacss_LengthUnit$px$();
-  var f$23 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$16, u$9);
+  var $$this$16 = 5;
+  var u$7 = $m_Lscalacss_LengthUnit$px$();
+  var f$23 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$16, u$7);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$11 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$9) {
-    var x$3$11 = $as_Lscalacss_Length(x$3$2$9);
-    return x$3$11.value__T()
+  var ab$11 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$7) {
+    var x$3$9 = $as_Lscalacss_Length(x$3$2$7);
+    return x$3$9.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$22 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$11) {
@@ -26330,40 +26411,39 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$11 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$22);
   var r$11 = ab$11.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$11);
-  var radius$1 = r$11.apply__O__Lscalacss_ValueT(f$23);
-  var v$23 = radius$1.value$1;
-  var x$46 = new $c_Lscalacss_Attrs$BorderRadiusNext().init___T(v$23);
-  var x$47 = x$46.av__Lscalacss_AV();
-  var x$48 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$47, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$23 = r$11.apply__O__Lscalacss_ValueT(f$23);
+  var v$24 = v$23.value$1;
+  var x$46 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$292.attr$3, v$24);
+  var x$47 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$46, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$21 = $m_Lscalacss_Cond$().empty$1;
-  var d$20 = new $c_sci_Map$Map1().init___O__O(c$21, x$48);
+  var d$20 = new $c_sci_Map$Map1().init___O__O(c$21, x$47);
   var this$297 = $m_s_package$().Vector$1;
-  var jsx$87 = this$297.NIL$6;
-  var jsx$86 = $m_s_None$();
+  var jsx$81 = this$297.NIL$6;
+  var jsx$80 = $m_s_None$();
   var this$298 = $m_s_package$().Vector$1;
-  var jsx$85 = this$298.NIL$6;
+  var jsx$79 = this$298.NIL$6;
   var this$299 = $m_s_package$().Vector$1;
-  var jsx$84 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$96, jsx$92, jsx$88, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$20, jsx$87, jsx$86, jsx$85, this$299.NIL$6))]);
+  var jsx$78 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$94, jsx$90, jsx$86, jsx$82, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$20, jsx$81, jsx$80, jsx$79, this$299.NIL$6))]);
   var this$300 = $m_Lscalacss_Defaults$();
-  this.bootstrapButton$3 = jsx$97.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$84, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$300).composition__Lscalacss_Compose());
-  var jsx$123 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "mainContainer");
+  this.search$3 = jsx$98.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$78, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$300).composition__Lscalacss_Compose());
+  var jsx$112 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "bootstrapButton");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$49 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("col-md-12 maincontainer");
-  var jsx$122 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$49);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$310 = $m_Lscalacss_Attrs$marginTop$();
+  var x$48 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("btn btn-info");
+  var jsx$111 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$48);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$17 = 30;
-  var u$10 = $m_Lscalacss_LengthUnit$px$();
-  var f$25 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$17, u$10);
+  var this$310 = $m_Lscalacss_Attrs$height$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$12 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$10) {
-    var x$3$12 = $as_Lscalacss_Length(x$3$2$10);
-    return x$3$12.value__T()
+  var $$this$17 = 35;
+  var u$8 = $m_Lscalacss_LengthUnit$px$();
+  var f$25 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$17, u$8);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$12 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$8) {
+    var x$3$10 = $as_Lscalacss_Length(x$3$2$8);
+    return x$3$10.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$24 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$12) {
@@ -26372,50 +26452,50 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$12 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$24);
   var r$12 = ab$12.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$12);
-  var v$24 = r$12.apply__O__Lscalacss_ValueT(f$25);
-  var v$25 = v$24.value$1;
-  var x$50 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$310.attr$4, v$25);
-  var x$51 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$50, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$25 = r$12.apply__O__Lscalacss_ValueT(f$25);
+  var v$26 = v$25.value$1;
+  var x$49 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$310.attr$3, v$26);
+  var x$50 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$49, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$22 = $m_Lscalacss_Cond$().empty$1;
-  var d$21 = new $c_sci_Map$Map1().init___O__O(c$22, x$51);
+  var d$21 = new $c_sci_Map$Map1().init___O__O(c$22, x$50);
   var this$315 = $m_s_package$().Vector$1;
-  var jsx$121 = this$315.NIL$6;
-  var jsx$120 = $m_s_None$();
+  var jsx$110 = this$315.NIL$6;
+  var jsx$109 = $m_s_None$();
   var this$316 = $m_s_package$().Vector$1;
-  var jsx$119 = this$316.NIL$6;
+  var jsx$108 = this$316.NIL$6;
   var this$317 = $m_s_package$().Vector$1;
-  var jsx$118 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$21, jsx$121, jsx$120, jsx$119, this$317.NIL$6));
+  var jsx$107 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$21, jsx$110, jsx$109, jsx$108, this$317.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var a$5 = $m_Lscalacss_Attrs$borderTop$();
+  var a$5 = $m_Lscalacss_Attrs$margin$();
   var $$this$18 = a$5;
-  var x$52 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$18.attr$4, "2px solid #ccc");
-  var x$53 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$52, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$51 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$18.attr$3, "-1px 0px 0px 0%");
+  var x$52 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$51, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$23 = $m_Lscalacss_Cond$().empty$1;
-  var d$22 = new $c_sci_Map$Map1().init___O__O(c$23, x$53);
+  var d$22 = new $c_sci_Map$Map1().init___O__O(c$23, x$52);
   var this$326 = $m_s_package$().Vector$1;
-  var jsx$117 = this$326.NIL$6;
-  var jsx$116 = $m_s_None$();
+  var jsx$106 = this$326.NIL$6;
+  var jsx$105 = $m_s_None$();
   var this$327 = $m_s_package$().Vector$1;
-  var jsx$115 = this$327.NIL$6;
+  var jsx$104 = this$327.NIL$6;
   var this$328 = $m_s_package$().Vector$1;
-  var jsx$114 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$22, jsx$117, jsx$116, jsx$115, this$328.NIL$6));
+  var jsx$103 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$22, jsx$106, jsx$105, jsx$104, this$328.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$337 = $m_Lscalacss_Attrs$paddingTop$();
+  $m_Lscalacss_Attrs$borderRadius$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$19 = 30;
-  var u$11 = $m_Lscalacss_LengthUnit$px$();
-  var f$27 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$19, u$11);
+  var $$this$19 = 0;
+  var u$9 = $m_Lscalacss_LengthUnit$px$();
+  var f$27 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$19, u$9);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$13 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$11) {
-    var x$3$13 = $as_Lscalacss_Length(x$3$2$11);
-    return x$3$13.value__T()
+  var ab$13 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$9) {
+    var x$3$11 = $as_Lscalacss_Length(x$3$2$9);
+    return x$3$11.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$26 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$13) {
@@ -26424,50 +26504,40 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$13 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$26);
   var r$13 = ab$13.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$13);
-  var v$26 = r$13.apply__O__Lscalacss_ValueT(f$27);
-  var v$27 = v$26.value$1;
-  var x$54 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$337.attr$3, v$27);
+  var radius$1 = r$13.apply__O__Lscalacss_ValueT(f$27);
+  var v$27 = radius$1.value$1;
+  var x$53 = new $c_Lscalacss_Attrs$BorderRadiusNext().init___T(v$27);
+  var x$54 = x$53.av__Lscalacss_AV();
   var x$55 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$54, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$24 = $m_Lscalacss_Cond$().empty$1;
   var d$23 = new $c_sci_Map$Map1().init___O__O(c$24, x$55);
   var this$342 = $m_s_package$().Vector$1;
-  var jsx$113 = this$342.NIL$6;
-  var jsx$112 = $m_s_None$();
+  var jsx$102 = this$342.NIL$6;
+  var jsx$101 = $m_s_None$();
   var this$343 = $m_s_package$().Vector$1;
-  var jsx$111 = this$343.NIL$6;
+  var jsx$100 = this$343.NIL$6;
   var this$344 = $m_s_package$().Vector$1;
-  var jsx$110 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$23, jsx$113, jsx$112, jsx$111, this$344.NIL$6));
+  var jsx$99 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$111, jsx$107, jsx$103, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$23, jsx$102, jsx$101, jsx$100, this$344.NIL$6))]);
+  var this$345 = $m_Lscalacss_Defaults$();
+  this.bootstrapButton$3 = jsx$112.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$99, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$345).composition__Lscalacss_Compose());
+  var jsx$138 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "mainContainer");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$56 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("col-md-12 maincontainer");
+  var jsx$137 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$56);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var a$6 = $m_Lscalacss_Attrs$borderBottom$();
-  var $$this$20 = a$6;
-  var x$56 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$20.attr$4, "2px solid #ccc");
-  var x$57 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$56, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$25 = $m_Lscalacss_Cond$().empty$1;
-  var d$24 = new $c_sci_Map$Map1().init___O__O(c$25, x$57);
-  var this$353 = $m_s_package$().Vector$1;
-  var jsx$109 = this$353.NIL$6;
-  var jsx$108 = $m_s_None$();
-  var this$354 = $m_s_package$().Vector$1;
-  var jsx$107 = this$354.NIL$6;
-  var this$355 = $m_s_package$().Vector$1;
-  var jsx$106 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$24, jsx$109, jsx$108, jsx$107, this$355.NIL$6));
+  var this$355 = $m_Lscalacss_Attrs$marginTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$364 = $m_Lscalacss_Attrs$paddingBottom$();
+  var $$this$20 = 30;
+  var u$10 = $m_Lscalacss_LengthUnit$px$();
+  var f$29 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$20, u$10);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$21 = 30;
-  var u$12 = $m_Lscalacss_LengthUnit$px$();
-  var f$29 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$21, u$12);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$14 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$12) {
-    var x$3$14 = $as_Lscalacss_Length(x$3$2$12);
-    return x$3$14.value__T()
+  var ab$14 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$10) {
+    var x$3$12 = $as_Lscalacss_Length(x$3$2$10);
+    return x$3$12.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$28 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$14) {
@@ -26478,51 +26548,48 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$14 = ab$14.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$14);
   var v$28 = r$14.apply__O__Lscalacss_ValueT(f$29);
   var v$29 = v$28.value$1;
-  var x$58 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$364.attr$3, v$29);
-  var x$59 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$58, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$57 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$355.attr$4, v$29);
+  var x$58 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$57, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$25 = $m_Lscalacss_Cond$().empty$1;
+  var d$24 = new $c_sci_Map$Map1().init___O__O(c$25, x$58);
+  var this$360 = $m_s_package$().Vector$1;
+  var jsx$136 = this$360.NIL$6;
+  var jsx$135 = $m_s_None$();
+  var this$361 = $m_s_package$().Vector$1;
+  var jsx$134 = this$361.NIL$6;
+  var this$362 = $m_s_package$().Vector$1;
+  var jsx$133 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$24, jsx$136, jsx$135, jsx$134, this$362.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var a$6 = $m_Lscalacss_Attrs$borderTop$();
+  var $$this$21 = a$6;
+  var x$59 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$21.attr$4, "2px solid #ccc");
+  var x$60 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$59, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$26 = $m_Lscalacss_Cond$().empty$1;
-  var d$25 = new $c_sci_Map$Map1().init___O__O(c$26, x$59);
-  var this$369 = $m_s_package$().Vector$1;
-  var jsx$105 = this$369.NIL$6;
-  var jsx$104 = $m_s_None$();
-  var this$370 = $m_s_package$().Vector$1;
-  var jsx$103 = this$370.NIL$6;
+  var d$25 = new $c_sci_Map$Map1().init___O__O(c$26, x$60);
   var this$371 = $m_s_package$().Vector$1;
-  var jsx$102 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$25, jsx$105, jsx$104, jsx$103, this$371.NIL$6));
+  var jsx$132 = this$371.NIL$6;
+  var jsx$131 = $m_s_None$();
+  var this$372 = $m_s_package$().Vector$1;
+  var jsx$130 = this$372.NIL$6;
+  var this$373 = $m_s_package$().Vector$1;
+  var jsx$129 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$25, jsx$132, jsx$131, jsx$130, this$373.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$373 = $m_Lscalacss_Attrs$display$();
-  var v$30 = $m_Lscalacss_Literal$Typed$none$();
-  var v$31 = v$30.value$1;
-  var x$60 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$373.attr$2, v$31);
-  var x$61 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$60, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$27 = $m_Lscalacss_Cond$().empty$1;
-  var d$26 = new $c_sci_Map$Map1().init___O__O(c$27, x$61);
-  var this$378 = $m_s_package$().Vector$1;
-  var jsx$101 = this$378.NIL$6;
-  var jsx$100 = $m_s_None$();
-  var this$379 = $m_s_package$().Vector$1;
-  var jsx$99 = this$379.NIL$6;
-  var this$380 = $m_s_package$().Vector$1;
-  var jsx$98 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$122, jsx$118, jsx$114, jsx$110, jsx$106, jsx$102, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$26, jsx$101, jsx$100, jsx$99, this$380.NIL$6))]);
-  var this$381 = $m_Lscalacss_Defaults$();
-  this.mainContainer$3 = jsx$123.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$98, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$381).composition__Lscalacss_Compose());
-  var jsx$136 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "innerDiv");
+  var this$382 = $m_Lscalacss_Attrs$paddingTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$390 = $m_Lscalacss_Attrs$width$();
+  var $$this$22 = 30;
+  var u$11 = $m_Lscalacss_LengthUnit$px$();
+  var f$31 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$22, u$11);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$22 = 530;
-  var u$13 = $m_Lscalacss_LengthUnit$px$();
-  var f$31 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$22, u$13);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$15 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$13) {
-    var x$3$15 = $as_Lscalacss_Length(x$3$2$13);
-    return x$3$15.value__T()
+  var ab$15 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$11) {
+    var x$3$13 = $as_Lscalacss_Length(x$3$2$11);
+    return x$3$13.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$30 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$15) {
@@ -26531,33 +26598,50 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$15 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$30);
   var r$15 = ab$15.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$15);
-  var v$32 = r$15.apply__O__Lscalacss_ValueT(f$31);
-  var v$33 = v$32.value$1;
-  var x$62 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$390.attr$3, v$33);
-  var x$63 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$62, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$30 = r$15.apply__O__Lscalacss_ValueT(f$31);
+  var v$31 = v$30.value$1;
+  var x$61 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$382.attr$3, v$31);
+  var x$62 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$61, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$27 = $m_Lscalacss_Cond$().empty$1;
+  var d$26 = new $c_sci_Map$Map1().init___O__O(c$27, x$62);
+  var this$387 = $m_s_package$().Vector$1;
+  var jsx$128 = this$387.NIL$6;
+  var jsx$127 = $m_s_None$();
+  var this$388 = $m_s_package$().Vector$1;
+  var jsx$126 = this$388.NIL$6;
+  var this$389 = $m_s_package$().Vector$1;
+  var jsx$125 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$26, jsx$128, jsx$127, jsx$126, this$389.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var a$7 = $m_Lscalacss_Attrs$borderBottom$();
+  var $$this$23 = a$7;
+  var x$63 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$23.attr$4, "2px solid #ccc");
+  var x$64 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$63, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$28 = $m_Lscalacss_Cond$().empty$1;
-  var d$27 = new $c_sci_Map$Map1().init___O__O(c$28, x$63);
-  var this$395 = $m_s_package$().Vector$1;
-  var jsx$135 = this$395.NIL$6;
-  var jsx$134 = $m_s_None$();
-  var this$396 = $m_s_package$().Vector$1;
-  var jsx$133 = this$396.NIL$6;
-  var this$397 = $m_s_package$().Vector$1;
-  var jsx$132 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$27, jsx$135, jsx$134, jsx$133, this$397.NIL$6));
+  var d$27 = new $c_sci_Map$Map1().init___O__O(c$28, x$64);
+  var this$398 = $m_s_package$().Vector$1;
+  var jsx$124 = this$398.NIL$6;
+  var jsx$123 = $m_s_None$();
+  var this$399 = $m_s_package$().Vector$1;
+  var jsx$122 = this$399.NIL$6;
+  var this$400 = $m_s_package$().Vector$1;
+  var jsx$121 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$27, jsx$124, jsx$123, jsx$122, this$400.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$406 = $m_Lscalacss_Attrs$height$();
+  var this$409 = $m_Lscalacss_Attrs$paddingBottom$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$23 = 400;
-  var u$14 = $m_Lscalacss_LengthUnit$px$();
-  var f$33 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$23, u$14);
+  var $$this$24 = 30;
+  var u$12 = $m_Lscalacss_LengthUnit$px$();
+  var f$33 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$24, u$12);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$16 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$14) {
-    var x$3$16 = $as_Lscalacss_Length(x$3$2$14);
-    return x$3$16.value__T()
+  var ab$16 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$12) {
+    var x$3$14 = $as_Lscalacss_Length(x$3$2$12);
+    return x$3$14.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$32 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$16) {
@@ -26566,33 +26650,53 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$16 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$32);
   var r$16 = ab$16.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$16);
-  var v$34 = r$16.apply__O__Lscalacss_ValueT(f$33);
-  var v$35 = v$34.value$1;
-  var x$64 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$406.attr$3, v$35);
-  var x$65 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$64, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$32 = r$16.apply__O__Lscalacss_ValueT(f$33);
+  var v$33 = v$32.value$1;
+  var x$65 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$409.attr$3, v$33);
+  var x$66 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$65, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$29 = $m_Lscalacss_Cond$().empty$1;
-  var d$28 = new $c_sci_Map$Map1().init___O__O(c$29, x$65);
-  var this$411 = $m_s_package$().Vector$1;
-  var jsx$131 = this$411.NIL$6;
-  var jsx$130 = $m_s_None$();
-  var this$412 = $m_s_package$().Vector$1;
-  var jsx$129 = this$412.NIL$6;
-  var this$413 = $m_s_package$().Vector$1;
-  var jsx$128 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$28, jsx$131, jsx$130, jsx$129, this$413.NIL$6));
+  var d$28 = new $c_sci_Map$Map1().init___O__O(c$29, x$66);
+  var this$414 = $m_s_package$().Vector$1;
+  var jsx$120 = this$414.NIL$6;
+  var jsx$119 = $m_s_None$();
+  var this$415 = $m_s_package$().Vector$1;
+  var jsx$118 = this$415.NIL$6;
+  var this$416 = $m_s_package$().Vector$1;
+  var jsx$117 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$28, jsx$120, jsx$119, jsx$118, this$416.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$422 = $m_Lscalacss_Attrs$marginLeft$();
+  var this$418 = $m_Lscalacss_Attrs$display$();
+  var v$34 = $m_Lscalacss_Literal$Typed$none$();
+  var v$35 = v$34.value$1;
+  var x$67 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$418.attr$2, v$35);
+  var x$68 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$67, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$30 = $m_Lscalacss_Cond$().empty$1;
+  var d$29 = new $c_sci_Map$Map1().init___O__O(c$30, x$68);
+  var this$423 = $m_s_package$().Vector$1;
+  var jsx$116 = this$423.NIL$6;
+  var jsx$115 = $m_s_None$();
+  var this$424 = $m_s_package$().Vector$1;
+  var jsx$114 = this$424.NIL$6;
+  var this$425 = $m_s_package$().Vector$1;
+  var jsx$113 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$137, jsx$133, jsx$129, jsx$125, jsx$121, jsx$117, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$29, jsx$116, jsx$115, jsx$114, this$425.NIL$6))]);
+  var this$426 = $m_Lscalacss_Defaults$();
+  this.mainContainer$3 = jsx$138.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$113, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$426).composition__Lscalacss_Compose());
+  var jsx$155 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "innerDiv");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$24 = 60;
-  var u$15 = $m_Lscalacss_LengthUnit$px$();
-  var f$35 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$24, u$15);
+  var this$435 = $m_Lscalacss_Attrs$width$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$17 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$15) {
-    var x$3$17 = $as_Lscalacss_Length(x$3$2$15);
-    return x$3$17.value__T()
+  var $$this$25 = 620;
+  var u$13 = $m_Lscalacss_LengthUnit$px$();
+  var f$35 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$25, u$13);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$17 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$13) {
+    var x$3$15 = $as_Lscalacss_Length(x$3$2$13);
+    return x$3$15.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$34 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$17) {
@@ -26603,34 +26707,31 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$17 = ab$17.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$17);
   var v$36 = r$17.apply__O__Lscalacss_ValueT(f$35);
   var v$37 = v$36.value$1;
-  var x$66 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$422.attr$4, v$37);
-  var x$67 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$66, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$69 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$435.attr$3, v$37);
+  var x$70 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$69, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$30 = $m_Lscalacss_Cond$().empty$1;
-  var d$29 = new $c_sci_Map$Map1().init___O__O(c$30, x$67);
-  var this$427 = $m_s_package$().Vector$1;
-  var jsx$127 = this$427.NIL$6;
-  var jsx$126 = $m_s_None$();
-  var this$428 = $m_s_package$().Vector$1;
-  var jsx$125 = this$428.NIL$6;
-  var this$429 = $m_s_package$().Vector$1;
-  var jsx$124 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$132, jsx$128, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$29, jsx$127, jsx$126, jsx$125, this$429.NIL$6))]);
-  var this$430 = $m_Lscalacss_Defaults$();
-  this.innerDiv$3 = jsx$136.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$124, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$430).composition__Lscalacss_Compose());
-  var jsx$149 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "city");
+  var c$31 = $m_Lscalacss_Cond$().empty$1;
+  var d$30 = new $c_sci_Map$Map1().init___O__O(c$31, x$70);
+  var this$440 = $m_s_package$().Vector$1;
+  var jsx$154 = this$440.NIL$6;
+  var jsx$153 = $m_s_None$();
+  var this$441 = $m_s_package$().Vector$1;
+  var jsx$152 = this$441.NIL$6;
+  var this$442 = $m_s_package$().Vector$1;
+  var jsx$151 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$30, jsx$154, jsx$153, jsx$152, this$442.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$439 = $m_Lscalacss_Attrs$fontSize$();
+  var this$451 = $m_Lscalacss_Attrs$height$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$25 = 28;
-  var u$16 = $m_Lscalacss_LengthUnit$px$();
-  var f$37 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$25, u$16);
+  var $$this$26 = 200;
+  var u$14 = $m_Lscalacss_LengthUnit$px$();
+  var f$37 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$26, u$14);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$18 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$16) {
-    var x$3$18 = $as_Lscalacss_Length(x$3$2$16);
-    return x$3$18.value__T()
+  var ab$18 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$14) {
+    var x$3$16 = $as_Lscalacss_Length(x$3$2$14);
+    return x$3$16.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$36 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$18) {
@@ -26641,69 +26742,31 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$18 = ab$18.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$18);
   var v$38 = r$18.apply__O__Lscalacss_ValueT(f$37);
   var v$39 = v$38.value$1;
-  var x$68 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$439.attr$3, v$39);
-  var x$69 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$68, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$31 = $m_Lscalacss_Cond$().empty$1;
-  var d$30 = new $c_sci_Map$Map1().init___O__O(c$31, x$69);
-  var this$444 = $m_s_package$().Vector$1;
-  var jsx$148 = this$444.NIL$6;
-  var jsx$147 = $m_s_None$();
-  var this$445 = $m_s_package$().Vector$1;
-  var jsx$146 = this$445.NIL$6;
-  var this$446 = $m_s_package$().Vector$1;
-  var jsx$145 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$30, jsx$148, jsx$147, jsx$146, this$446.NIL$6));
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var a$7 = $m_Lscalacss_Attrs$color$();
-  var $$this$26 = a$7;
-  var x$70 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$26.attr$4, "#67890a");
-  var x$71 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$70, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var x$71 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$451.attr$3, v$39);
+  var x$72 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$71, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$32 = $m_Lscalacss_Cond$().empty$1;
-  var d$31 = new $c_sci_Map$Map1().init___O__O(c$32, x$71);
-  var this$455 = $m_s_package$().Vector$1;
-  var jsx$144 = this$455.NIL$6;
-  var jsx$143 = $m_s_None$();
+  var d$31 = new $c_sci_Map$Map1().init___O__O(c$32, x$72);
   var this$456 = $m_s_package$().Vector$1;
-  var jsx$142 = this$456.NIL$6;
+  var jsx$150 = this$456.NIL$6;
+  var jsx$149 = $m_s_None$();
   var this$457 = $m_s_package$().Vector$1;
-  var jsx$141 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$31, jsx$144, jsx$143, jsx$142, this$457.NIL$6));
+  var jsx$148 = this$457.NIL$6;
+  var this$458 = $m_s_package$().Vector$1;
+  var jsx$147 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$31, jsx$150, jsx$149, jsx$148, this$458.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$459 = $m_Lscalacss_Attrs$fontWeight$();
-  var x$72 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$459.attr$2, "bold");
-  var x$73 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$72, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$33 = $m_Lscalacss_Cond$().empty$1;
-  var d$32 = new $c_sci_Map$Map1().init___O__O(c$33, x$73);
-  var this$464 = $m_s_package$().Vector$1;
-  var jsx$140 = this$464.NIL$6;
-  var jsx$139 = $m_s_None$();
-  var this$465 = $m_s_package$().Vector$1;
-  var jsx$138 = this$465.NIL$6;
-  var this$466 = $m_s_package$().Vector$1;
-  var jsx$137 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$145, jsx$141, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$32, jsx$140, jsx$139, jsx$138, this$466.NIL$6))]);
-  var this$467 = $m_Lscalacss_Defaults$();
-  this.city$3 = jsx$149.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$137, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$467).composition__Lscalacss_Compose());
-  var jsx$163 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "table");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$74 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("table-bordered table-striped");
-  var jsx$162 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$74);
+  var this$467 = $m_Lscalacss_Attrs$marginLeft$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$477 = $m_Lscalacss_Attrs$width$();
+  var $$this$27 = 60;
+  var u$15 = $m_Lscalacss_LengthUnit$px$();
+  var f$39 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$27, u$15);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$27 = 540;
-  var u$17 = $m_Lscalacss_LengthUnit$px$();
-  var f$39 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$27, u$17);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$19 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$17) {
-    var x$3$19 = $as_Lscalacss_Length(x$3$2$17);
-    return x$3$19.value__T()
+  var ab$19 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$15) {
+    var x$3$17 = $as_Lscalacss_Length(x$3$2$15);
+    return x$3$17.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$38 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$19) {
@@ -26714,46 +26777,51 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   var r$19 = ab$19.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$19);
   var v$40 = r$19.apply__O__Lscalacss_ValueT(f$39);
   var v$41 = v$40.value$1;
-  var x$75 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$477.attr$3, v$41);
+  var x$73 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$467.attr$4, v$41);
+  var x$74 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$73, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$33 = $m_Lscalacss_Cond$().empty$1;
+  var d$32 = new $c_sci_Map$Map1().init___O__O(c$33, x$74);
+  var this$472 = $m_s_package$().Vector$1;
+  var jsx$146 = this$472.NIL$6;
+  var jsx$145 = $m_s_None$();
+  var this$473 = $m_s_package$().Vector$1;
+  var jsx$144 = this$473.NIL$6;
+  var this$474 = $m_s_package$().Vector$1;
+  var jsx$143 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$32, jsx$146, jsx$145, jsx$144, this$474.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$476 = $m_Lscalacss_Attrs$overflow$();
+  var v$42 = $m_Lscalacss_Literal$Typed$auto$();
+  var v$43 = v$42.value$1;
+  var x$75 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$476.attr$2, v$43);
   var x$76 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$75, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$34 = $m_Lscalacss_Cond$().empty$1;
   var d$33 = new $c_sci_Map$Map1().init___O__O(c$34, x$76);
+  var this$481 = $m_s_package$().Vector$1;
+  var jsx$142 = this$481.NIL$6;
+  var jsx$141 = $m_s_None$();
   var this$482 = $m_s_package$().Vector$1;
-  var jsx$161 = this$482.NIL$6;
-  var jsx$160 = $m_s_None$();
+  var jsx$140 = this$482.NIL$6;
   var this$483 = $m_s_package$().Vector$1;
-  var jsx$159 = this$483.NIL$6;
-  var this$484 = $m_s_package$().Vector$1;
-  var jsx$158 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$33, jsx$161, jsx$160, jsx$159, this$484.NIL$6));
+  var jsx$139 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$151, jsx$147, jsx$143, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$33, jsx$142, jsx$141, jsx$140, this$483.NIL$6))]);
+  var this$484 = $m_Lscalacss_Defaults$();
+  this.innerDiv$3 = jsx$155.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$139, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$484).composition__Lscalacss_Compose());
+  var jsx$172 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "city");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$486 = $m_Lscalacss_Attrs$textAlign$();
-  var x$77 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$486.attr$2, "center");
-  var x$78 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$77, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
-  $m_Lscalacss_StyleS$();
-  var c$35 = $m_Lscalacss_Cond$().empty$1;
-  var d$34 = new $c_sci_Map$Map1().init___O__O(c$35, x$78);
-  var this$491 = $m_s_package$().Vector$1;
-  var jsx$157 = this$491.NIL$6;
-  var jsx$156 = $m_s_None$();
-  var this$492 = $m_s_package$().Vector$1;
-  var jsx$155 = this$492.NIL$6;
-  var this$493 = $m_s_package$().Vector$1;
-  var jsx$154 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$34, jsx$157, jsx$156, jsx$155, this$493.NIL$6));
+  var this$493 = $m_Lscalacss_Attrs$marginLeft$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$502 = $m_Lscalacss_Attrs$marginTop$();
+  var $$this$28 = 60;
+  var u$16 = $m_Lscalacss_LengthUnit$px$();
+  var f$41 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$28, u$16);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$28 = 10;
-  var u$18 = $m_Lscalacss_LengthUnit$px$();
-  var f$41 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$28, u$18);
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$20 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$18) {
-    var x$3$20 = $as_Lscalacss_Length(x$3$2$18);
-    return x$3$20.value__T()
+  var ab$20 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$16) {
+    var x$3$18 = $as_Lscalacss_Length(x$3$2$16);
+    return x$3$18.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$40 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$20) {
@@ -26762,36 +26830,33 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$20 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$40);
   var r$20 = ab$20.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$20);
-  var v$42 = r$20.apply__O__Lscalacss_ValueT(f$41);
-  var v$43 = v$42.value$1;
-  var x$79 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$502.attr$4, v$43);
-  var x$80 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$79, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$44 = r$20.apply__O__Lscalacss_ValueT(f$41);
+  var v$45 = v$44.value$1;
+  var x$77 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$493.attr$4, v$45);
+  var x$78 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$77, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$36 = $m_Lscalacss_Cond$().empty$1;
-  var d$35 = new $c_sci_Map$Map1().init___O__O(c$36, x$80);
-  var this$507 = $m_s_package$().Vector$1;
-  var jsx$153 = this$507.NIL$6;
-  var jsx$152 = $m_s_None$();
-  var this$508 = $m_s_package$().Vector$1;
-  var jsx$151 = this$508.NIL$6;
-  var this$509 = $m_s_package$().Vector$1;
-  var jsx$150 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$162, jsx$158, jsx$154, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$35, jsx$153, jsx$152, jsx$151, this$509.NIL$6))]);
-  var this$510 = $m_Lscalacss_Defaults$();
-  this.table$3 = jsx$163.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$150, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$510).composition__Lscalacss_Compose());
+  var c$35 = $m_Lscalacss_Cond$().empty$1;
+  var d$34 = new $c_sci_Map$Map1().init___O__O(c$35, x$78);
+  var this$498 = $m_s_package$().Vector$1;
+  var jsx$171 = this$498.NIL$6;
+  var jsx$170 = $m_s_None$();
+  var this$499 = $m_s_package$().Vector$1;
+  var jsx$169 = this$499.NIL$6;
+  var this$500 = $m_s_package$().Vector$1;
+  var jsx$168 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$34, jsx$171, jsx$170, jsx$169, this$500.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$519 = $m_Lscalacss_Attrs$padding$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$29 = 0;
-  var u$19 = $m_Lscalacss_LengthUnit$px$();
-  var f$43 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$29, u$19);
+  var this$509 = $m_Lscalacss_Attrs$fontSize$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$21 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$19) {
-    var x$3$21 = $as_Lscalacss_Length(x$3$2$19);
-    return x$3$21.value__T()
+  var $$this$29 = 28;
+  var u$17 = $m_Lscalacss_LengthUnit$px$();
+  var f$43 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$29, u$17);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$21 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$17) {
+    var x$3$19 = $as_Lscalacss_Length(x$3$2$17);
+    return x$3$19.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$42 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$21) {
@@ -26800,52 +26865,71 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$21 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$42);
   var r$21 = ab$21.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$21);
-  var all = r$21.apply__O__Lscalacss_ValueT(f$43);
-  var v$44 = all.value$1;
-  var x$81 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$519.attr$3, v$44);
+  var v$46 = r$21.apply__O__Lscalacss_ValueT(f$43);
+  var v$47 = v$46.value$1;
+  var x$79 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$509.attr$3, v$47);
+  var x$80 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$79, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$36 = $m_Lscalacss_Cond$().empty$1;
+  var d$35 = new $c_sci_Map$Map1().init___O__O(c$36, x$80);
+  var this$514 = $m_s_package$().Vector$1;
+  var jsx$167 = this$514.NIL$6;
+  var jsx$166 = $m_s_None$();
+  var this$515 = $m_s_package$().Vector$1;
+  var jsx$165 = this$515.NIL$6;
+  var this$516 = $m_s_package$().Vector$1;
+  var jsx$164 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$35, jsx$167, jsx$166, jsx$165, this$516.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var a$8 = $m_Lscalacss_Attrs$color$();
+  var $$this$30 = a$8;
+  var x$81 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$30.attr$4, "#67890a");
   var x$82 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$81, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$37 = $m_Lscalacss_Cond$().empty$1;
   var d$36 = new $c_sci_Map$Map1().init___O__O(c$37, x$82);
-  var this$524 = $m_s_package$().Vector$1;
-  var jsx$170 = this$524.NIL$6;
-  var jsx$169 = $m_s_None$();
   var this$525 = $m_s_package$().Vector$1;
-  var jsx$168 = this$525.NIL$6;
+  var jsx$163 = this$525.NIL$6;
+  var jsx$162 = $m_s_None$();
   var this$526 = $m_s_package$().Vector$1;
-  var jsx$167 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$36, jsx$170, jsx$169, jsx$168, this$526.NIL$6));
+  var jsx$161 = this$526.NIL$6;
+  var this$527 = $m_s_package$().Vector$1;
+  var jsx$160 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$36, jsx$163, jsx$162, jsx$161, this$527.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$528 = $m_Lscalacss_Attrs$fontWeight$();
-  var x$83 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$528.attr$2, "bold");
+  var this$529 = $m_Lscalacss_Attrs$fontWeight$();
+  var x$83 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$529.attr$2, "bold");
   var x$84 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$83, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$38 = $m_Lscalacss_Cond$().empty$1;
   var d$37 = new $c_sci_Map$Map1().init___O__O(c$38, x$84);
-  var this$533 = $m_s_package$().Vector$1;
-  var jsx$166 = this$533.NIL$6;
-  var jsx$165 = $m_s_None$();
   var this$534 = $m_s_package$().Vector$1;
-  var jsx$164 = this$534.NIL$6;
+  var jsx$159 = this$534.NIL$6;
+  var jsx$158 = $m_s_None$();
   var this$535 = $m_s_package$().Vector$1;
-  var t$1 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$167, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$37, jsx$166, jsx$165, jsx$164, this$535.NIL$6))]);
-  var this$536 = $m_Lscalacss_Defaults$();
-  var c$39 = $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$536).composition__Lscalacss_Compose();
-  this.commonTD$3 = $m_Lscalacss_Dsl$().style__sc_Seq__Lscalacss_Compose__Lscalacss_StyleS(t$1, c$39);
-  var jsx$175 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "td");
+  var jsx$157 = this$535.NIL$6;
+  var this$536 = $m_s_package$().Vector$1;
+  var jsx$156 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$168, jsx$164, jsx$160, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$37, jsx$159, jsx$158, jsx$157, this$536.NIL$6))]);
+  var this$537 = $m_Lscalacss_Defaults$();
+  this.city$3 = jsx$172.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$156, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$537).composition__Lscalacss_Compose());
+  var jsx$186 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "table");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$85 = this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$().addClassName__T__Lscalacss_StyleS("table-bordered table-striped");
+  var jsx$185 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$85);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$546 = $m_Lscalacss_Attrs$padding$();
+  var this$547 = $m_Lscalacss_Attrs$width$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$30 = 20;
-  var u$20 = $m_Lscalacss_LengthUnit$px$();
-  var f$45 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$30, u$20);
+  var $$this$31 = 620;
+  var u$18 = $m_Lscalacss_LengthUnit$px$();
+  var f$45 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$31, u$18);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$22 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$20) {
-    var x$3$22 = $as_Lscalacss_Length(x$3$2$20);
-    return x$3$22.value__T()
+  var ab$22 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$18) {
+    var x$3$20 = $as_Lscalacss_Length(x$3$2$18);
+    return x$3$20.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$44 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$22) {
@@ -26854,39 +26938,48 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$22 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$44);
   var r$22 = ab$22.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$22);
-  var all$1 = r$22.apply__O__Lscalacss_ValueT(f$45);
-  var v$45 = all$1.value$1;
-  var x$85 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$546.attr$3, v$45);
-  var x$86 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$85, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$48 = r$22.apply__O__Lscalacss_ValueT(f$45);
+  var v$49 = v$48.value$1;
+  var x$86 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$547.attr$3, v$49);
+  var x$87 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$86, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$39 = $m_Lscalacss_Cond$().empty$1;
+  var d$38 = new $c_sci_Map$Map1().init___O__O(c$39, x$87);
+  var this$552 = $m_s_package$().Vector$1;
+  var jsx$184 = this$552.NIL$6;
+  var jsx$183 = $m_s_None$();
+  var this$553 = $m_s_package$().Vector$1;
+  var jsx$182 = this$553.NIL$6;
+  var this$554 = $m_s_package$().Vector$1;
+  var jsx$181 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$38, jsx$184, jsx$183, jsx$182, this$554.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$556 = $m_Lscalacss_Attrs$textAlign$();
+  var x$88 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$556.attr$2, "center");
+  var x$89 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$88, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$40 = $m_Lscalacss_Cond$().empty$1;
-  var d$38 = new $c_sci_Map$Map1().init___O__O(c$40, x$86);
-  var this$551 = $m_s_package$().Vector$1;
-  var jsx$174 = this$551.NIL$6;
-  var jsx$173 = $m_s_None$();
-  var this$552 = $m_s_package$().Vector$1;
-  var jsx$172 = this$552.NIL$6;
-  var this$553 = $m_s_package$().Vector$1;
-  var jsx$171 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$38, jsx$174, jsx$173, jsx$172, this$553.NIL$6))]);
-  var this$554 = $m_Lscalacss_Defaults$();
-  this.td$3 = jsx$175.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$171, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$554).composition__Lscalacss_Compose());
-  var jsx$181 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "firstTd");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$87 = this.commonTD$3;
-  var jsx$180 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$87);
+  var d$39 = new $c_sci_Map$Map1().init___O__O(c$40, x$89);
+  var this$561 = $m_s_package$().Vector$1;
+  var jsx$180 = this$561.NIL$6;
+  var jsx$179 = $m_s_None$();
+  var this$562 = $m_s_package$().Vector$1;
+  var jsx$178 = this$562.NIL$6;
+  var this$563 = $m_s_package$().Vector$1;
+  var jsx$177 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$39, jsx$180, jsx$179, jsx$178, this$563.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$564 = $m_Lscalacss_Attrs$fontSize$();
+  var this$572 = $m_Lscalacss_Attrs$marginTop$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$31 = 22;
-  var u$21 = $m_Lscalacss_LengthUnit$px$();
-  var f$47 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$31, u$21);
+  var $$this$32 = 10;
+  var u$19 = $m_Lscalacss_LengthUnit$px$();
+  var f$47 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$32, u$19);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$23 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$21) {
-    var x$3$23 = $as_Lscalacss_Length(x$3$2$21);
-    return x$3$23.value__T()
+  var ab$23 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$19) {
+    var x$3$21 = $as_Lscalacss_Length(x$3$2$19);
+    return x$3$21.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$46 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$23) {
@@ -26895,42 +26988,36 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$23 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$46);
   var r$23 = ab$23.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$23);
-  var v$46 = r$23.apply__O__Lscalacss_ValueT(f$47);
-  var v$47 = v$46.value$1;
-  var x$88 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$564.attr$3, v$47);
-  var x$89 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$88, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var v$50 = r$23.apply__O__Lscalacss_ValueT(f$47);
+  var v$51 = v$50.value$1;
+  var x$90 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$572.attr$4, v$51);
+  var x$91 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$90, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$41 = $m_Lscalacss_Cond$().empty$1;
-  var d$39 = new $c_sci_Map$Map1().init___O__O(c$41, x$89);
-  var this$569 = $m_s_package$().Vector$1;
-  var jsx$179 = this$569.NIL$6;
-  var jsx$178 = $m_s_None$();
-  var this$570 = $m_s_package$().Vector$1;
-  var jsx$177 = this$570.NIL$6;
-  var this$571 = $m_s_package$().Vector$1;
-  var jsx$176 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$180, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$39, jsx$179, jsx$178, jsx$177, this$571.NIL$6))]);
-  var this$572 = $m_Lscalacss_Defaults$();
-  this.firstTd$3 = jsx$181.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$176, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$572).composition__Lscalacss_Compose());
-  var jsx$183 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondTd");
-  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var x$90 = this.commonTD$3;
-  var jsx$182 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$90)]);
-  var this$574 = $m_Lscalacss_Defaults$();
-  this.secondTd$3 = jsx$183.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$182, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$574).composition__Lscalacss_Compose());
-  var jsx$192 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "mapCanvas");
+  var d$40 = new $c_sci_Map$Map1().init___O__O(c$41, x$91);
+  var this$577 = $m_s_package$().Vector$1;
+  var jsx$176 = this$577.NIL$6;
+  var jsx$175 = $m_s_None$();
+  var this$578 = $m_s_package$().Vector$1;
+  var jsx$174 = this$578.NIL$6;
+  var this$579 = $m_s_package$().Vector$1;
+  var jsx$173 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$185, jsx$181, jsx$177, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$40, jsx$176, jsx$175, jsx$174, this$579.NIL$6))]);
+  var this$580 = $m_Lscalacss_Defaults$();
+  this.table$3 = jsx$186.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$173, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$580).composition__Lscalacss_Compose());
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$583 = $m_Lscalacss_Attrs$height$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$589 = $m_Lscalacss_Attrs$padding$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$32 = 430;
-  var u$22 = $m_Lscalacss_LengthUnit$px$();
-  var f$49 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$32, u$22);
+  var $$this$33 = 0;
+  var u$20 = $m_Lscalacss_LengthUnit$px$();
+  var f$49 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$33, u$20);
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$24 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$22) {
-    var x$3$24 = $as_Lscalacss_Length(x$3$2$22);
-    return x$3$24.value__T()
+  var ab$24 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$20) {
+    var x$3$22 = $as_Lscalacss_Length(x$3$2$20);
+    return x$3$22.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$48 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$24) {
@@ -26939,33 +27026,52 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$24 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$48);
   var r$24 = ab$24.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$24);
-  var v$48 = r$24.apply__O__Lscalacss_ValueT(f$49);
-  var v$49 = v$48.value$1;
-  var x$91 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$583.attr$3, v$49);
-  var x$92 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$91, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var all = r$24.apply__O__Lscalacss_ValueT(f$49);
+  var v$52 = all.value$1;
+  var x$92 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$589.attr$3, v$52);
+  var x$93 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$92, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
   var c$42 = $m_Lscalacss_Cond$().empty$1;
-  var d$40 = new $c_sci_Map$Map1().init___O__O(c$42, x$92);
-  var this$588 = $m_s_package$().Vector$1;
-  var jsx$191 = this$588.NIL$6;
-  var jsx$190 = $m_s_None$();
-  var this$589 = $m_s_package$().Vector$1;
-  var jsx$189 = this$589.NIL$6;
-  var this$590 = $m_s_package$().Vector$1;
-  var jsx$188 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$40, jsx$191, jsx$190, jsx$189, this$590.NIL$6));
+  var d$41 = new $c_sci_Map$Map1().init___O__O(c$42, x$93);
+  var this$594 = $m_s_package$().Vector$1;
+  var jsx$193 = this$594.NIL$6;
+  var jsx$192 = $m_s_None$();
+  var this$595 = $m_s_package$().Vector$1;
+  var jsx$191 = this$595.NIL$6;
+  var this$596 = $m_s_package$().Vector$1;
+  var jsx$190 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$41, jsx$193, jsx$192, jsx$191, this$596.NIL$6));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var this$599 = $m_Lscalacss_Attrs$width$();
+  var this$598 = $m_Lscalacss_Attrs$fontWeight$();
+  var x$94 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$598.attr$2, "bold");
+  var x$95 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$94, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$43 = $m_Lscalacss_Cond$().empty$1;
+  var d$42 = new $c_sci_Map$Map1().init___O__O(c$43, x$95);
+  var this$603 = $m_s_package$().Vector$1;
+  var jsx$189 = this$603.NIL$6;
+  var jsx$188 = $m_s_None$();
+  var this$604 = $m_s_package$().Vector$1;
+  var jsx$187 = this$604.NIL$6;
+  var this$605 = $m_s_package$().Vector$1;
+  var t$1 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$190, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$42, jsx$189, jsx$188, jsx$187, this$605.NIL$6))]);
+  var this$606 = $m_Lscalacss_Defaults$();
+  var c$44 = $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$606).composition__Lscalacss_Compose();
+  this.commonTD$3 = $m_Lscalacss_Dsl$().style__sc_Seq__Lscalacss_Compose__Lscalacss_StyleS(t$1, c$44);
+  var jsx$202 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "td");
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var $$this$33 = 512;
-  var u$23 = $m_Lscalacss_LengthUnit$px$();
-  var f$51 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$33, u$23);
+  var this$616 = $m_Lscalacss_Attrs$padding$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
-  var ab$25 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$23) {
-    var x$3$25 = $as_Lscalacss_Length(x$3$2$23);
-    return x$3$25.value__T()
+  var $$this$34 = 20;
+  var u$21 = $m_Lscalacss_LengthUnit$px$();
+  var f$51 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$34, u$21);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$25 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$21) {
+    var x$3$23 = $as_Lscalacss_Length(x$3$2$21);
+    return x$3$23.value__T()
   })));
   this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
   var f$50 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$25) {
@@ -26974,22 +27080,317 @@ $c_Lcom_knoldus_weather_ReportStyles$.prototype.init___ = (function() {
   }));
   var bc$25 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$50);
   var r$25 = ab$25.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$25);
-  var v$50 = r$25.apply__O__Lscalacss_ValueT(f$51);
-  var v$51 = v$50.value$1;
-  var x$93 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$599.attr$3, v$51);
-  var x$94 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$93, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  var all$1 = r$25.apply__O__Lscalacss_ValueT(f$51);
+  var v$53 = all$1.value$1;
+  var x$96 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$616.attr$3, v$53);
+  var x$97 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$96, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
   $m_Lscalacss_StyleS$();
-  var c$43 = $m_Lscalacss_Cond$().empty$1;
-  var d$41 = new $c_sci_Map$Map1().init___O__O(c$43, x$94);
-  var this$604 = $m_s_package$().Vector$1;
-  var jsx$187 = this$604.NIL$6;
-  var jsx$186 = $m_s_None$();
-  var this$605 = $m_s_package$().Vector$1;
-  var jsx$185 = this$605.NIL$6;
-  var this$606 = $m_s_package$().Vector$1;
-  var jsx$184 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$188, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$41, jsx$187, jsx$186, jsx$185, this$606.NIL$6))]);
-  var this$607 = $m_Lscalacss_Defaults$();
-  this.mapCanvas$3 = jsx$192.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$184, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$607).composition__Lscalacss_Compose());
+  var c$45 = $m_Lscalacss_Cond$().empty$1;
+  var d$43 = new $c_sci_Map$Map1().init___O__O(c$45, x$97);
+  var this$621 = $m_s_package$().Vector$1;
+  var jsx$201 = this$621.NIL$6;
+  var jsx$200 = $m_s_None$();
+  var this$622 = $m_s_package$().Vector$1;
+  var jsx$199 = this$622.NIL$6;
+  var this$623 = $m_s_package$().Vector$1;
+  var jsx$198 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$43, jsx$201, jsx$200, jsx$199, this$623.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$625 = $m_Lscalacss_Attrs$textAlign$();
+  var x$98 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$625.attr$2, "left");
+  var x$99 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$98, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$46 = $m_Lscalacss_Cond$().empty$1;
+  var d$44 = new $c_sci_Map$Map1().init___O__O(c$46, x$99);
+  var this$630 = $m_s_package$().Vector$1;
+  var jsx$197 = this$630.NIL$6;
+  var jsx$196 = $m_s_None$();
+  var this$631 = $m_s_package$().Vector$1;
+  var jsx$195 = this$631.NIL$6;
+  var this$632 = $m_s_package$().Vector$1;
+  var jsx$194 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$198, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$44, jsx$197, jsx$196, jsx$195, this$632.NIL$6))]);
+  var this$633 = $m_Lscalacss_Defaults$();
+  this.td$3 = jsx$202.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$194, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$633).composition__Lscalacss_Compose());
+  var jsx$208 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "firstTd");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$100 = this.commonTD$3;
+  var jsx$207 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$100);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$643 = $m_Lscalacss_Attrs$fontSize$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$35 = 22;
+  var u$22 = $m_Lscalacss_LengthUnit$px$();
+  var f$53 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$35, u$22);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$26 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$22) {
+    var x$3$24 = $as_Lscalacss_Length(x$3$2$22);
+    return x$3$24.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$52 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$26) {
+    var x$1$28 = $as_Lscalacss_ValueT(x$1$2$26);
+    return x$1$28
+  }));
+  var bc$26 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$52);
+  var r$26 = ab$26.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$26);
+  var v$54 = r$26.apply__O__Lscalacss_ValueT(f$53);
+  var v$55 = v$54.value$1;
+  var x$101 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$643.attr$3, v$55);
+  var x$102 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$101, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$47 = $m_Lscalacss_Cond$().empty$1;
+  var d$45 = new $c_sci_Map$Map1().init___O__O(c$47, x$102);
+  var this$648 = $m_s_package$().Vector$1;
+  var jsx$206 = this$648.NIL$6;
+  var jsx$205 = $m_s_None$();
+  var this$649 = $m_s_package$().Vector$1;
+  var jsx$204 = this$649.NIL$6;
+  var this$650 = $m_s_package$().Vector$1;
+  var jsx$203 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$207, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$45, jsx$206, jsx$205, jsx$204, this$650.NIL$6))]);
+  var this$651 = $m_Lscalacss_Defaults$();
+  this.firstTd$3 = jsx$208.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$203, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$651).composition__Lscalacss_Compose());
+  var jsx$210 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "secondTd");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var x$103 = this.commonTD$3;
+  var jsx$209 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(x$103)]);
+  var this$653 = $m_Lscalacss_Defaults$();
+  this.secondTd$3 = jsx$210.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$209, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$653).composition__Lscalacss_Compose());
+  var jsx$219 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "mapCanvas");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$662 = $m_Lscalacss_Attrs$height$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$36 = 830;
+  var u$23 = $m_Lscalacss_LengthUnit$px$();
+  var f$55 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$36, u$23);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$27 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$23) {
+    var x$3$25 = $as_Lscalacss_Length(x$3$2$23);
+    return x$3$25.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$54 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$27) {
+    var x$1$29 = $as_Lscalacss_ValueT(x$1$2$27);
+    return x$1$29
+  }));
+  var bc$27 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$54);
+  var r$27 = ab$27.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$27);
+  var v$56 = r$27.apply__O__Lscalacss_ValueT(f$55);
+  var v$57 = v$56.value$1;
+  var x$104 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$662.attr$3, v$57);
+  var x$105 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$104, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$48 = $m_Lscalacss_Cond$().empty$1;
+  var d$46 = new $c_sci_Map$Map1().init___O__O(c$48, x$105);
+  var this$667 = $m_s_package$().Vector$1;
+  var jsx$218 = this$667.NIL$6;
+  var jsx$217 = $m_s_None$();
+  var this$668 = $m_s_package$().Vector$1;
+  var jsx$216 = this$668.NIL$6;
+  var this$669 = $m_s_package$().Vector$1;
+  var jsx$215 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$46, jsx$218, jsx$217, jsx$216, this$669.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$678 = $m_Lscalacss_Attrs$width$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$37 = 912;
+  var u$24 = $m_Lscalacss_LengthUnit$px$();
+  var f$57 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$37, u$24);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$28 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$24) {
+    var x$3$26 = $as_Lscalacss_Length(x$3$2$24);
+    return x$3$26.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$56 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$28) {
+    var x$1$30 = $as_Lscalacss_ValueT(x$1$2$28);
+    return x$1$30
+  }));
+  var bc$28 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$56);
+  var r$28 = ab$28.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$28);
+  var v$58 = r$28.apply__O__Lscalacss_ValueT(f$57);
+  var v$59 = v$58.value$1;
+  var x$106 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$678.attr$3, v$59);
+  var x$107 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$106, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$49 = $m_Lscalacss_Cond$().empty$1;
+  var d$47 = new $c_sci_Map$Map1().init___O__O(c$49, x$107);
+  var this$683 = $m_s_package$().Vector$1;
+  var jsx$214 = this$683.NIL$6;
+  var jsx$213 = $m_s_None$();
+  var this$684 = $m_s_package$().Vector$1;
+  var jsx$212 = this$684.NIL$6;
+  var this$685 = $m_s_package$().Vector$1;
+  var jsx$211 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$215, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$47, jsx$214, jsx$213, jsx$212, this$685.NIL$6))]);
+  var this$686 = $m_Lscalacss_Defaults$();
+  this.mapCanvas$3 = jsx$219.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$211, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$686).composition__Lscalacss_Compose());
+  var jsx$240 = new $c_Lscalacss_mutable_StyleSheet$Inline$MStyle().init___Lscalacss_mutable_StyleSheet$Inline__T(this, "innerDivEdwin");
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$695 = $m_Lscalacss_Attrs$width$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$38 = 700;
+  var u$25 = $m_Lscalacss_LengthUnit$px$();
+  var f$59 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$38, u$25);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$29 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$25) {
+    var x$3$27 = $as_Lscalacss_Length(x$3$2$25);
+    return x$3$27.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$58 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$29) {
+    var x$1$31 = $as_Lscalacss_ValueT(x$1$2$29);
+    return x$1$31
+  }));
+  var bc$29 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$58);
+  var r$29 = ab$29.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$29);
+  var v$60 = r$29.apply__O__Lscalacss_ValueT(f$59);
+  var v$61 = v$60.value$1;
+  var x$108 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$695.attr$3, v$61);
+  var x$109 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$108, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$50 = $m_Lscalacss_Cond$().empty$1;
+  var d$48 = new $c_sci_Map$Map1().init___O__O(c$50, x$109);
+  var this$700 = $m_s_package$().Vector$1;
+  var jsx$239 = this$700.NIL$6;
+  var jsx$238 = $m_s_None$();
+  var this$701 = $m_s_package$().Vector$1;
+  var jsx$237 = this$701.NIL$6;
+  var this$702 = $m_s_package$().Vector$1;
+  var jsx$236 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$48, jsx$239, jsx$238, jsx$237, this$702.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$711 = $m_Lscalacss_Attrs$height$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$39 = 600;
+  var u$26 = $m_Lscalacss_LengthUnit$px$();
+  var f$61 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$39, u$26);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$30 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$26) {
+    var x$3$28 = $as_Lscalacss_Length(x$3$2$26);
+    return x$3$28.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$60 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$30) {
+    var x$1$32 = $as_Lscalacss_ValueT(x$1$2$30);
+    return x$1$32
+  }));
+  var bc$30 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$60);
+  var r$30 = ab$30.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$30);
+  var v$62 = r$30.apply__O__Lscalacss_ValueT(f$61);
+  var v$63 = v$62.value$1;
+  var x$110 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$711.attr$3, v$63);
+  var x$111 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$110, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$51 = $m_Lscalacss_Cond$().empty$1;
+  var d$49 = new $c_sci_Map$Map1().init___O__O(c$51, x$111);
+  var this$716 = $m_s_package$().Vector$1;
+  var jsx$235 = this$716.NIL$6;
+  var jsx$234 = $m_s_None$();
+  var this$717 = $m_s_package$().Vector$1;
+  var jsx$233 = this$717.NIL$6;
+  var this$718 = $m_s_package$().Vector$1;
+  var jsx$232 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$49, jsx$235, jsx$234, jsx$233, this$718.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$727 = $m_Lscalacss_Attrs$marginTop$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$40 = 30;
+  var u$27 = $m_Lscalacss_LengthUnit$px$();
+  var f$63 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$40, u$27);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$31 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$27) {
+    var x$3$29 = $as_Lscalacss_Length(x$3$2$27);
+    return x$3$29.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$62 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$31) {
+    var x$1$33 = $as_Lscalacss_ValueT(x$1$2$31);
+    return x$1$33
+  }));
+  var bc$31 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$62);
+  var r$31 = ab$31.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$31);
+  var v$64 = r$31.apply__O__Lscalacss_ValueT(f$63);
+  var v$65 = v$64.value$1;
+  var x$112 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$727.attr$4, v$65);
+  var x$113 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$112, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$52 = $m_Lscalacss_Cond$().empty$1;
+  var d$50 = new $c_sci_Map$Map1().init___O__O(c$52, x$113);
+  var this$732 = $m_s_package$().Vector$1;
+  var jsx$231 = this$732.NIL$6;
+  var jsx$230 = $m_s_None$();
+  var this$733 = $m_s_package$().Vector$1;
+  var jsx$229 = this$733.NIL$6;
+  var this$734 = $m_s_package$().Vector$1;
+  var jsx$228 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$50, jsx$231, jsx$230, jsx$229, this$734.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var this$743 = $m_Lscalacss_Attrs$marginLeft$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var $$this$41 = 5;
+  var u$28 = $m_Lscalacss_LengthUnit$px$();
+  var f$65 = new $c_Lscalacss_Length().init___O__Lscalacss_LengthUnit($$this$41, u$28);
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var ab$32 = $m_Lscalacss_ValueT$Rule$().apply__F1__Lscalacss_ValueT$Rule(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2$28) {
+    var x$3$30 = $as_Lscalacss_Length(x$3$2$28);
+    return x$3$30.value__T()
+  })));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var f$64 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2$32) {
+    var x$1$34 = $as_Lscalacss_ValueT(x$1$2$32);
+    return x$1$34
+  }));
+  var bc$32 = new $c_Lscalacss_ValueT$Rule$$anon$1().init___F1(f$64);
+  var r$32 = ab$32.$$greater$greater__Lscalacss_ValueT$Rule__Lscalacss_ValueT$Rule(bc$32);
+  var v$66 = r$32.apply__O__Lscalacss_ValueT(f$65);
+  var v$67 = v$66.value$1;
+  var x$114 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T(this$743.attr$4, v$67);
+  var x$115 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$114, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$53 = $m_Lscalacss_Cond$().empty$1;
+  var d$51 = new $c_sci_Map$Map1().init___O__O(c$53, x$115);
+  var this$748 = $m_s_package$().Vector$1;
+  var jsx$227 = this$748.NIL$6;
+  var jsx$226 = $m_s_None$();
+  var this$749 = $m_s_package$().Vector$1;
+  var jsx$225 = this$749.NIL$6;
+  var this$750 = $m_s_package$().Vector$1;
+  var jsx$224 = new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$51, jsx$227, jsx$226, jsx$225, this$750.NIL$6));
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  this.dsl__Lscalacss_mutable_StyleSheet$Base$dsl$();
+  var a$9 = $m_Lscalacss_Attrs$float$();
+  var $$this$42 = a$9;
+  var x$116 = new $c_Lscalacss_AV().init___Lscalacss_Attr__T($$this$42.attr$2, "right");
+  var x$117 = $m_Lscalacss_AVs$().apply__Lscalacss_AV__sc_Seq__Lscalacss_AVs(x$116, new $c_sjs_js_WrappedArray().init___sjs_js_Array([]));
+  $m_Lscalacss_StyleS$();
+  var c$54 = $m_Lscalacss_Cond$().empty$1;
+  var d$52 = new $c_sci_Map$Map1().init___O__O(c$54, x$117);
+  var this$759 = $m_s_package$().Vector$1;
+  var jsx$223 = this$759.NIL$6;
+  var jsx$222 = $m_s_None$();
+  var this$760 = $m_s_package$().Vector$1;
+  var jsx$221 = this$760.NIL$6;
+  var this$761 = $m_s_package$().Vector$1;
+  var jsx$220 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([jsx$236, jsx$232, jsx$228, jsx$224, new $c_Lscalacss_DslBase$ToStyle().init___Lscalacss_StyleS(new $c_Lscalacss_StyleS().init___sci_Map__sci_Vector__s_Option__sci_Vector__sci_Vector(d$52, jsx$223, jsx$222, jsx$221, this$761.NIL$6))]);
+  var this$762 = $m_Lscalacss_Defaults$();
+  this.innerDivEdwin$3 = jsx$240.apply__sc_Seq__Lscalacss_Compose__Lscalacss_package$StyleA(jsx$220, $s_Lscalacss_Defaults$class__defaults__Lscalacss_Defaults__Lscalacss_IDefaults(this$762).composition__Lscalacss_Compose());
   return this
 });
 var $d_Lcom_knoldus_weather_ReportStyles$ = new $TypeData().initClass({
@@ -27021,10 +27422,17 @@ function $h_Lcom_knoldus_weather_Weather$() {
 }
 $h_Lcom_knoldus_weather_Weather$.prototype = $c_Lcom_knoldus_weather_Weather$.prototype;
 $c_Lcom_knoldus_weather_Weather$.prototype.init___ = (function() {
+  $c_Lcom_knoldus_weather_WeatherReport.prototype.init___.call(this);
   return this
 });
-$c_Lcom_knoldus_weather_Weather$.prototype.$$js$exported$meth$main__O = (function() {
+$c_Lcom_knoldus_weather_Weather$.prototype.main__V = (function() {
+  var this$2 = $m_s_Console$();
+  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("start miracle!!!\n");
   this.showReport__V()
+});
+$c_Lcom_knoldus_weather_Weather$.prototype.$$js$exported$meth$main__O = (function() {
+  this.main__V()
 });
 $c_Lcom_knoldus_weather_Weather$.prototype.main = (function() {
   return this.$$js$exported$meth$main__O()
@@ -28478,6 +28886,9 @@ $h_sc_AbstractIterator.prototype = $c_sc_AbstractIterator.prototype;
 $c_sc_AbstractIterator.prototype.seq__sc_TraversableOnce = (function() {
   return this
 });
+$c_sc_AbstractIterator.prototype.copyToArray__O__I__V = (function(xs, start) {
+  $s_sc_TraversableOnce$class__copyToArray__sc_TraversableOnce__O__I__V(this, xs, start)
+});
 $c_sc_AbstractIterator.prototype.isEmpty__Z = (function() {
   return $s_sc_Iterator$class__isEmpty__sc_Iterator__Z(this)
 });
@@ -28494,6 +28905,11 @@ $c_sc_AbstractIterator.prototype.toVector__sci_Vector = (function() {
 });
 $c_sc_AbstractIterator.prototype.size__I = (function() {
   return $s_sc_TraversableOnce$class__size__sc_TraversableOnce__I(this)
+});
+$c_sc_AbstractIterator.prototype.toBuffer__scm_Buffer = (function() {
+  var this$1 = $m_scm_ArrayBuffer$();
+  var cbf = this$1.ReusableCBFInstance$2;
+  return $as_scm_Buffer($s_sc_TraversableOnce$class__to__sc_TraversableOnce__scg_CanBuildFrom__O(this, cbf))
 });
 $c_sc_AbstractIterator.prototype.toStream__sci_Stream = (function() {
   return $s_sc_Iterator$class__toStream__sc_Iterator__sci_Stream(this)
@@ -28512,6 +28928,9 @@ $c_sc_AbstractIterator.prototype.isTraversableAgain__Z = (function() {
 });
 $c_sc_AbstractIterator.prototype.drop__I__sc_Iterator = (function(n) {
   return $s_sc_Iterator$class__drop__sc_Iterator__I__sc_Iterator(this, n)
+});
+$c_sc_AbstractIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  return $s_sc_TraversableOnce$class__toArray__sc_TraversableOnce__s_reflect_ClassTag__O(this, evidence$1)
 });
 $c_sc_AbstractIterator.prototype.reduceLeft__F2__O = (function(op) {
   return $s_sc_TraversableOnce$class__reduceLeft__sc_TraversableOnce__F2__O(this, op)
@@ -29060,25 +29479,6 @@ $c_sjsr_RuntimeLong.prototype.$$less__sjsr_RuntimeLong__Z = (function(b) {
     return (ahi < bhi)
   }
 });
-$c_sjsr_RuntimeLong.prototype.divideUnsigned__sjsr_RuntimeLong__sjsr_RuntimeLong = (function(b) {
-  var alo = this.lo$2;
-  var ahi = this.hi$2;
-  var blo = b.lo$2;
-  var bhi = b.hi$2;
-  if (((blo | bhi) === 0)) {
-    throw new $c_jl_ArithmeticException().init___T("/ by zero")
-  };
-  if ((ahi === 0)) {
-    if ((bhi === 0)) {
-      var x = ($uD((alo >>> 0)) / $uD((blo >>> 0)));
-      return new $c_sjsr_RuntimeLong().init___I__I($uI((x | 0)), 0)
-    } else {
-      return $m_sjsr_RuntimeLong$().Zero$1
-    }
-  } else {
-    return this.unsigned$und$div__p2__I__I__I__I__sjsr_RuntimeLong(alo, ahi, blo, bhi)
-  }
-});
 $c_sjsr_RuntimeLong.prototype.$$times__sjsr_RuntimeLong__sjsr_RuntimeLong = (function(b) {
   var alo = this.lo$2;
   var ahi = this.hi$2;
@@ -29495,6 +29895,140 @@ var $d_sjsr_RuntimeLong = new $TypeData().initClass({
   jl_Comparable: 1
 });
 $c_sjsr_RuntimeLong.prototype.$classData = $d_sjsr_RuntimeLong;
+/** @constructor */
+function $c_sr_AbstractFunction0$mcV$sp() {
+  $c_sr_AbstractFunction0.call(this)
+}
+$c_sr_AbstractFunction0$mcV$sp.prototype = new $h_sr_AbstractFunction0();
+$c_sr_AbstractFunction0$mcV$sp.prototype.constructor = $c_sr_AbstractFunction0$mcV$sp;
+/** @constructor */
+function $h_sr_AbstractFunction0$mcV$sp() {
+  /*<skip>*/
+}
+$h_sr_AbstractFunction0$mcV$sp.prototype = $c_sr_AbstractFunction0$mcV$sp.prototype;
+/** @constructor */
+function $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1() {
+  $c_sr_AbstractFunction3.call(this);
+  this.$$outer$2 = null
+}
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype = new $h_sr_AbstractFunction3();
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype.constructor = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1;
+/** @constructor */
+function $h_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1() {
+  /*<skip>*/
+}
+$h_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype;
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype.apply__T__T__Lorg_scalajs_jquery_JQueryXHR__V = (function(data, textStatus, jqXHR) {
+  var xs = $m_sjsr_RuntimeString$().split__T__T__I__AT(data, "\\|", 0);
+  var elems$2 = [];
+  var i = 0;
+  var len = xs.u.length;
+  while ((i < len)) {
+    var index = i;
+    var arg1 = xs.u[index];
+    var w = $as_T(arg1);
+    var g = $m_sjsr_RuntimeString$().split__T__T__I__AT(w, ",", 0);
+    var this$12 = new $c_sci_StringOps().init___T(g.u[2]);
+    var jsx$1 = $m_jl_Double$().parseDouble__T__D(this$12.repr$1);
+    var this$15 = new $c_sci_StringOps().init___T(g.u[3]);
+    var elem = new $c_s_Tuple2$mcDD$sp().init___D__D(jsx$1, $m_jl_Double$().parseDouble__T__D(this$15.repr$1));
+    elems$2.push(elem);
+    i = ((1 + i) | 0)
+  };
+  var xs$1 = $makeNativeArrayWrapper($d_T2.getArrayOf(), elems$2);
+  var i$1 = 0;
+  var len$1 = xs$1.u.length;
+  while ((i$1 < len$1)) {
+    var index$1 = i$1;
+    var arg1$1 = xs$1.u[index$1];
+    var f = $as_T2(arg1$1);
+    var jsx$2 = this.$$outer$2;
+    var this$21 = this.$$outer$2.busData$1;
+    var this$20 = $m_sci_List$();
+    var bf = this$20.ReusableCBFInstance$2;
+    jsx$2.busData$1 = $as_sci_List($s_sc_SeqLike$class__$$colon$plus__sc_SeqLike__O__scg_CanBuildFrom__O(this$21, f, bf));
+    i$1 = ((1 + i$1) | 0)
+  }
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype.init___Lcom_knoldus_weather_WeatherReport = (function($$outer) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$2 = $$outer
+  };
+  return this
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype.apply__O__O__O__O = (function(v1, v2, v3) {
+  this.apply__T__T__Lorg_scalajs_jquery_JQueryXHR__V($as_T(v1), $as_T(v2), v3)
+});
+var $d_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1 = new $TypeData().initClass({
+  Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1: 0
+}, false, "com.knoldus.weather.WeatherReport$$anonfun$polulateBus$1", {
+  Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1: 1,
+  sr_AbstractFunction3: 1,
+  O: 1,
+  F3: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1.prototype.$classData = $d_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateBus$1;
+/** @constructor */
+function $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1() {
+  $c_sr_AbstractFunction3.call(this)
+}
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype = new $h_sr_AbstractFunction3();
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype.constructor = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1;
+/** @constructor */
+function $h_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1() {
+  /*<skip>*/
+}
+$h_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype;
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype.apply__T__T__Lorg_scalajs_jquery_JQueryXHR__sjs_js_Dynamic = (function(data, textStatus, jqXHR) {
+  var xs = $m_sjsr_RuntimeString$().split__T__T__I__AT(data, "\\|", 0);
+  var elems$2 = [];
+  var i = 0;
+  var len = xs.u.length;
+  while ((i < len)) {
+    var index = i;
+    var arg1 = xs.u[index];
+    var w = $as_T(arg1);
+    var dd = $m_sjsr_RuntimeString$().split__T__T__I__AT(w, "_", 0);
+    var jsx$1 = dd.u[0];
+    var this$13 = new $c_sci_StringOps().init___T(dd.u[1]);
+    var elem = [jsx$1, $m_jl_Double$().parseDouble__T__D(this$13.repr$1)];
+    var unboxedElem = ((elem === null) ? null : elem);
+    elems$2.push(unboxedElem);
+    i = ((1 + i) | 0)
+  };
+  var xs$1 = $makeNativeArrayWrapper($d_sjs_js_Array.getArrayOf(), elems$2);
+  var $$this$1 = new $c_scm_WrappedArray$ofRef().init___AO(xs$1);
+  var result = [];
+  var i$1 = 0;
+  var len$1 = $$this$1.length__I();
+  while ((i$1 < len$1)) {
+    var arg1$1 = $$this$1.apply__I__O(i$1);
+    $uI(result.push(arg1$1));
+    i$1 = ((1 + i$1) | 0)
+  };
+  return $g.loadPie(result)
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype.init___Lcom_knoldus_weather_WeatherReport = (function($$outer) {
+  return this
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype.apply__O__O__O__O = (function(v1, v2, v3) {
+  return this.apply__T__T__Lorg_scalajs_jquery_JQueryXHR__sjs_js_Dynamic($as_T(v1), $as_T(v2), v3)
+});
+var $d_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1 = new $TypeData().initClass({
+  Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1: 0
+}, false, "com.knoldus.weather.WeatherReport$$anonfun$polulateChart$1", {
+  Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1: 1,
+  sr_AbstractFunction3: 1,
+  O: 1,
+  F3: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1.prototype.$classData = $d_Lcom_knoldus_weather_WeatherReport$$anonfun$polulateChart$1;
 /** @constructor */
 function $c_Lscalacss_AV() {
   $c_O.call(this);
@@ -37739,6 +38273,9 @@ $c_T2.prototype.equals__O__Z = (function(x$1) {
 $c_T2.prototype.productElement__I__O = (function(n) {
   return $s_s_Product2$class__productElement__s_Product2__I__O(this, n)
 });
+$c_T2.prototype.$$und1$mcD$sp__D = (function() {
+  return $uD(this.$$und1__O())
+});
 $c_T2.prototype.init___O__O = (function(_1, _2) {
   this.$$und1$f = _1;
   this.$$und2$f = _2;
@@ -37749,6 +38286,9 @@ $c_T2.prototype.toString__T = (function() {
 });
 $c_T2.prototype.$$und2__O = (function() {
   return this.$$und2$f
+});
+$c_T2.prototype.$$und2$mcD$sp__D = (function() {
+  return $uD(this.$$und2__O())
 });
 $c_T2.prototype.$$und2$mcI$sp__I = (function() {
   return $uI(this.$$und2__O())
@@ -38494,6 +39034,103 @@ var $d_sjsr_UndefinedBehaviorError = new $TypeData().initClass({
   s_util_control_NoStackTrace: 1
 });
 $c_sjsr_UndefinedBehaviorError.prototype.$classData = $d_sjsr_UndefinedBehaviorError;
+/** @constructor */
+function $c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2() {
+  $c_sr_AbstractFunction0$mcV$sp.call(this);
+  this.$$outer$3 = null;
+  this.gogleMap$2$f = null;
+  this.markers$1$3 = null
+}
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype = new $h_sr_AbstractFunction0$mcV$sp();
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype.constructor = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2;
+/** @constructor */
+function $h_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2() {
+  /*<skip>*/
+}
+$h_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype = $c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype;
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype.init___Lcom_knoldus_weather_WeatherReport__sjs_js_Object__sr_ObjectRef = (function($$outer, gogleMap$2, markers$1) {
+  if (($$outer === null)) {
+    throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
+  } else {
+    this.$$outer$3 = $$outer
+  };
+  this.gogleMap$2$f = gogleMap$2;
+  this.markers$1$3 = markers$1;
+  return this
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype.apply$mcV$sp__V = (function() {
+  var this$1 = $as_sci_List(this.markers$1$3.elem$1);
+  var these = this$1;
+  while ((!these.isEmpty__Z())) {
+    var arg1 = these.head__O();
+    arg1.setMap(null);
+    these = $as_sci_List(these.tail__O())
+  };
+  this.$$outer$3.polulateBus__V();
+  var jsx$6 = this.markers$1$3;
+  var this$7 = this.$$outer$3.busData$1;
+  var f = (function(arg$outer) {
+    return (function(w$2) {
+      var w = $as_T2(w$2);
+      var jsx$4 = $g.google.maps.Marker;
+      var jsx$3 = arg$outer.gogleMap$2$f;
+      var jsx$2 = $g.google.maps.LatLng;
+      var value = w.$$und1$mcD$sp__D();
+      var value$1 = w.$$und2$mcD$sp__D();
+      var jsx$1 = new jsx$2(value, value$1);
+      return new jsx$4({
+        "map": jsx$3,
+        "position": jsx$1
+      })
+    })
+  })(this);
+  var this$6 = $m_sci_List$();
+  var bf = this$6.ReusableCBFInstance$2;
+  if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
+    if ((this$7 === $m_sci_Nil$())) {
+      var jsx$5 = $m_sci_Nil$()
+    } else {
+      var arg1$1 = this$7.head__O();
+      var h = new $c_sci_$colon$colon().init___O__sci_List(f(arg1$1), $m_sci_Nil$());
+      var t = h;
+      var rest = $as_sci_List(this$7.tail__O());
+      while ((rest !== $m_sci_Nil$())) {
+        var arg1$2 = rest.head__O();
+        var nx = new $c_sci_$colon$colon().init___O__sci_List(f(arg1$2), $m_sci_Nil$());
+        t.tl$5 = nx;
+        t = nx;
+        rest = $as_sci_List(rest.tail__O())
+      };
+      var jsx$5 = h
+    }
+  } else {
+    var b = $s_sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$7, bf);
+    var these$1 = this$7;
+    while ((!these$1.isEmpty__Z())) {
+      var arg1$3 = these$1.head__O();
+      b.$$plus$eq__O__scm_Builder(f(arg1$3));
+      these$1 = $as_sci_List(these$1.tail__O())
+    };
+    var jsx$5 = b.result__O()
+  };
+  jsx$6.elem$1 = $as_sci_List(jsx$5)
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype.apply__O = (function() {
+  this.apply$mcV$sp__V()
+});
+var $d_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2 = new $TypeData().initClass({
+  Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2: 0
+}, false, "com.knoldus.weather.WeatherReport$$anonfun$showReport$2", {
+  Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2: 1,
+  sr_AbstractFunction0$mcV$sp: 1,
+  sr_AbstractFunction0: 1,
+  O: 1,
+  F0: 1,
+  s_Function0$mcV$sp: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2.prototype.$classData = $d_Lcom_knoldus_weather_WeatherReport$$anonfun$showReport$2;
 /** @constructor */
 function $c_Lscalacss_AttrCmp$Overlap$() {
   $c_Lscalacss_AttrCmp$Conflict.call(this)
@@ -39508,6 +40145,51 @@ var $d_Lscalaz_ApplicativePlus$$anon$3 = new $TypeData().initClass({
   Lscalaz_syntax_PlusSyntax: 1
 });
 $c_Lscalaz_ApplicativePlus$$anon$3.prototype.$classData = $d_Lscalaz_ApplicativePlus$$anon$3;
+/** @constructor */
+function $c_s_Tuple2$mcDD$sp() {
+  $c_T2.call(this);
+  this.$$und1$mcD$sp$f = 0.0;
+  this.$$und2$mcD$sp$f = 0.0
+}
+$c_s_Tuple2$mcDD$sp.prototype = new $h_T2();
+$c_s_Tuple2$mcDD$sp.prototype.constructor = $c_s_Tuple2$mcDD$sp;
+/** @constructor */
+function $h_s_Tuple2$mcDD$sp() {
+  /*<skip>*/
+}
+$h_s_Tuple2$mcDD$sp.prototype = $c_s_Tuple2$mcDD$sp.prototype;
+$c_s_Tuple2$mcDD$sp.prototype.$$und1$mcD$sp__D = (function() {
+  return this.$$und1$mcD$sp$f
+});
+$c_s_Tuple2$mcDD$sp.prototype.$$und2__O = (function() {
+  return this.$$und2$mcD$sp$f
+});
+$c_s_Tuple2$mcDD$sp.prototype.$$und2$mcD$sp__D = (function() {
+  return this.$$und2$mcD$sp$f
+});
+$c_s_Tuple2$mcDD$sp.prototype.init___D__D = (function(_1$mcD$sp, _2$mcD$sp) {
+  this.$$und1$mcD$sp$f = _1$mcD$sp;
+  this.$$und2$mcD$sp$f = _2$mcD$sp;
+  $c_T2.prototype.init___O__O.call(this, null, null);
+  return this
+});
+$c_s_Tuple2$mcDD$sp.prototype.$$und1__O = (function() {
+  return this.$$und1$mcD$sp$f
+});
+var $d_s_Tuple2$mcDD$sp = new $TypeData().initClass({
+  s_Tuple2$mcDD$sp: 0
+}, false, "scala.Tuple2$mcDD$sp", {
+  s_Tuple2$mcDD$sp: 1,
+  T2: 1,
+  O: 1,
+  s_Product2: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1,
+  s_Product2$mcDD$sp: 1
+});
+$c_s_Tuple2$mcDD$sp.prototype.$classData = $d_s_Tuple2$mcDD$sp;
 /** @constructor */
 function $c_s_reflect_AnyValManifest() {
   $c_O.call(this);
@@ -41196,6 +41878,9 @@ function $h_sc_AbstractTraversable() {
   /*<skip>*/
 }
 $h_sc_AbstractTraversable.prototype = $c_sc_AbstractTraversable.prototype;
+$c_sc_AbstractTraversable.prototype.copyToArray__O__I__V = (function(xs, start) {
+  $s_sc_TraversableOnce$class__copyToArray__sc_TraversableOnce__O__I__V(this, xs, start)
+});
 $c_sc_AbstractTraversable.prototype.flatMap__F1__scg_CanBuildFrom__O = (function(f, bf) {
   return $s_sc_TraversableLike$class__flatMap__sc_TraversableLike__F1__scg_CanBuildFrom__O(this, f, bf)
 });
@@ -41215,6 +41900,11 @@ $c_sc_AbstractTraversable.prototype.toVector__sci_Vector = (function() {
 });
 $c_sc_AbstractTraversable.prototype.size__I = (function() {
   return $s_sc_TraversableOnce$class__size__sc_TraversableOnce__I(this)
+});
+$c_sc_AbstractTraversable.prototype.toBuffer__scm_Buffer = (function() {
+  var this$1 = $m_scm_ArrayBuffer$();
+  var cbf = this$1.ReusableCBFInstance$2;
+  return $as_scm_Buffer($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(this, cbf))
 });
 $c_sc_AbstractTraversable.prototype.tail__O = (function() {
   return $s_sc_TraversableLike$class__tail__sc_TraversableLike__O(this)
@@ -41238,6 +41928,9 @@ $c_sc_AbstractTraversable.prototype.isTraversableAgain__Z = (function() {
 });
 $c_sc_AbstractTraversable.prototype.map__F1__scg_CanBuildFrom__O = (function(f, bf) {
   return $s_sc_TraversableLike$class__map__sc_TraversableLike__F1__scg_CanBuildFrom__O(this, f, bf)
+});
+$c_sc_AbstractTraversable.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  return $s_sc_TraversableOnce$class__toArray__sc_TraversableOnce__s_reflect_ClassTag__O(this, evidence$1)
 });
 $c_sc_AbstractTraversable.prototype.nonEmpty__Z = (function() {
   return $s_sc_TraversableOnce$class__nonEmpty__sc_TraversableOnce__Z(this)
@@ -41554,6 +42247,9 @@ function $h_sci_StringOps() {
   /*<skip>*/
 }
 $h_sci_StringOps.prototype = $c_sci_StringOps.prototype;
+$c_sci_StringOps.prototype.copyToArray__O__I__V = (function(xs, start) {
+  $s_sc_TraversableOnce$class__copyToArray__sc_TraversableOnce__O__I__V(this, xs, start)
+});
 $c_sci_StringOps.prototype.seq__sc_TraversableOnce = (function() {
   var $$this = this.repr$1;
   return new $c_sci_WrappedString().init___T($$this)
@@ -41612,6 +42308,9 @@ $c_sci_StringOps.prototype.toVector__sci_Vector = (function() {
 $c_sci_StringOps.prototype.reverse__O = (function() {
   return $s_sc_IndexedSeqOptimized$class__reverse__sc_IndexedSeqOptimized__O(this)
 });
+$c_sci_StringOps.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_sci_StringOps.prototype.size__I = (function() {
   var $$this = this.repr$1;
   return $uI($$this.length)
@@ -41664,6 +42363,9 @@ $c_sci_StringOps.prototype.hashCode__I = (function() {
 $c_sci_StringOps.prototype.init___T = (function(repr) {
   this.repr$1 = repr;
   return this
+});
+$c_sci_StringOps.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  return $m_sjsr_RuntimeString$().toCharArray__T__AC(this.repr$1)
 });
 $c_sci_StringOps.prototype.toCollection__O__sc_Seq = (function(repr) {
   var repr$1 = $as_T(repr);
@@ -42656,18 +43358,8 @@ $c_Lscalatags_Text$all$.prototype.table$lzycompute__p1__Lscalatags_generic_Typed
   };
   return this.table$1
 });
-$c_Lscalatags_Text$all$.prototype.tr$lzycompute__p1__Lscalatags_generic_TypedTag = (function() {
-  if (new $c_sjsr_RuntimeLong().init___I__I(1, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong())) {
-    this.tr$1 = $s_Lscalatags_text_Tags$class__tr__Lscalatags_text_Tags__Lscalatags_generic_TypedTag(this);
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(1, 0).$$bar__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1)
-  };
-  return this.tr$1
-});
 $c_Lscalatags_Text$all$.prototype.button__Lscalatags_generic_TypedTag = (function() {
   return (new $c_sjsr_RuntimeLong().init___I__I(256, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.button$lzycompute__p1__Lscalatags_generic_TypedTag() : this.button$1)
-});
-$c_Lscalatags_Text$all$.prototype.tr__Lscalatags_generic_TypedTag = (function() {
-  return (new $c_sjsr_RuntimeLong().init___I__I(1, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.tr$lzycompute__p1__Lscalatags_generic_TypedTag() : this.tr$1)
 });
 $c_Lscalatags_Text$all$.prototype.table__Lscalatags_generic_TypedTag = (function() {
   return (new $c_sjsr_RuntimeLong().init___I__I(0, 33554432).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$0$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.table$lzycompute__p1__Lscalatags_generic_TypedTag() : this.table$1)
@@ -42705,13 +43397,6 @@ $c_Lscalatags_Text$all$.prototype.name$lzycompute__p1__Lscalatags_generic_Attr =
 });
 $c_Lscalatags_Text$all$.prototype.input__Lscalatags_generic_TypedTag = (function() {
   return (new $c_sjsr_RuntimeLong().init___I__I(128, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.input$lzycompute__p1__Lscalatags_generic_TypedTag() : this.input$1)
-});
-$c_Lscalatags_Text$all$.prototype.td$lzycompute__p1__Lscalatags_generic_TypedTag = (function() {
-  if (new $c_sjsr_RuntimeLong().init___I__I(2, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong())) {
-    this.td$1 = $s_Lscalatags_text_Tags$class__td__Lscalatags_text_Tags__Lscalatags_generic_TypedTag(this);
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(2, 0).$$bar__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1)
-  };
-  return this.td$1
 });
 $c_Lscalatags_Text$all$.prototype.src$lzycompute__p1__Lscalatags_generic_Attr = (function() {
   if (new $c_sjsr_RuntimeLong().init___I__I(1073741824, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$2$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong())) {
@@ -42792,9 +43477,6 @@ $c_Lscalatags_Text$all$.prototype.placeholder$lzycompute__p1__Lscalatags_generic
 });
 $c_Lscalatags_Text$all$.prototype.html__Lscalatags_generic_TypedTag = (function() {
   return (new $c_sjsr_RuntimeLong().init___I__I(1, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$0$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.html$lzycompute__p1__Lscalatags_generic_TypedTag() : this.html$1)
-});
-$c_Lscalatags_Text$all$.prototype.td__Lscalatags_generic_TypedTag = (function() {
-  return (new $c_sjsr_RuntimeLong().init___I__I(2, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$1$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.td$lzycompute__p1__Lscalatags_generic_TypedTag() : this.td$1)
 });
 $c_Lscalatags_Text$all$.prototype.body__Lscalatags_generic_TypedTag = (function() {
   return (new $c_sjsr_RuntimeLong().init___I__I(64, 0).$$amp__sjsr_RuntimeLong__sjsr_RuntimeLong(this.bitmap$0$1).equals__sjsr_RuntimeLong__Z($m_sjsr_RuntimeLong$().Zero__sjsr_RuntimeLong()) ? this.body$lzycompute__p1__Lscalatags_generic_TypedTag() : this.body$1)
@@ -42938,6 +43620,9 @@ $c_sc_AbstractMap.prototype.toString__T = (function() {
 $c_sc_AbstractMap.prototype.keysIterator__sc_Iterator = (function() {
   return new $c_sc_MapLike$$anon$1().init___sc_MapLike(this)
 });
+$c_sc_AbstractMap.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_MapLike$class__toBuffer__sc_MapLike__scm_Buffer(this)
+});
 $c_sc_AbstractMap.prototype.valuesIterator__sc_Iterator = (function() {
   return new $c_sc_MapLike$$anon$2().init___sc_MapLike(this)
 });
@@ -42980,6 +43665,9 @@ $c_sc_AbstractSet.prototype.toString__T = (function() {
 });
 $c_sc_AbstractSet.prototype.subsetOf__sc_GenSet__Z = (function(that) {
   return this.forall__F1__Z(that)
+});
+$c_sc_AbstractSet.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_SetLike$class__toBuffer__sc_SetLike__scm_Buffer(this)
 });
 $c_sc_AbstractSet.prototype.hashCode__I = (function() {
   var this$1 = $m_s_util_hashing_MurmurHash3$();
@@ -46172,6 +46860,9 @@ $c_sci_Range.prototype.reverse__O = (function() {
 $c_sci_Range.prototype.size__I = (function() {
   return this.length__I()
 });
+$c_sci_Range.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_sci_Range.prototype.iterator__sc_Iterator = (function() {
   return new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(this, 0, this.length__I())
 });
@@ -47590,6 +48281,9 @@ $c_sci_Vector.prototype.appendBack__O__sci_Vector = (function(value) {
     return s$5
   }
 });
+$c_sci_Vector.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_sci_Vector.prototype.preClean__p4__I__V = (function(depth) {
   this.depth$4 = depth;
   var x1 = (((-1) + depth) | 0);
@@ -47987,6 +48681,9 @@ $c_sci_WrappedString.prototype.slice__I__I__O = (function(from, until) {
 $c_sci_WrappedString.prototype.reverse__O = (function() {
   return $s_sc_IndexedSeqOptimized$class__reverse__sc_IndexedSeqOptimized__O(this)
 });
+$c_sci_WrappedString.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_sci_WrappedString.prototype.iterator__sc_Iterator = (function() {
   var thiz = this.self$4;
   return new $c_sc_IndexedSeqLike$Elements().init___sc_IndexedSeqLike__I__I(this, 0, $uI(thiz.length))
@@ -48039,6 +48736,9 @@ $c_sci_WrappedString.prototype.slice__I__I__sci_WrappedString = (function(from, 
   };
   var thiz$3 = $m_s_Predef$().unwrapString__sci_WrappedString__T(this);
   return new $c_sci_WrappedString().init___T($as_T(thiz$3.substring(start, end)))
+});
+$c_sci_WrappedString.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  return $m_sjsr_RuntimeString$().toCharArray__T__AC(this.self$4)
 });
 $c_sci_WrappedString.prototype.toCollection__O__sc_Seq = (function(repr) {
   var repr$1 = $as_sci_WrappedString(repr);
@@ -48365,6 +49065,9 @@ $c_scm_AbstractSet.prototype.subsetOf__sc_GenSet__Z = (function(that) {
   var this$1 = new $c_scm_FlatHashTable$$anon$1().init___scm_FlatHashTable(this);
   return $s_sc_Iterator$class__forall__sc_Iterator__F1__Z(this$1, that)
 });
+$c_scm_AbstractSet.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_SetLike$class__toBuffer__sc_SetLike__scm_Buffer(this)
+});
 $c_scm_AbstractSet.prototype.sizeHintBounded__I__sc_TraversableLike__V = (function(size, boundingColl) {
   $s_scm_Builder$class__sizeHintBounded__scm_Builder__I__sc_TraversableLike__V(this, size, boundingColl)
 });
@@ -48457,6 +49160,9 @@ $c_scm_WrappedArray.prototype.slice__I__I__O = (function(from, until) {
 $c_scm_WrappedArray.prototype.reverse__O = (function() {
   return $s_sc_IndexedSeqOptimized$class__reverse__sc_IndexedSeqOptimized__O(this)
 });
+$c_scm_WrappedArray.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_scm_WrappedArray.prototype.seq__scm_Seq = (function() {
   return this
 });
@@ -48481,6 +49187,22 @@ $c_scm_WrappedArray.prototype.copyToArray__O__I__I__V = (function(xs, start, len
 });
 $c_scm_WrappedArray.prototype.hashCode__I = (function() {
   return $m_s_util_hashing_MurmurHash3$().seqHash__sc_Seq__I(this)
+});
+$c_scm_WrappedArray.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  if ($is_jl_Class(evidence$1)) {
+    var x2 = $as_jl_Class(evidence$1);
+    var thatElementClass = x2.getComponentType__jl_Class()
+  } else if ((evidence$1 !== null)) {
+    var thatElementClass = evidence$1.runtimeClass__jl_Class()
+  } else {
+    var thatElementClass;
+    throw new $c_jl_UnsupportedOperationException().init___T(new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["unsupported schematic ", " (", ")"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([evidence$1, $objectGetClass(evidence$1)])))
+  };
+  return ((this.elementClass__p5__jl_Class() === thatElementClass) ? this.array__O() : $s_sc_TraversableOnce$class__toArray__sc_TraversableOnce__s_reflect_ClassTag__O(this, evidence$1))
+});
+$c_scm_WrappedArray.prototype.elementClass__p5__jl_Class = (function() {
+  var schematic = $objectGetClass(this.array__O());
+  return schematic.getComponentType__jl_Class()
 });
 $c_scm_WrappedArray.prototype.toCollection__O__sc_Seq = (function(repr) {
   var repr$1 = $as_scm_WrappedArray(repr);
@@ -49808,6 +50530,10 @@ $c_scm_ListBuffer.prototype.copy__p6__V = (function() {
     cursor = $as_sci_List(cursor.tail__O())
   }
 });
+$c_scm_ListBuffer.prototype.copyToArray__O__I__V = (function(xs, start) {
+  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
+  $s_sc_TraversableOnce$class__copyToArray__sc_TraversableOnce__O__I__V(this$1, xs, start)
+});
 $c_scm_ListBuffer.prototype.indexOf__O__I__I = (function(elem, from) {
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
   return $s_sc_GenSeqLike$class__indexOf__sc_GenSeqLike__O__I__I(this$1, elem, from)
@@ -49897,6 +50623,12 @@ $c_scm_ListBuffer.prototype.foldLeft__O__F2__O = (function(z, op) {
 $c_scm_ListBuffer.prototype.indexWhere__F1__I__I = (function(p, from) {
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
   return $s_sc_LinearSeqOptimized$class__indexWhere__sc_LinearSeqOptimized__F1__I__I(this$1, p, from)
+});
+$c_scm_ListBuffer.prototype.toBuffer__scm_Buffer = (function() {
+  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
+  var this$2 = $m_scm_ArrayBuffer$();
+  var cbf = this$2.ReusableCBFInstance$2;
+  return $as_scm_Buffer($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(this$1, cbf))
 });
 $c_scm_ListBuffer.prototype.size__I = (function() {
   return this.len$6
@@ -50029,6 +50761,10 @@ $c_scm_ListBuffer.prototype.clear__V = (function() {
   this.last0$6 = null;
   this.exported$6 = false;
   this.len$6 = 0
+});
+$c_scm_ListBuffer.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
+  return $s_sc_TraversableOnce$class__toArray__sc_TraversableOnce__s_reflect_ClassTag__O(this$1, evidence$1)
 });
 $c_scm_ListBuffer.prototype.nonEmpty__Z = (function() {
   var this$1 = this.scala$collection$mutable$ListBuffer$$start$6;
@@ -50224,6 +50960,9 @@ $c_scm_StringBuilder.prototype.slice__I__I__O = (function(from, until) {
 $c_scm_StringBuilder.prototype.reverse__O = (function() {
   return this.reverse__scm_StringBuilder()
 });
+$c_scm_StringBuilder.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
+});
 $c_scm_StringBuilder.prototype.result__O = (function() {
   var this$1 = this.underlying$5;
   return this$1.content$1
@@ -50292,6 +51031,11 @@ $c_scm_StringBuilder.prototype.sizeHint__I__V = (function(size) {
 });
 $c_scm_StringBuilder.prototype.hashCode__I = (function() {
   return $m_s_util_hashing_MurmurHash3$().seqHash__sc_Seq__I(this)
+});
+$c_scm_StringBuilder.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$1) {
+  var jsx$1 = $m_sjsr_RuntimeString$();
+  var this$1 = this.underlying$5;
+  return jsx$1.toCharArray__T__AC(this$1.content$1)
 });
 $c_scm_StringBuilder.prototype.reverse__scm_StringBuilder = (function() {
   return new $c_scm_StringBuilder().init___jl_StringBuilder(new $c_jl_StringBuilder().init___jl_CharSequence(this.underlying$5).reverse__jl_StringBuilder())
@@ -50456,6 +51200,9 @@ $c_sjs_js_WrappedArray.prototype.slice__I__I__O = (function(from, until) {
 });
 $c_sjs_js_WrappedArray.prototype.reverse__O = (function() {
   return $s_sc_IndexedSeqOptimized$class__reverse__sc_IndexedSeqOptimized__O(this)
+});
+$c_sjs_js_WrappedArray.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
 });
 $c_sjs_js_WrappedArray.prototype.result__O = (function() {
   return this
@@ -50671,6 +51418,9 @@ $c_scm_ArrayBuffer.prototype.slice__I__I__O = (function(from, until) {
 });
 $c_scm_ArrayBuffer.prototype.reverse__O = (function() {
   return $s_sc_IndexedSeqOptimized$class__reverse__sc_IndexedSeqOptimized__O(this)
+});
+$c_scm_ArrayBuffer.prototype.toBuffer__scm_Buffer = (function() {
+  return $s_sc_IndexedSeqLike$class__toBuffer__sc_IndexedSeqLike__scm_Buffer(this)
 });
 $c_scm_ArrayBuffer.prototype.result__O = (function() {
   return this

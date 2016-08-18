@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, phantom-js-jetty, cpd"
-		date="20160806174717"/>
+		date="20160818014348"/>
 	<dependencies>
 		<module organisation="com.github.japgolly.scalacss" name="ext-scalatags_sjs0.6_2.11">
 			<revision name="0.4.0" status="release" pubdate="20160216005750" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/japgolly/scalacss" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
@@ -98,12 +98,12 @@
 			</revision>
 		</module>
 		<module organisation="org.webjars.npm" name="gmaps">
-			<revision name="0.4.24" status="release" pubdate="20160701035714" resolver="public" artresolver="public" homepage="http://webjars.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+			<revision name="0.4.24" status="release" pubdate="20160701035714" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webjars.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
 				<license name="MIT" url="https://spdx.org/licenses/MIT#licenseText"/>
-				<metadata-artifact status="successful" details="" size="1332" time="283" location="/Users/EdwinGuo/.ivy2/cache/org.webjars.npm/gmaps/ivy-0.4.24.xml" searched="true" original-local-location="/Users/EdwinGuo/.ivy2/cache/org.webjars.npm/gmaps/ivy-0.4.24.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/npm/gmaps/0.4.24/gmaps-0.4.24.pom"/>
+				<metadata-artifact status="no" details="" size="2535" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.webjars.npm/gmaps/ivy-0.4.24.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/npm/gmaps/0.4.24/gmaps-0.4.24.pom"/>
 				<caller organisation="client" name="client_sjs0.6_2.11" conf="compile, runtime-internal, runtime, optional" rev="0.4.24" rev-constraint-default="0.4.24" rev-constraint-dynamic="0.4.24" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="gmaps" type="jar" ext="jar" status="successful" details="" size="168919" time="357" location="/Users/EdwinGuo/.ivy2/cache/org.webjars.npm/gmaps/jars/gmaps-0.4.24.jar">
+					<artifact name="gmaps" type="jar" ext="jar" status="no" details="" size="168919" time="0" location="/Users/EdwinGuo/.ivy2/cache/org.webjars.npm/gmaps/jars/gmaps-0.4.24.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/npm/gmaps/0.4.24/gmaps-0.4.24.jar"/>
 					</artifact>
 				</artifacts>
@@ -122,7 +122,7 @@
 			</revision>
 		</module>
 		<module organisation="shared" name="shared_sjs0.6_2.11">
-			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160806174717" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.1-SNAPSHOT" status="integration" pubdate="20160818014348" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="client" name="client_sjs0.6_2.11" conf="compile, runtime-internal, runtime, optional" rev="0.1-SNAPSHOT" rev-constraint-default="0.1-SNAPSHOT" rev-constraint-dynamic="0.1-SNAPSHOT" callerrev="0.1-SNAPSHOT"/>
 				<artifacts>

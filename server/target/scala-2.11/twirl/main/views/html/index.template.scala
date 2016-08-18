@@ -51,7 +51,7 @@ object index_Scope0 {
 object index extends index_Scope0.index
 /*
                   -- GENERATED --
-                  DATE: Sat Aug 06 17:47:10 GMT 2016
+                  DATE: Thu Aug 11 12:58:31 GMT 2016
                   SOURCE: /Users/EdwinGuo/datallite/lindor/server/app/views/index.scala.html
                   HASH: 5c94c7dd9b08e173ac438f92cf2c7bedb2510b63
                   MATRIX: 593->1|617->17|697->21|724->22|827->87|855->90

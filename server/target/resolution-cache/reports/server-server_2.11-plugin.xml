@@ -7,7 +7,7 @@
 		revision="0.1-SNAPSHOT"
 		conf="plugin"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, cpd"
-		date="20160806174004"/>
+		date="20160818014329"/>
 	<dependencies>
 		<module organisation="org.brianmckenna" name="wartremover_2.11">
 			<revision name="0.14" status="release" pubdate="20150830025137" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/puffnfresh/wartremover" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">

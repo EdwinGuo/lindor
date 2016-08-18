@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/EdwinGuo/datallite/lindor/server/conf/routes
-// @DATE:Sat Aug 06 18:24:32 GMT 2016
+// @DATE:Thu Aug 18 01:54:38 GMT 2016
 
 package controllers;
 

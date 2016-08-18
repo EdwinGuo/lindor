@@ -7,6 +7,11 @@ resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releas
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.0")
 
+
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.6")
+
+addSbtPlugin("com.lihaoyi" % "workbench" % "0.2.3")
+
 // Scala-js  plugins
 addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.7")
 

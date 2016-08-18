@@ -38,9 +38,38 @@ object main_Scope0 {
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="gmaps.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    """), _display_( /*20.6*/ content), format.raw /*20.13*/ ("""
-    """), _display_( /*21.6*/ playscalajs /*21.17*/ .html.scripts("client")), format.raw /*21.40*/ ("""
-  """), format.raw /*22.3*/ ("""</body>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAStmPtrbXppbP2QAB3PdNpvf-R1vKLB50"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+
+     function loadPie(ggg) """), format.raw /*27.28*/ ("""{"""), format.raw /*27.29*/ ("""
+       """), format.raw /*28.8*/ ("""c3.generate("""), format.raw /*28.20*/ ("""{"""), format.raw /*28.21*/ ("""
+         """), format.raw /*29.10*/ ("""bindto: '#edwinTest',
+         data: """), format.raw /*30.16*/ ("""{"""), format.raw /*30.17*/ ("""
+           """), format.raw /*31.12*/ ("""columns: ggg,
+           type : 'donut'
+         """), format.raw /*33.10*/ ("""}"""), format.raw /*33.11*/ (""",
+         donut: """), format.raw /*34.17*/ ("""{"""), format.raw /*34.18*/ ("""
+           """), format.raw /*35.12*/ ("""title: "Bus stats:",
+         """), format.raw /*36.10*/ ("""}"""), format.raw /*36.11*/ ("""
+       """), format.raw /*37.8*/ ("""}"""), format.raw /*37.9*/ (""");
+     """), format.raw /*38.6*/ ("""}"""), format.raw /*38.7*/ ("""
+    """), format.raw /*39.5*/ ("""</script>
+
+
+    <script type="text/javascript" src="../example-fastopt.js"></script>
+    <script type="text/javascript" src="/workbench.js"></script>
+
+    <script>
+     com.knoldus.weather.Weather().main();
+    </script>
+
+    """), _display_( /*49.6*/ content), format.raw /*49.13*/ ("""
+    """), _display_( /*50.6*/ playscalajs /*50.17*/ .html.scripts("client")), format.raw /*50.40*/ ("""
+  """), format.raw /*51.3*/ ("""</body>
 </html>
 """))
         }
@@ -67,10 +96,10 @@ object main_Scope0 {
 object main extends main_Scope0.main
 /*
                   -- GENERATED --
-                  DATE: Sat Aug 06 18:24:29 GMT 2016
+                  DATE: Tue Aug 16 20:40:45 GMT 2016
                   SOURCE: /Users/EdwinGuo/datallite/lindor/server/app/views/main.scala.html
-                  HASH: 6054410e45124f617a6edd75480f78791f814018
-                  MATRIX: 847->323|972->353|1001->355|1082->409|1108->414|1193->472|1208->478|1276->524|1525->747|1553->754|1585->760|1605->771|1649->794|1679->797
-                  LINES: 26->8|31->8|33->10|36->13|36->13|37->14|37->14|37->14|43->20|43->20|44->21|44->21|44->21|45->22
+                  HASH: 689a306ae306765021721d7c782c479297ece41d
+                  MATRIX: 847->323|972->353|1001->355|1082->409|1108->414|1193->472|1208->478|1276->524|2090->1310|2119->1311|2154->1319|2194->1331|2223->1332|2261->1342|2326->1379|2355->1380|2395->1392|2472->1441|2501->1442|2547->1460|2576->1461|2616->1473|2674->1503|2703->1504|2738->1512|2766->1513|2801->1521|2829->1522|2861->1527|3114->1754|3142->1761|3174->1767|3194->1778|3238->1801|3268->1804
+                  LINES: 26->8|31->8|33->10|36->13|36->13|37->14|37->14|37->14|50->27|50->27|51->28|51->28|51->28|52->29|53->30|53->30|54->31|56->33|56->33|57->34|57->34|58->35|59->36|59->36|60->37|60->37|61->38|61->38|62->39|72->49|72->49|73->50|73->50|73->50|74->51
                   -- GENERATED --
               */
