@@ -14,20 +14,21 @@ version := "0.1"
 
 lazy val clients = Seq(client)
 lazy val scalaV = "2.11.7"
-
+import sbt.Resolver
 
 lazy val server = (project in file("server")).settings(
   scalaVersion := scalaV,
   cpdSettings,
   scalaJSProjects := clients,
   pipelineStages := Seq(scalaJSProd, gzip),
-  resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases",
+  resolvers ++= Seq[sbt.Resolver]("scalaz-bintray" at "https://dl.bintray.com/scalaz/releases",
+                     "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"),
   scalacOptions ++= Seq("-deprecation", "-Xlint","-feature"),
   libraryDependencies ++= Seq(
     "com.vmunier" %%% "play-scalajs-scripts" % "0.3.0",
     "org.scalaj" % "scalaj-http_2.11" % "2.3.0",
+    "org.json4s" % "json4s-jackson_2.10" % "3.4.0",
     specs2 % Test
-      //    "com.datallite.tango" %%% "map.core" % "1.0.0"
   )
 ).enablePlugins(PlayScala).
   aggregate(clients.map(projectToRef): _*).
@@ -48,8 +49,8 @@ lazy val client = (project in file("client")).settings(
     "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
     "com.lihaoyi" %%% "scalatags" % "0.5.4",
     "com.github.japgolly.scalacss" %%% "ext-scalatags" % "0.4.0",
+    "org.datallite" % "scalajsgm" % "0.1",
     "com.github.japgolly.scalacss" %%% "core" % "0.4.0"
-      //"com.datallite.tango" %%% "map.core" % "1.0.0"
   ),
 
   jsDependencies ++= Seq(

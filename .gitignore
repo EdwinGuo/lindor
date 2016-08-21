@@ -11,8 +11,11 @@ lib_managed/
 src_managed/
 project/boot/
 project/plugins/project/
-server/target
-client/target
+project/project/*
+project/target/*
+server/target/*
+client/target/*
+shared/*
 
 # Scala-IDE specific
 .scala_dependencies

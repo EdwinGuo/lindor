@@ -18,59 +18,131 @@ import js.JSConverters._
 import js.annotation._
 import google.maps.LatLng
 import google._
+import org.scalajs.dom.{ html => _, _ }
 
-trait DataGenerator {
+import Constants._
 
-  // def initialize(lat: Double, long: Double) = {
-  //   val map_canvas = document.getElementById("map_canvas")
-  //   val map_options = lit(center = (jsnew(g.google.maps.LatLng))(lat, long), zoom = 3, mapTypeId = g.google.maps.MapTypeId.ROADMAP)
-  //   val gogleMap = (jsnew(g.google.maps.Map))(map_canvas, map_options)
-  //   val marker = (jsnew(g.google.maps.Marker))(lit(map = gogleMap, position = (jsnew(g.google.maps.LatLng)(lat, long))))
-  // }
+// experimental google map
+// todo
+//s2.toList.groupBy(w => w._7).map(g => (g._1, g._2.size))
 
-  def initialize(data: List[(Double, Double)]) = {
-    val map_canvas = document.getElementById("map_canvas")
-    val map_options = lit(center = (jsnew(g.google.maps.LatLng))(43.768050, -79.371202), zoom = 10, mapTypeId = g.google.maps.MapTypeId.ROADMAP)
-    val gogleMap = (jsnew(g.google.maps.Map))(map_canvas, map_options)
+@JSExport
+object Weather extends js.JSApp {
+  val renderHtml = new WeatherFrag(scalatags.Text)
+  dom.document.body.innerHTML = renderHtml.htmlFrag.render
 
-    val marker =
-      data.map(w =>
-        (jsnew(g.google.maps.Marker))(lit(
-          map = gogleMap,
-          position = (jsnew(g.google.maps.LatLng)(w._1, w._2)) //, animaton = g.google.maps.Animation.DROP
-        )))
-  }
-
-  def msToTime(unix_timestamp: Long): String = {
-    val date = new Date(unix_timestamp * 1000);
-    val hrs = date.getHours();
-    val mins = date.getMinutes();
-    val secs = date.getSeconds();
-    hrs + ":" + mins + ":" + secs
-  }
-}
-
-class WeatherReport extends DataGenerator {
   @JSExport
-  var busData = List[(Double, Double)]()
+  var toDisplay = "all"
+  //  latitude, longitude, vid, dir_tag, route_tag, heading, status
+  var allData = List[(Double, Double, String, String, String, String, String)]()
+  var delayData = List[(Double, Double, String, String, String, String, String)]()
+  var runningData = List[(Double, Double, String, String, String, String, String)]()
+  var terminalData = List[(Double, Double, String, String, String, String, String)]()
+  var questionData = List[(Double, Double, String, String, String, String, String)]()
+  // to display the info at the map, will be used as default
+  var displayData = List[(Double, Double, String, String, String, String, String)]()
+
+  val opts = google.maps.MapOptions(
+    center = new LatLng(43.768050, -79.371202),
+    zoom = 10,
+    panControl = false,
+    streetViewControl = false,
+    mapTypeControl = false
+  )
+
+  val gmap = new google.maps.Map(document.getElementById("map_canvas"), opts)
+
+  polulateBus
+
+  renderDisplayData()
+
+  var markers = displayData.map(w => {
+    val marker = new google.maps.Marker(google.maps.MarkerOptions(
+      position = new google.maps.LatLng(w._1, w._2),
+      map = gmap,
+      icon = w._7 match {
+        case "delayed" => imaRed;
+        case "running" => imaGreen;
+        case "terminal" => imaYellow;
+        case _ => imaPink
+      },
+      title = "Marker"
+    ))
+
+    val infowindow = new google.maps.InfoWindow(google.maps.InfoWindowOptions(
+      content = f"""Id: ${w._3},
+                      DirTag: ${w._4},
+                      RouteTag: ${w._5},
+                      Heading: ${w._6}
+                   """
+    ))
+
+    google.maps.event.addListener(marker, "mouseover", () => {
+      infowindow.open(gmap, marker)
+    })
+
+    google.maps.event.addListener(marker, "mouseout", () => {
+      infowindow.close()
+    })
+
+    marker
+  })
+
+  @JSExport
+  def updateInternalState(d: String) = {
+    toDisplay = d
+  }
+
+  @JSExport
+  def renderDisplayData() = {
+    toDisplay match {
+      case "all" => displayData = allData
+      case "delayed" => displayData = delayData
+      case "running" => displayData = runningData
+      case "terminal" => displayData = terminalData
+      case "question" => displayData = terminalData
+      case _ => displayData = allData
+    }
+  }
 
   @JSExport
   def polulateBus() {
-    // clear the bus data
-    busData = List[(Double, Double)]()
+    //  latitude, longitude, vid, dir_tag, route_tag, heading, status
+    allData = List[(Double, Double, String, String, String, String, String)]()
+    delayData = List[(Double, Double, String, String, String, String, String)]()
+    runningData = List[(Double, Double, String, String, String, String, String)]()
+    terminalData = List[(Double, Double, String, String, String, String, String)]()
+    questionData = List[(Double, Double, String, String, String, String, String)]()
 
     jQuery.ajax(js.Dynamic.literal(
       `type` = "GET",
       `async` = false,
       `timeout` = 3000,
       url = "/bus", success = { (data: String, textStatus: String, jqXHR: JQueryXHR) =>
-      data.split("\\|").map(w => { val g = w.split(","); (g(2).toDouble, g(3).toDouble) }).foreach { f =>
+      data.split("\\|").map(w => { val g = w.split("\\^"); (g(2).toDouble, g(3).toDouble, g(0), g(1), g(4), g(5), g(6)) }).foreach { f =>
         {
-          busData = busData :+ f
+          // clear the bus data
+
+          allData = allData :+ f
+          if (f._7 == "running") {
+            runningData = runningData :+ f
+          } else if (f._7 == "delayed") {
+            delayData = delayData :+ f
+          } else if (f._7 == "terminal") {
+            terminalData = terminalData :+ f
+          } else {
+            questionData = questionData :+ f
+          }
         }
       }
     }
     ).asInstanceOf[JQueryAjaxSettings])
+  }
+
+  @JSExport
+  def polulateChartNew() {
+    // clear the bus data
+    js.Dynamic.global.loadPie(displayData.groupBy(w => w._7).map(g => js.Array(g._1, g._2.size)).toSeq.toJSArray)
   }
 
   @JSExport
@@ -87,51 +159,17 @@ class WeatherReport extends DataGenerator {
     ).asInstanceOf[JQueryAjaxSettings])
   }
 
-  // def loadMarker() {
-  //   val marker =
-  //     busData.map(w =>
-  //       (jsnew(g.google.maps.Marker))(lit(
-  //         map = gogleMap,
-  //         position = (jsnew(g.google.maps.LatLng)(w._1, w._2))
-  //       //, animation = g.google.maps.Animation.DROP
-  //       )))
-  // }
+  import google.maps.Data.Feature
+  import google.maps.LatLng
 
   @JSExport
   def showReport(): Unit = {
-    val renderHtml = new WeatherFrag(scalatags.Text)
-    dom.document.body.innerHTML = renderHtml.htmlFrag.render
-
-    val map_canvas = document.getElementById("map_canvas")
-    val map_options = lit(center = (jsnew(g.google.maps.LatLng))(43.768050, -79.371202), zoom = 10, mapTypeId = g.google.maps.MapTypeId.ROADMAP)
-    val gogleMap = (jsnew(g.google.maps.Map))(map_canvas, map_options)
-
-    polulateBus
-
-    //println("I have bus: " + busData.toString)
-
-    // load the initial data
-    var markers = busData.map(w =>
-      (jsnew(g.google.maps.Marker))(lit(
-        map = gogleMap,
-        position = (jsnew(g.google.maps.LatLng)(w._1, w._2))
-      //, animation = g.google.maps.Animation.DROP
-      )))
-
-    showDetail
 
     //start here
 
-    //val data = js.Array(js.Array("idle", 3), js.Array("running", 85), js.Array("Malfunctional", 10), js.Array("Misc", 2))
-    polulateChart()
-    dom.window.setInterval(() => {
-      polulateChart()
-    }, 50000)
-
+    //google.maps.event.addDomListener(window, "load", initializeEdwin)
     //end here
 
-    //updateBus
-    //initialize(43.856415, -79.281601)
     dom.window.setInterval(() => {
       // clear out the old marker
       markers.foreach { w =>
@@ -139,30 +177,79 @@ class WeatherReport extends DataGenerator {
           w.setMap(null)
         }
       }
-
-      // get the new bus info
+      //repopulate bus
       polulateBus
 
+      renderDisplayData
+
       // repopulate the map
-      markers = busData.map(w =>
-        (jsnew(g.google.maps.Marker))(lit(
-          map = gogleMap,
-          position = (jsnew(g.google.maps.LatLng)(w._1, w._2))
-        //, animation = g.google.maps.Animation.DROP
-        )))
+      markers = displayData.map(w => {
+
+        val marker = new google.maps.Marker(google.maps.MarkerOptions(
+          position = new google.maps.LatLng(w._1, w._2),
+          map = gmap,
+          icon = w._7 match {
+            case "delayed" => imaRed;
+            case "running" => imaGreen;
+            case "terminal" => imaYellow;
+            case _ => imaPink
+          },
+          title = "Marker"
+        ))
+
+        val infowindow = new google.maps.InfoWindow(google.maps.InfoWindowOptions(
+          content = f"""Id: ${w._3},
+                      DirTag: ${w._4},
+                      RouteTag: ${w._5},
+                      Heading: ${w._6}
+                   """
+        ))
+
+        google.maps.event.addListener(marker, "mouseover", () => {
+          infowindow.open(gmap, marker)
+        })
+
+        google.maps.event.addListener(marker, "mouseout", () => {
+          infowindow.close()
+        })
+
+        marker
+      })
+    }, 10000)
+
+    showDetail
+
+    //val data = js.Array(js.Array("idle", 3), js.Array("running", 85), js.Array("Malfunctional", 10), js.Array("Misc", 2))
+    polulateChartNew()
+    dom.window.setInterval(() => {
+      polulateChartNew()
     }, 50000)
+
+    //end here
+
+    //updateBus
+    // dom.window.setInterval(() => {
+    //   // clear out the old marker
+    //   markers.foreach { w =>
+    //     {
+    //       w.setMap(null)
+    //     }
+    //   }
+
+    //   // get the new bus info
+    //   polulateBus
+
+    //   // repopulate the map
+    //   markers = busData.map(w =>
+    //     (jsnew(g.google.maps.Marker))(lit(
+    //       map = gogleMap,
+    //       position = (jsnew(g.google.maps.LatLng)(w._1, w._2))
+    //     //, animation = g.google.maps.Animation.DROP
+    //     )))
+    // }, 50000)
+
     dom.window.setInterval(() => showDetail, 50000)
     //dom.window.setInterval(() => updateBus, 3000)
-  }
-
-  def updateBus() {
-    //clearBusMap
-    jQuery.ajax(js.Dynamic.literal(
-      `type` = "GET",
-      url = "/bus", success = { (data: String, textStatus: String, jqXHR: JQueryXHR) =>
-      initialize(data.split("\\|").map(w => { val g = w.split(","); (g(2).toDouble, g(3).toDouble) }).toList)
-    }
-    ).asInstanceOf[JQueryAjaxSettings])
   }
 
   //@JSExport
@@ -194,84 +281,64 @@ class WeatherReport extends DataGenerator {
     jQuery("#temp").empty()
   }
 
-  // private def populateWeatherReprt(data: String) = {
-  //   val result = JSON.parse(data)
-  //   val weather = result.weather.asInstanceOf[Array[js.Dynamic]](0)
-  //   jQuery("#tempDetail").attr("style", "display:block;")
-  //   jQuery("#cityName").append("Information Board")
-  //   val image = "http://openweathermap.org/img/w/" + weather.icon + ".png"
-  //   jQuery("#temp").append("<img src=" + image + " >" + Math.floor(result.main.temp.toString.toDouble - 273.15))
-  //   jQuery("#weather").append("" + weather.main)
-  //   jQuery("#pressure").append("" + result.main.pressure + " hpa")
-  //   jQuery("#humidity").append(result.main.humidity + " %")
-  //   jQuery("#sunrise").append(msToTime(result.sys.sunrise.toString.toLong))
-  //   jQuery("#sunset").append(msToTime(result.sys.sunset.toString.toLong))
-  //   jQuery("#geocoords").append("[" + result.coord.lon + ", " + result.coord.lat + "]")
-
-  //   initialize(43.856415, -79.281601)
-  //   //initialize()
-  // }
-
   private def populateMyWork(data: String) = {
     jQuery("#tempDetail").attr("style", "display:block;")
     jQuery("#cityName").append("Twitter Board")
     data.split("\\|").map(g =>
       //jQuery("#twitterTable").appendChild(tr(td(ReportStyles.td, g)))
       jQuery("#twitterTable").append(f"""<tr class="child" align="left"><td>$g</td></tr>"""))
-
-    //start here
-
-    // end here
-
-    //initialize()
   }
-}
 
-// experimental google map
+  @JSExport
+  def getActionData(data: String): Unit = {
 
-@JSExport
-object Weather extends WeatherReport with js.JSApp {
+    updateInternalState(data)
+    renderDisplayData
+
+    markers.foreach { w =>
+      {
+        w.setMap(null)
+      }
+    }
+
+    markers = displayData.map(w => {
+      val marker = new google.maps.Marker(google.maps.MarkerOptions(
+        position = new google.maps.LatLng(w._1, w._2),
+        map = gmap,
+        icon = w._7 match {
+          case "delayed" => imaRed;
+          case "running" => imaGreen;
+          case "terminal" => imaYellow;
+          case _ => imaPink
+        },
+        title = "Marker"
+      ))
+
+      val infowindow = new google.maps.InfoWindow(google.maps.InfoWindowOptions(
+        content = f"""Id: ${w._3},
+                      DirTag: ${w._4},
+                      RouteTag: ${w._5},
+                      Heading: ${w._6}
+                   """
+      ))
+
+      google.maps.event.addListener(marker, "mouseover", () => {
+        infowindow.open(gmap, marker)
+      })
+
+      google.maps.event.addListener(marker, "mouseout", () => {
+        infowindow.close()
+      })
+
+      marker
+    })
+  }
+
   @JSExport
   def main(): Unit = {
     println("start miracle!!!")
     showReport
   }
-  // def main(): Unit = {
-  //   println("*************edwin*****************running**********")
-
-  //   def initialize() = js.Function {
-  //     val opts = google.maps.MapOptions(
-  //       center = new LatLng(51.201203, -1.724370),
-  //       zoom = 8,
-  //       panControl = false,
-  //       streetViewControl = false,
-  //       mapTypeControl = false
-  //     )
-  //     val gmap = new google.maps.Map(document.getElementById("map-canvas"), opts)
-
-  //     val marker = new google.maps.Marker(google.maps.MarkerOptions(
-  //       position = gmap.getCenter(),
-  //       map = gmap,
-  //       title = "Marker"
-  //     ))
-
-  //     val contentString = """
-  //           <div id="content">
-  //           <h1 id="firstHeading" class="firstHeading">Hello World !!</h1>
-  //           </div>
-  //           """
-
-  //     val infowindow = new google.maps.InfoWindow(google.maps.InfoWindowOptions(
-  //       content = contentString
-  //     ))
-
-  //     google.maps.event.addListener(marker, "click", () => {
-  //       println("Marker click !")
-  //       infowindow.open(gmap, marker)
-  //     })
-  //   }
-  //   google.maps.event.addDomListener(dom.window, "load", initialize)
-  // }
 }
 
 class WeatherFrag[Builder, Output <: FragT, FragT](val bundle: scalatags.generic.Bundle[Builder, Output, FragT]) {

@@ -4,6 +4,8 @@ import play.api.mvc._
 
 import scalaj.http.Http
 import com.typesafe.config.ConfigFactory
+import org.json4s._
+import org.json4s.jackson.JsonMethods._
 
 class WeatherController extends Controller {
   val ttcInfo = List(
@@ -150,6 +152,40 @@ class WeatherController extends Controller {
 
   val busStats = List(List("idle_2", "running_80", "Malfunctional_10", "Mics_8"), List("idle_22", "running_50", "Malfunctional_10", "Mics_18"), List("idle_90", "running_10", "Malfunctional_0", "Mics_10"), List("idle_100", "running_0", "Malfunctional_0", "Mics_0"))
 
+  def getLastBustData() = {
+    val response = Http("https://api.salaam.io/last_vehicle_location").asString
+    val s1 = org.json4s.jackson.JsonMethods.parse(response.body).values
+    val s2 = s1.asInstanceOf[List[Map[String, Any]]]
+
+    s2.map(w => w.getOrElse("vid", 0).asInstanceOf[BigInt].toString + "^" +
+      w.getOrElse("dir_tag", "").asInstanceOf[String] + "^" +
+      {
+        if (w.getOrElse("latitude", 0.0).isInstanceOf[Double])
+          w.getOrElse("latitude", 0.0).asInstanceOf[Double].toString
+        else
+          w.getOrElse("latitude", 0.0).asInstanceOf[BigInt].toString
+      }
+      + "^" +
+      {
+        if (w.getOrElse("longitude", 0.0).isInstanceOf[Double])
+          w.getOrElse("longitude", 0.0).asInstanceOf[Double].toString
+        else
+          w.getOrElse("longitude", 0.0).asInstanceOf[BigInt].toString
+      }
+      + "^" +
+      w.getOrElse("route_tag", "").asInstanceOf[String] + "^" +
+      w.getOrElse("heading", 0).asInstanceOf[BigInt].toString + "^" +
+      {
+        if (w.getOrElse("is_terminal", false).asInstanceOf[Boolean])
+          "terminal"
+        else
+          w.getOrElse("status", "").asInstanceOf[String]
+      }
+    //w.getOrElse("vid", 0).asInstanceOf[BigInt].toString + "," +
+    )
+
+  }
+
   import java.util.Random
 
   val rand = new Random(System.currentTimeMillis());
@@ -179,9 +215,8 @@ class WeatherController extends Controller {
   }
 
   def busCall() = Action { implicit request =>
-    val ss = (0 to 10).map(_ =>
-      busInfo(rand.nextInt(busInfo.length)))
-    Ok(ss.mkString("|"))
+    val data = getLastBustData()
+    Ok(data.mkString("|"))
   }
 
   def busStatus() = Action { implicit request =>
