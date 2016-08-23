@@ -23,18 +23,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
 
     <script type="text/javascript">
+     var flag = 'on';
      function loadPie(ggg) {
        c3.generate({
          bindto: '#edwinTest',
          data: {
            columns: ggg,
            type : 'donut',
-           onclick: function (d, i) { console.log("onclick", d); },
+           onclick: function (d, i) { 
+                // console.log("onclick", d); 
+                if (flag == 'on') {
+                  flag = 'off';  }
+                else {
+                  flag = 'on'; }},
            onmouseover: function (d, i) { 
-		console.log("onmouseover", d.id);
-                com.knoldus.weather.Weather().getActionData(d.id); },
-           onmouseout: function (d, i) { console.log("onmouseout", d);
-                com.knoldus.weather.Weather().getActionData('all'); }
+		// console.log("onmouseover", d.id);
+                if (flag == 'on') {
+                //  console.log("I have flag: " + flag)
+                  com.knoldus.weather.Weather().getActionData(d.id); } 
+                },
+           onmouseout: function (d, i) { 
+               // console.log("onmouseout", d);
+                if (flag == 'on') {
+                  com.knoldus.weather.Weather().getActionData('all'); }
+                }
          },
          donut: {
            title: "Bus stats:",

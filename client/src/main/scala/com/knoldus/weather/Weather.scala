@@ -22,22 +22,22 @@ import org.scalajs.dom.{ html => _, _ }
 
 import Constants._
 
-// experimental google map
-// todo
-//s2.toList.groupBy(w => w._7).map(g => (g._1, g._2.size))
-
 @JSExport
 object Weather extends js.JSApp {
   val renderHtml = new WeatherFrag(scalatags.Text)
   dom.document.body.innerHTML = renderHtml.htmlFrag.render
 
   @JSExport
+  var allRoutes = Set("5", "6", "7", "8", "9", "10", "11", "12", "14", "15", "16", "17", "20", "21", "22", "23", "24", "25", "26", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "115", "116", "118", "120", "121", "122", "123", "124", "125", "126", "127", "129", "130", "131", "132", "133", "134", "135", "143", "144", "145", "160", "161", "162", "165", "168", "169", "171", "185", "190", "191", "192", "195", "196", "198", "199", "300", "301", "302", "304", "306", "310", "315", "317", "320", "322", "324", "325", "329", "334", "335", "336", "337", "339", "341", "343", "353", "354", "384", "385", "395", "396", "501", "502", "503", "504", "505", "506", "509", "510", "511", "512", "514")
+
   var toDisplay = "all"
+  var routeId = "all"
   //  latitude, longitude, vid, dir_tag, route_tag, heading, status
   var allData = List[(Double, Double, String, String, String, String, String)]()
   var delayData = List[(Double, Double, String, String, String, String, String)]()
   var runningData = List[(Double, Double, String, String, String, String, String)]()
   var terminalData = List[(Double, Double, String, String, String, String, String)]()
+  var unavailableData = List[(Double, Double, String, String, String, String, String)]()
   var questionData = List[(Double, Double, String, String, String, String, String)]()
   // to display the info at the map, will be used as default
   var displayData = List[(Double, Double, String, String, String, String, String)]()
@@ -64,7 +64,8 @@ object Weather extends js.JSApp {
         case "delayed" => imaRed;
         case "running" => imaGreen;
         case "terminal" => imaYellow;
-        case _ => imaPink
+        case "unavailable" => imaPink;
+        case _ => imaBlue;
       },
       title = "Marker"
     ))
@@ -100,7 +101,8 @@ object Weather extends js.JSApp {
       case "delayed" => displayData = delayData
       case "running" => displayData = runningData
       case "terminal" => displayData = terminalData
-      case "question" => displayData = terminalData
+      case "unavailable" => displayData = unavailableData
+      case "question" => displayData = questionData
       case _ => displayData = allData
     }
   }
@@ -112,6 +114,7 @@ object Weather extends js.JSApp {
     delayData = List[(Double, Double, String, String, String, String, String)]()
     runningData = List[(Double, Double, String, String, String, String, String)]()
     terminalData = List[(Double, Double, String, String, String, String, String)]()
+    unavailableData = List[(Double, Double, String, String, String, String, String)]()
     questionData = List[(Double, Double, String, String, String, String, String)]()
 
     jQuery.ajax(js.Dynamic.literal(
@@ -130,6 +133,8 @@ object Weather extends js.JSApp {
             delayData = delayData :+ f
           } else if (f._7 == "terminal") {
             terminalData = terminalData :+ f
+          } else if (f._7 == "unavailable") {
+            unavailableData = unavailableData :+ f
           } else {
             questionData = questionData :+ f
           }
@@ -142,6 +147,7 @@ object Weather extends js.JSApp {
   @JSExport
   def polulateChartNew() {
     // clear the bus data
+    //println("Chart stuff :" + displayData.groupBy(w => w._7).map(g => g._1 + ":" + g._2.size + ",").mkString(","))
     js.Dynamic.global.loadPie(displayData.groupBy(w => w._7).map(g => js.Array(g._1, g._2.size)).toSeq.toJSArray)
   }
 
@@ -192,7 +198,8 @@ object Weather extends js.JSApp {
             case "delayed" => imaRed;
             case "running" => imaGreen;
             case "terminal" => imaYellow;
-            case _ => imaPink
+            case "unavailable" => imaPink;
+            case _ => imaBlue;
           },
           title = "Marker"
         ))
@@ -227,27 +234,6 @@ object Weather extends js.JSApp {
 
     //end here
 
-    //updateBus
-    // dom.window.setInterval(() => {
-    //   // clear out the old marker
-    //   markers.foreach { w =>
-    //     {
-    //       w.setMap(null)
-    //     }
-    //   }
-
-    //   // get the new bus info
-    //   polulateBus
-
-    //   // repopulate the map
-    //   markers = busData.map(w =>
-    //     (jsnew(g.google.maps.Marker))(lit(
-    //       map = gogleMap,
-    //       position = (jsnew(g.google.maps.LatLng)(w._1, w._2))
-    //     //, animation = g.google.maps.Animation.DROP
-    //     )))
-    // }, 50000)
-
     dom.window.setInterval(() => showDetail, 50000)
     //dom.window.setInterval(() => updateBus, 3000)
   }
@@ -268,17 +254,6 @@ object Weather extends js.JSApp {
   private def clearTwitterBoard: JQuery = {
     jQuery("#cityName").empty()
     jQuery("#twitterTable").empty()
-  }
-
-  private def cleanUI: JQuery = {
-    jQuery("#cityName").empty()
-    jQuery("#weather").empty()
-    jQuery("#pressure").empty()
-    jQuery("#humidity").empty()
-    jQuery("#sunrise").empty()
-    jQuery("#sunset").empty()
-    jQuery("#geocoords").empty()
-    jQuery("#temp").empty()
   }
 
   private def populateMyWork(data: String) = {
@@ -309,7 +284,8 @@ object Weather extends js.JSApp {
           case "delayed" => imaRed;
           case "running" => imaGreen;
           case "terminal" => imaYellow;
-          case _ => imaPink
+          case "unavailable" => imaPink;
+          case _ => imaBlue;
         },
         title = "Marker"
       ))
@@ -332,6 +308,23 @@ object Weather extends js.JSApp {
 
       marker
     })
+  }
+
+  @JSExport
+  def selectSpecificRoute() {
+    val route = jQuery("#route").value()
+    if (allRoutes.contains(route.toString)) {
+      println("I have route: " + route)
+      displayData = allData.filter(_._5 == route)
+
+      delayData = displayData.filter(_._7 == "delayed")
+      runningData = displayData.filter(_._7 == "running")
+      terminalData = displayData.filter(_._7 == "terminal")
+      unavailableData = displayData.filter(_._7 == "unavailable")
+
+    } else {
+      println("route not found: " + route)
+    }
   }
 
   @JSExport
@@ -361,13 +354,13 @@ class WeatherFrag[Builder, Output <: FragT, FragT](val bundle: scalatags.generic
         ReportStyles.secondDiv, id := "search",
         input(
           ReportStyles.search,
-          id := "name", name := "name", placeholder := "Enter a route name",
+          id := "route", name := "route", placeholder := "Enter a route name",
           `type` := "text", value := "", size := 15
         ),
         button(
           ReportStyles.bootstrapButton,
           `type` := "button", name := "submit", id := "submit",
-          onclick := "com.knoldus.weather.Weather().showDetail();", "Search"
+          onclick := "com.knoldus.weather.Weather().selectSpecificRoute();", "Search"
         )
       ),
       div(ReportStyles.mainContainer, id := "tempDetail",
